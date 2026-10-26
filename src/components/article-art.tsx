@@ -1,0 +1,10 @@
+export function ArticleArt({ kind, featured = false }: { kind: string; featured?: boolean }) {
+  return <div className={`journal-art art-${kind} ${featured ? 'art-featured' : ''}`} aria-hidden="true">
+    <div className="art-grid" />
+    {kind === 'build' ? <div className="build-sketch"><span className="art-label-line short" /><div className="scope-sheets"><div className="scope-sheet behind"><i /><i /><i /></div><div className="scope-sheet front"><span className="art-label-line short" /><span className="art-heading-lines"><i /><i /></span>{[0, 1, 2].map(item => <div key={item} className="scope-check"><span>✓</span><i className="art-label-line" /></div>)}</div></div><span className="sketch-foot"><i className="art-label-line" /><span>↗</span><i className="art-label-line" /></span></div>
+    : kind === 'prototype' ? <div className="prototype-sketch"><div className="mini-window"><span className="art-label-line short" /><div className="wireframe-box" /><i /><i /><div className="wireframe-button" /></div><span className="sketch-connector">→</span><div className="mini-window working"><span className="art-label-line short" /><div className="working-check">✓</div><i /><div className="wireframe-button" /></div></div>
+    : kind === 'features' ? <div className="feature-sketch"><span className="art-label-line short" />{[0, 1, 2].map(item => <div key={item} className={`priority-row ${item === 2 ? 'postponed' : ''}`}><span className="priority-check">{item === 2 ? '○' : '✓'}</span><i className="art-label-line" /><i className="priority-tag" /></div>)}</div>
+    : kind === 'budget' ? <div className="budget-sketch"><div className="budget-paper"><span className="art-label-line short" /><div className="budget-bars"><i /><i /><i /><i /></div><div className="budget-labels"><i /><i /><i /><i /></div><span className="art-label-line" /></div></div>
+    : <div className="hire-sketch"><div className="developer-note"><span className="art-label-line" /><span className="code-mark">{'{ }'}</span><div className="developer-note-bottom"><i className="art-label-line" /><i className="art-label-line" /></div></div><span className="art-label-line" /></div>}
+  </div>
+}

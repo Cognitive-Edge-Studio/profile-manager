@@ -1,0 +1,11 @@
+{
+  "result": "passed",
+  "scope": "Production build, loopback server, disposable UTF8 database. Outbound email disabled. No actual owner content was published and no new public pages were added.",
+  "checks": [
+    "Origin, content type, token, malformed/oversized body, unknown fields, honeypot and field validation reject without saving",
+    "Concurrent retries create one durable inquiry; conflicting reuse returns 409; both finalized form sources save their existing fields",
+    "Disabled email produces visible retryable notification failure after acceptance; private inquiry/status APIs deny visitors; owner workflow cannot falsify delivery or edit original input",
+    "Storage failures never return acceptance; form message/contact details and provider secrets are absent from public HTML",
+    "Published owner form labels/help/next-step copy refresh on existing homepage and Contact routes without creating new pages"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "mode": "dry-run",
+  "updateExisting": false,
+  "entries": [
+    {
+      "sourceId": "approved:home",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "approved:about",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "approved:contact",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "page:blog",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "page:calculator",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:ai-integration-services",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:ai-workflow-automation",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:ai-agent-development",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:web-application-development",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:mobile-app-development",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:tv-app-development",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:saas-development",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:devops-services",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "service:mlops-services",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "project:eudora-edutech",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "project:adtech",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "project:saas",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "project:media-streaming",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "post:mvp-development-cost",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "post:mvp-feature-prioritization",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "post:how-to-build-an-mvp",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "post:prototype-vs-mvp",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "post:how-to-hire-a-freelance-full-stack-developer",
+      "action": "retain",
+      "differingFields": []
+    },
+    {
+      "sourceId": "settings:original",
+      "action": "retain"
+    }
+  ],
+  "notes": [
+    "No publication dates inferred.",
+    "Media imported privately.",
+    "SVG technology marks and decorative article illustrations remain code assets.",
+    "Source snapshots retain the complete original manuscripts and page sections."
+  ]
+}

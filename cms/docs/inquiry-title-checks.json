@@ -1,0 +1,79 @@
+{
+  "build": "passed",
+  "before": [
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "text": "Inquiry form",
+      "width": 390
+    },
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "text": "Inquiry form",
+      "width": 768
+    },
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "text": "Inquiry form",
+      "width": 1280
+    }
+  ],
+  "after": [
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "h3Count": 0,
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "tag": "P",
+      "text": "Inquiry form",
+      "width": 390
+    },
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "h3Count": 0,
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "tag": "P",
+      "text": "Inquiry form",
+      "width": 768
+    },
+    {
+      "color": "rgb(32, 33, 36)",
+      "fontFamily": "\"Google Sans\", \"Manrope Variable\", \"Segoe UI\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "500",
+      "h3Count": 0,
+      "letterSpacing": "-0.44px",
+      "lineHeight": "33px",
+      "margin": "0px",
+      "tag": "P",
+      "text": "Inquiry form",
+      "width": 1280
+    }
+  ]
+}

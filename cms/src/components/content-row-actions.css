@@ -1,0 +1,8 @@
+.content-title-cell { min-width: 220px; }
+.content-row-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin-top: 6px; font-size: 12px; font-weight: 400; }
+.content-row-actions a, .content-row-actions button, .content-row-actions > span { display: inline-flex; align-items: center; min-height: 28px; }
+.content-row-actions a { text-decoration: underline; text-underline-offset: 3px; }
+.content-row-actions button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.content-row-actions > span { color: var(--theme-elevation-500); cursor: help; }
+.content-row-actions .content-row-actions__delete { color: var(--theme-error-500); }
+.content-row-actions a:focus-visible, .content-row-actions button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }

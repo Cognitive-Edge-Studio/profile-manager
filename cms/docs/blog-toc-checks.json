@@ -1,0 +1,89 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "allTargetsMatch": true,
+      "headingsMatch": true,
+      "navCount": 1,
+      "overflow": false,
+      "sections": 16,
+      "title": "MVP Development Cost: What Affects Your Budget?",
+      "uniqueIDs": true
+    },
+    {
+      "id": 2,
+      "allTargetsMatch": true,
+      "headingsMatch": true,
+      "navCount": 1,
+      "overflow": false,
+      "sections": 14,
+      "title": "MVP Feature Prioritization: Which Features Belong in Your First MVP?",
+      "uniqueIDs": true
+    },
+    {
+      "id": 3,
+      "allTargetsMatch": true,
+      "headingsMatch": true,
+      "navCount": 1,
+      "overflow": false,
+      "sections": 16,
+      "title": "How to Build an MVP With One Developer: Plan Your First Useful Version",
+      "uniqueIDs": true
+    },
+    {
+      "id": 4,
+      "allTargetsMatch": true,
+      "headingsMatch": true,
+      "navCount": 1,
+      "overflow": false,
+      "sections": 11,
+      "title": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?",
+      "uniqueIDs": true
+    },
+    {
+      "id": 5,
+      "allTargetsMatch": true,
+      "headingsMatch": true,
+      "navCount": 1,
+      "overflow": false,
+      "sections": 11,
+      "title": "How to Hire a Freelance Full-Stack Developer Without a Technical Background",
+      "uniqueIDs": true
+    }
+  ],
+  "responsive": [
+    {
+      "overflow": false,
+      "sticky": "static",
+      "toggleVisible": true,
+      "width": 320
+    },
+    {
+      "overflow": false,
+      "sticky": "static",
+      "toggleVisible": true,
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "sticky": "static",
+      "toggleVisible": true,
+      "width": 1100
+    },
+    {
+      "overflow": false,
+      "sticky": "sticky",
+      "toggleVisible": false,
+      "width": 1280
+    }
+  ],
+  "mobileKeyboardExpansion": true,
+  "mobileLinkJumpAndFocus": true,
+  "mobileCollapseAfterJump": true,
+  "build": "passed",
+  "unitTests": 14,
+  "sources": [
+    "https://designsystem.digital.gov/components/in-page-navigation/",
+    "https://www.w3.org/WAI/WCAG22/Techniques/general/G64"
+  ]
+}

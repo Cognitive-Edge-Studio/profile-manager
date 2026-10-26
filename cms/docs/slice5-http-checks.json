@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "environment": "Production build with indexing enabled, served only on loopback using a disposable UTF8 database and example.test canonical origin. No external requests or owner content publication.",
+  "checks": [
+    "HTTP publication rejects missing reviewed service detail, including draft=true",
+    "Published service template, initial HTML canonical/indexing/social metadata, actual 1200×630 image, Service/Person/Breadcrumb JSON-LD and sitemap",
+    "Manual draft SEO edits preview privately, leave public metadata unchanged and become live on the next request after publishing",
+    "Article schema has no inferred dates; authenticated noindex/no-store previews and private owner readiness endpoint",
+    "Production robots allows crawling noindex pages; noindex, canonical overrides and filtered blog sitemap policies",
+    "Draft slug isolation; real permanent redirects preserve local queries, collapse chains, support restoring old addresses and refresh navigation/sitemap",
+    "Temporary/disabled/external HTTP redirects, reserved route protection and no visitor query forwarding off-site",
+    "Required navigation blocks unpublish; removing references allows immediate 404/list/sitemap removal; deletion removes managed aliases"
+  ]
+}

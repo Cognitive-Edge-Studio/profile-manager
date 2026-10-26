@@ -1,0 +1,63 @@
+{
+  "name": "shibly-noman-cms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run.mjs next dev --hostname 127.0.0.1 --port 3000",
+    "dev:website": "node scripts/run.mjs next dev --hostname 127.0.0.1 --port 3001",
+    "build": "node scripts/run.mjs next build",
+    "start": "node scripts/run.mjs next start --hostname 127.0.0.1 --port 3000",
+    "typecheck": "node scripts/run.mjs tsc --noEmit",
+    "payload": "node scripts/run.mjs payload",
+    "generate:types": "node scripts/run.mjs payload generate:types",
+    "generate:importmap": "node scripts/run.mjs payload generate:importmap",
+    "db:local": "node scripts/run.mjs script scripts/local-postgres.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "bootstrap": "node scripts/run.mjs tsx scripts/bootstrap.ts",
+    "verify:http": "node scripts/run.mjs script scripts/smoke-http.mjs",
+    "verify:website": "node scripts/run.mjs script scripts/verify-website.mjs",
+    "import:content": "node scripts/run.mjs tsx scripts/import-content.ts",
+    "verify:content": "node scripts/run.mjs tsx scripts/verify-published-content.ts",
+    "verify:seo": "node scripts/run.mjs tsx scripts/verify-published-content.ts --seo",
+    "inquiries:work": "node scripts/run.mjs tsx scripts/inquiries-worker.ts",
+    "verify:contact": "node scripts/run.mjs tsx scripts/verify-published-content.ts --contact",
+    "test": "node --test tests/*.test.mjs",
+    "test:integration": "node scripts/run.mjs tsx --test --test-force-exit tests/access.integration.test.ts tests/content.integration.test.ts tests/publishing.integration.test.ts tests/contact.integration.test.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@payloadcms/db-postgres": "3.92.0",
+    "@payloadcms/next": "3.92.0",
+    "@payloadcms/plugin-seo": "3.92.0",
+    "@payloadcms/richtext-lexical": "3.92.0",
+    "@radix-ui/react-slot": "1.5.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "graphql": "^16.11.0",
+    "lucide-react": "0.468.0",
+    "motion": "12.43.0",
+    "next": "16.4.3",
+    "payload": "3.92.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1",
+    "sharp": "^0.34.5",
+    "tailwind-merge": "3.7.0",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/pg": "^8.15.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "embedded-postgres": "18.4.0-beta.17",
+    "pg": "^8.16.3",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  },
+  "optionalDependencies": {
+    "node-win-x64": "24.22.1"
+  }
+}

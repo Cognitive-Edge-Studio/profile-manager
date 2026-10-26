@@ -1,0 +1,73 @@
+{
+  "result": "passed",
+  "publicAddresses": [
+    {
+      "path": "/services/",
+      "status": 404
+    },
+    {
+      "path": "/services/ai-integration-services/",
+      "status": 404
+    },
+    {
+      "path": "/services/ai-workflow-automation/",
+      "status": 404
+    },
+    {
+      "path": "/services/ai-agent-development/",
+      "status": 404
+    },
+    {
+      "path": "/services/web-application-development/",
+      "status": 404
+    },
+    {
+      "path": "/services/mobile-app-development/",
+      "status": 404
+    },
+    {
+      "path": "/services/tv-app-development/",
+      "status": 404
+    },
+    {
+      "path": "/services/saas-development/",
+      "status": 404
+    },
+    {
+      "path": "/services/devops-services/",
+      "status": 404
+    },
+    {
+      "path": "/services/mlops-services/",
+      "status": 404
+    }
+  ],
+  "authenticatedDeletedPreviews": "all return 404",
+  "pages": [
+    {
+      "id": 5,
+      "title": "MVP cost calculator"
+    },
+    {
+      "id": 4,
+      "title": "Blog"
+    },
+    {
+      "id": 3,
+      "title": "Contact"
+    },
+    {
+      "id": 2,
+      "title": "About Me"
+    },
+    {
+      "id": 1,
+      "title": "Home"
+    }
+  ],
+  "servicePages": 0,
+  "retainedHomepageCards": 9,
+  "navigation": "Services links to the existing homepage #services section",
+  "sitemap": "No removed service URLs",
+  "publication": "Owner content remains draft; nothing published"
+}

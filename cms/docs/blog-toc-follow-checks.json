@@ -1,0 +1,47 @@
+{
+  "build": "passed",
+  "initial": {
+    "activeVisible": true,
+    "ctaVisible": true,
+    "listScroll": 237.6000061035156,
+    "page": 9282.400390625,
+    "title": "7. Choose a Method for Comparing the Remaining Options",
+    "upcoming": [
+      {
+        "title": "8. Resolve Competing Requests Before Changing the Scope",
+        "top": 1562
+      },
+      {
+        "title": "9. Give Postponed Features a Reason to Return",
+        "top": 2603
+      }
+    ]
+  },
+  "readingDown": {
+    "activeVisible": true,
+    "ctaVisible": true,
+    "focusedElement": "heading-7-choose-a-method-for-comparing-the-remaining-options",
+    "hash": "#heading-7-choose-a-method-for-comparing-the-remaining-options",
+    "listScroll": 317.6000061035156,
+    "page": 10938.400390625,
+    "title": "8. Resolve Competing Requests Before Changing the Scope"
+  },
+  "readingUp": {
+    "activeVisible": true,
+    "listScroll": 317.6000061035156,
+    "page": 8778.400390625,
+    "title": "6. Complete a Feature Decision Worksheet"
+  },
+  "earlierSection": {
+    "activeVisible": true,
+    "listScroll": 160.8000030517578,
+    "page": 6037.60009765625,
+    "title": "4. Check Dependencies and Unknowns With Your Developer"
+  },
+  "mobileReopen": {
+    "activeVisible": true,
+    "expanded": "true",
+    "overflow": false,
+    "title": "3. Ask What Happens If You Leave a Feature Out"
+  }
+}

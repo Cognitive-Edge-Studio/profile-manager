@@ -1,0 +1,52 @@
+{
+  "build": "passed",
+  "collapsed": [
+    {
+      "clearsHeader": true,
+      "overflow": false,
+      "tapHeight": 44,
+      "tocHeight": 58,
+      "tocTop": 88,
+      "width": 320
+    },
+    {
+      "clearsHeader": true,
+      "overflow": false,
+      "tapHeight": 44,
+      "tocHeight": 58,
+      "tocTop": 88,
+      "width": 390
+    },
+    {
+      "clearsHeader": true,
+      "overflow": false,
+      "tapHeight": 44,
+      "tocHeight": 58,
+      "tocTop": 88,
+      "width": 560
+    },
+    {
+      "clearsHeader": true,
+      "overflow": false,
+      "tapHeight": 44,
+      "tocHeight": 86,
+      "tocTop": 92,
+      "width": 768
+    }
+  ],
+  "expanded": {
+    "currentSection": "4 Check Dependencies and Unknowns With Your Developer",
+    "expanded": "true",
+    "listHeight": 360,
+    "panelBottom": 514,
+    "panelHeight": 426,
+    "scrollable": true
+  },
+  "jump": {
+    "collapsed": true,
+    "overflow": false,
+    "targetTop": 184,
+    "targetUncovered": true,
+    "tocHeight": 58
+  }
+}

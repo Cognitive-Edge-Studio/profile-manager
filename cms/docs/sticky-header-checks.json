@@ -1,0 +1,56 @@
+{
+  "build": "passed",
+  "desktop": {
+    "ctaBottom": 693,
+    "ctaVisible": true,
+    "headerBottom": 96,
+    "headerTop": 0,
+    "height": 720,
+    "overflow": false,
+    "scroll": 9202.400390625,
+    "targetTop": 144,
+    "targetUncovered": true,
+    "tocTop": 123,
+    "width": 1280
+  },
+  "responsive": [
+    {
+      "desktopCTAVisible": true,
+      "headerBottom": 96,
+      "headerTop": 0,
+      "height": 480,
+      "overflow": false,
+      "tocTop": 111,
+      "tocUncovered": true,
+      "width": 1280
+    },
+    {
+      "desktopCTAVisible": true,
+      "headerBottom": 80,
+      "headerTop": 0,
+      "height": 900,
+      "overflow": false,
+      "tocTop": 92,
+      "tocUncovered": true,
+      "width": 768
+    },
+    {
+      "desktopCTAVisible": true,
+      "headerBottom": 80,
+      "headerTop": 0,
+      "height": 844,
+      "overflow": false,
+      "tocTop": 92,
+      "tocUncovered": true,
+      "width": 390
+    }
+  ],
+  "mobileAnchor": {
+    "headerBottom": 80,
+    "headerTop": 0,
+    "mobileMenuClosed": true,
+    "sectionTop": 96,
+    "sectionUncovered": true,
+    "url": "http://127.0.0.1:3000/preview?collection=pages&id=1#services"
+  }
+}

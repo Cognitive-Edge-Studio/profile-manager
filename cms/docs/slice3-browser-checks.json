@@ -1,0 +1,345 @@
+{
+  "viewports": [
+    {
+      "viewport": 1280,
+      "path": "/about/",
+      "migrated": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 773.5499877929688,
+        "overflow": false,
+        "width": 1168.800048828125
+      },
+      "original": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 773.5499877929688,
+        "overflow": false,
+        "width": 1168.800048828125
+      }
+    },
+    {
+      "viewport": 1280,
+      "path": "/contact/",
+      "migrated": {
+        "heading": "Contact me",
+        "height": 1028.5999755859375,
+        "overflow": false,
+        "width": 1168.800048828125
+      },
+      "original": {
+        "heading": "Contact me",
+        "height": 1028.5999755859375,
+        "overflow": false,
+        "width": 1168.800048828125
+      }
+    },
+    {
+      "viewport": 1280,
+      "path": "/blog/",
+      "migrated": {
+        "heading": "Blog",
+        "height": 282.20001220703125,
+        "overflow": false,
+        "width": 1168.800048828125
+      },
+      "original": {
+        "heading": "Blog",
+        "height": 282.20001220703125,
+        "overflow": false,
+        "width": 1168.800048828125
+      }
+    },
+    {
+      "viewport": 1280,
+      "path": "/blog/mvp-development-cost/",
+      "migrated": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 217.25,
+        "overflow": false,
+        "width": 1048
+      },
+      "original": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 217.25,
+        "overflow": false,
+        "width": 1048
+      }
+    },
+    {
+      "viewport": 1280,
+      "path": "/tools/mvp-cost-calculator/",
+      "migrated": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 329.6000061035156,
+        "overflow": false,
+        "width": 1168.800048828125
+      },
+      "original": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 329.6000061035156,
+        "overflow": false,
+        "width": 1168.800048828125
+      }
+    },
+    {
+      "viewport": 768,
+      "path": "/",
+      "migrated": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 905.7999877929688,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 905.7999877929688,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      }
+    },
+    {
+      "viewport": 768,
+      "path": "/about/",
+      "migrated": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 780.2999877929688,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 780.2999877929688,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      }
+    },
+    {
+      "viewport": 768,
+      "path": "/contact/",
+      "migrated": {
+        "heading": "Contact me",
+        "height": 1646.800048828125,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "Contact me",
+        "height": 4369.60009765625,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "intentionalDifference": "Corrected pre-existing zero-width tablet contact introduction / overlapping form."
+    },
+    {
+      "viewport": 768,
+      "path": "/blog/",
+      "migrated": {
+        "heading": "Blog",
+        "height": 251.9750061035156,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "Blog",
+        "height": 251.9750061035156,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      }
+    },
+    {
+      "viewport": 768,
+      "path": "/blog/mvp-development-cost/",
+      "migrated": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 177.6999969482422,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 177.6999969482422,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      }
+    },
+    {
+      "viewport": 768,
+      "path": "/tools/mvp-cost-calculator/",
+      "migrated": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 408.8000183105469,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      },
+      "original": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 408.8000183105469,
+        "overflow": false,
+        "viewport": 768,
+        "width": 688.7999877929688
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/",
+      "migrated": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 1441.4500732421875,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 1441.4500732421875,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/about/",
+      "migrated": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 1155,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "Hi, I'm Shibly.",
+        "height": 1155,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/contact/",
+      "migrated": {
+        "heading": "Contact me",
+        "height": 1979.300048828125,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "Contact me",
+        "height": 1979.300048828125,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/blog/",
+      "migrated": {
+        "heading": "Blog",
+        "height": 289.375,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "Blog",
+        "height": 289.375,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/blog/mvp-development-cost/",
+      "migrated": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 216.8000030517578,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "MVP Development Cost: What Affects Your Budget?",
+        "height": 216.8000030517578,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 390,
+      "path": "/tools/mvp-cost-calculator/",
+      "migrated": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 302.7875061035156,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      },
+      "original": {
+        "heading": "MVP cost calculatorPlan your first version",
+        "height": 302.7875061035156,
+        "overflow": false,
+        "viewport": 390,
+        "width": 335.20001220703125
+      }
+    },
+    {
+      "viewport": 1280,
+      "path": "/",
+      "migrated": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 842.9125366210938,
+        "overflow": false,
+        "viewport": 1280,
+        "width": 1168.800048828125
+      },
+      "original": {
+        "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+        "height": 842.9125366210938,
+        "overflow": false,
+        "viewport": 1280,
+        "width": 1168.800048828125
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "task": "Mobile navigation opens, navigates through Next.js, and closes",
+      "passed": true
+    },
+    {
+      "task": "Blog topics, URL search, empty state, and reset",
+      "passed": true
+    },
+    {
+      "task": "Calculator example, editable handoff, return navigation, download and print report",
+      "passed": true
+    },
+    {
+      "task": "Calculator and handoff data remain in memory and clear on reload",
+      "passed": true
+    },
+    {
+      "task": "Keyboard skip link receives the first tab focus",
+      "passed": true
+    },
+    {
+      "task": "Mobile related-article carousel scrolls and updates its controls",
+      "passed": true
+    }
+  ]
+}

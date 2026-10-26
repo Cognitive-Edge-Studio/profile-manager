@@ -1,0 +1,245 @@
+{
+  "build": "passed",
+  "unitTests": 16,
+  "contentIntegrationTests": 7,
+  "previews": [
+    {
+      "collection": "pages",
+      "id": 1,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "I'm a freelance full-stack developer building web applications and AI systems",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "pages",
+      "id": 2,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "Hi, I'm Shibly",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "pages",
+      "id": 3,
+      "contactButtons": [
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "Contact me",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "pages",
+      "id": 4,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "Blog",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "pages",
+      "id": 5,
+      "contactButtons": [
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "MVP cost calculatorPlan your first version",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "posts",
+      "id": 1,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "MVP Development Cost: What Affects Your Budget?",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "posts",
+      "id": 2,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "MVP Feature Prioritization: Which Features Belong in Your First MVP?",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "posts",
+      "id": 3,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "How to Build an MVP With One Developer: Plan Your First Useful Version",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "posts",
+      "id": 4,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    },
+    {
+      "collection": "posts",
+      "id": 5,
+      "contactButtons": [
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3",
+        "/preview?collection=pages&id=3"
+      ],
+      "h1": "How to Hire a Freelance Full-Stack Developer Without a Technical Background",
+      "oldContactAnchors": 0,
+      "servicesLinks": [
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "my services"
+        },
+        {
+          "href": "/preview?collection=pages&id=1#services",
+          "text": "Services"
+        }
+      ],
+      "titleDots": []
+    }
+  ],
+  "bodyLinks": [
+    {
+      "href": "/preview?collection=pages&id=1#services",
+      "text": "my services"
+    },
+    {
+      "href": "/preview?collection=pages&id=3",
+      "text": "tell me what you're planning"
+    }
+  ],
+  "serviceNavigation": {
+    "heading": "What can I help you build?",
+    "sectionExists": true,
+    "url": "http://127.0.0.1:3000/preview?collection=pages&id=1#services"
+  },
+  "contactNavigation": {
+    "contactFormExists": true,
+    "h1": "Contact me",
+    "url": "http://127.0.0.1:3000/preview?collection=pages&id=3"
+  }
+}

@@ -1,0 +1,707 @@
+{
+  "contractVersion": 1,
+  "sourceFiles": [
+    {
+      "path": "src/content/approved.json",
+      "sha256": "92a11dde5e3e747731a7fd2a0a629564c2c30f2e7d5e1962e797633d056d6ddb"
+    },
+    {
+      "path": "src/content/approved.ts",
+      "sha256": "e9f59f38c8a21b6382b15fc52099c303c7dfc877f69da2b7038796aaebba6f84"
+    },
+    {
+      "path": "src/content/blog.json",
+      "sha256": "0555408631f2ea47c8f6543e0626659a6745957ca209ff903f535b228a9476dc"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "a64c0ac8269062ff4e70b911e1004e678e3282976c8341b7ef58eb22e0364d70"
+    },
+    {
+      "path": "src/blog.tsx",
+      "sha256": "56b92ecf204b60a4696093fb2813126c4cd6bfad62ded8d585e695574d79def6"
+    },
+    {
+      "path": "src/mvp-calculator.tsx",
+      "sha256": "1b15bd5ad32d5977735d04aed34eff56903b53b976078924be116b6cefe62e60"
+    },
+    {
+      "path": "src/lib/mvp-budget.ts",
+      "sha256": "e5f8b2a9a84d74dfa38d19a10c2f3be3af663ce5a7688f11fec473dc3c0a6d10"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "3091cb7182a4da1907eaaca68e18220a2943493ddd4492dad8c72b3c5d5f7964"
+    },
+    {
+      "path": "src/design-system.css",
+      "sha256": "d94332d394e2e83cb70e64e736a25bf07a8c4110ac619ebe266ea922e00b3a9f"
+    },
+    {
+      "path": "src/blog.css",
+      "sha256": "522ba2f22478f885779829e93173330565f763e40f08fd7edfbc6df96bbde0c6"
+    },
+    {
+      "path": "src/mvp-calculator.css",
+      "sha256": "8a226976f629938082bdfdf134dff9173e9a2d7b4f4e2939b6925840146e6abe"
+    },
+    {
+      "path": "index.html",
+      "sha256": "fa2f3de64a57f66a488bcfe02c9910a8e629a65423f966d09ed3f7d98aa1ac4f"
+    }
+  ],
+  "routes": [
+    {
+      "key": "home",
+      "path": "/",
+      "source": "src/content/approved.json#home"
+    },
+    {
+      "key": "about",
+      "path": "/about/",
+      "source": "src/content/approved.json#about"
+    },
+    {
+      "key": "contact",
+      "path": "/contact/",
+      "source": "src/content/approved.json#contact"
+    },
+    {
+      "key": "blog",
+      "path": "/blog/",
+      "source": "src/blog.tsx"
+    },
+    {
+      "key": "calculator",
+      "path": "/tools/mvp-cost-calculator/",
+      "source": "src/mvp-calculator.tsx"
+    },
+    {
+      "key": "post:mvp-development-cost",
+      "path": "/blog/mvp-development-cost/",
+      "source": "src/content/blog.json#mvp-development-cost"
+    },
+    {
+      "key": "post:mvp-feature-prioritization",
+      "path": "/blog/mvp-feature-prioritization/",
+      "source": "src/content/blog.json#mvp-feature-prioritization"
+    },
+    {
+      "key": "post:how-to-build-an-mvp",
+      "path": "/blog/how-to-build-an-mvp/",
+      "source": "src/content/blog.json#how-to-build-an-mvp"
+    },
+    {
+      "key": "post:prototype-vs-mvp",
+      "path": "/blog/prototype-vs-mvp/",
+      "source": "src/content/blog.json#prototype-vs-mvp"
+    },
+    {
+      "key": "post:how-to-hire-a-freelance-full-stack-developer",
+      "path": "/blog/how-to-hire-a-freelance-full-stack-developer/",
+      "source": "src/content/blog.json#how-to-hire-a-freelance-full-stack-developer"
+    }
+  ],
+  "plannedRoutes": [
+    "/services/",
+    "/services/[slug]/",
+    "/admin/",
+    "/api/contact",
+    "/preview",
+    "/sitemap.xml",
+    "/robots.txt"
+  ],
+  "pages": [
+    {
+      "sourceId": "approved:home",
+      "pageKey": "home",
+      "path": "/",
+      "_status": "draft",
+      "introSha256": "5ba0db3c5ca3412de3e7b11500d43a293f02b28f35d66867af12706817e8a85f",
+      "sections": [
+        {
+          "sourceId": "approved:home:section:0",
+          "title": "I help you understand what's worth building next.",
+          "sectionId": "about-brief",
+          "bodySha256": "d55b6c5d062f7953c5124f6f9e258fc5f8331655a61ddc66e9e1217f1f79dec1",
+          "sourceIndex": 0
+        },
+        {
+          "sourceId": "approved:home:section:1",
+          "title": "What can I help you build?",
+          "sectionId": "services",
+          "bodySha256": "edacfb2cee0872ae6d653f2a2c7d9b06013741078b7e6c70719a2c278919c85e",
+          "sourceIndex": 1
+        },
+        {
+          "sourceId": "approved:home:section:2",
+          "title": "Selected work",
+          "sectionId": "selected-work",
+          "bodySha256": "ad30fcd8a4b5b2621727280743625b98d3e8ab5530cf3a700faff2b089468f26",
+          "sourceIndex": 2
+        },
+        {
+          "sourceId": "approved:home:section:3",
+          "title": "How I will Work as Your Full-stack Developer",
+          "sectionId": "process",
+          "bodySha256": "46b6fd93c57ce997dfda340565b7737ff28d0bc2ae04105127f6d8b8c99aa618",
+          "sourceIndex": 3
+        },
+        {
+          "sourceId": "approved:home:section:4",
+          "title": "Have Questions?",
+          "sectionId": "faqs",
+          "bodySha256": "87a1263c0397bef3f1092a2f66e565d1dcad33eafb227b5dbcb048db8249159c",
+          "sourceIndex": 4
+        },
+        {
+          "sourceId": "approved:home:section:5",
+          "title": "Hire a freelance software developer for your project.",
+          "sectionId": "lets-talk",
+          "bodySha256": "13746dd254d776db65a64d571f87394e4492a04c0277be2e611c624dbe1cd666",
+          "sourceIndex": 5
+        }
+      ]
+    },
+    {
+      "sourceId": "approved:about",
+      "pageKey": "about",
+      "path": "/about/",
+      "_status": "draft",
+      "introSha256": "86cc20ab44b98ebd625ffcbc4793a1a5fa74d9d518d1ff7e017014896cfd22d9",
+      "sections": [
+        {
+          "sourceId": "approved:about:section:0",
+          "title": "Why this website exists",
+          "sectionId": "purpose",
+          "bodySha256": "7956b5cdac75fc468063f620b0ee864b05fe0e4d1c1120eed2542bb2c9b704c7",
+          "sourceIndex": 0
+        },
+        {
+          "sourceId": "approved:about:section:1",
+          "title": "The experience I bring",
+          "sectionId": "experience",
+          "bodySha256": "d4a4977b811fe6d0a1bef510dc2ada27a239f338a8764f5d377d66c1c9fec0f6",
+          "sourceIndex": 1
+        },
+        {
+          "sourceId": "approved:about:section:2",
+          "title": "What that means for your project",
+          "sectionId": "benefits",
+          "bodySha256": "9dd6ecfaf5053d01404c6583f510188ffca5979d393df9968ab5b710abb2630c",
+          "sourceIndex": 2
+        },
+        {
+          "sourceId": "approved:about:section:3",
+          "title": "Where I'd like to take my engineering work",
+          "sectionId": "interests",
+          "bodySha256": "a9c294b7c7979683ad82069465df879a51cc332585193dfc8f0141bf3c2e0822",
+          "sourceIndex": 3
+        },
+        {
+          "sourceId": "approved:about:section:4",
+          "title": "Let's talk",
+          "sectionId": "lets-talk",
+          "bodySha256": "d3ed0d8145c6f9f0d3f79e8341b6b1e8aae0e3218c96f3a3a2defc8a48283ee1",
+          "sourceIndex": 4
+        }
+      ]
+    },
+    {
+      "sourceId": "approved:contact",
+      "pageKey": "contact",
+      "path": "/contact/",
+      "_status": "draft",
+      "introSha256": "83568b13bf5c230fc1d467bd603b44cd287bb03269569b0e075926c3baee349f",
+      "sections": [
+        {
+          "sourceId": "approved:contact:section:0",
+          "title": "What happens next",
+          "sectionId": "next-steps",
+          "bodySha256": "ea4f0af656b8f4b2b52fe68b28cd54f81f12ccb5a0d4ca327690839580fc70cf",
+          "sourceIndex": 0
+        },
+        {
+          "sourceId": "approved:contact:section:1",
+          "title": "Send me a message",
+          "sectionId": "inquiry",
+          "bodySha256": "35f1d90b3a74596afd4aed77b0eced32f40503abf82ad0bce66916646abe12b9",
+          "sourceIndex": 1
+        },
+        {
+          "sourceId": "approved:contact:section:2",
+          "title": "Prefer to talk it through?",
+          "sectionId": "booking",
+          "bodySha256": "8980812203f617c20325d04f2d9f32349c9201b60cce7992b1d309095dc474f5",
+          "sourceIndex": 2
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "sourceId": "service:ai-integration-services",
+      "title": "AI Integration Services",
+      "slug": "ai-integration-services",
+      "category": "AI Systems & Integration",
+      "summarySha256": "6a13e0425cfe0f0813f2f6b4bfd6a0f7e8c62916549afebc3029d4b6f2ea8f07",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:ai-workflow-automation",
+      "title": "AI Workflow Automation",
+      "slug": "ai-workflow-automation",
+      "category": "AI Systems & Integration",
+      "summarySha256": "e67b5043bbc02de066e1d917c8f9ab7bf74a4ab2f56e8692e4af64ff6baed5bf",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:ai-agent-development",
+      "title": "AI Agent Development",
+      "slug": "ai-agent-development",
+      "category": "AI Systems & Integration",
+      "summarySha256": "b407fe1f61e6cf61b75ebe0ac87f79fd75bc4b3c5051212b20a27392e3406a59",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:web-application-development",
+      "title": "Web Application Development",
+      "slug": "web-application-development",
+      "category": "Application Development",
+      "summarySha256": "779e0b23e5ba3f0ededaa0ec8abf6d99c47fe4b7449af65c84f55569254b26cf",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:mobile-app-development",
+      "title": "Mobile App Development",
+      "slug": "mobile-app-development",
+      "category": "Application Development",
+      "summarySha256": "0ee73e358eb355ad6dcd9a300db253314996dbfb35ca25c5e8ea16d23d39a879",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:tv-app-development",
+      "title": "TV App Development",
+      "slug": "tv-app-development",
+      "category": "Application Development",
+      "summarySha256": "8cbebef08efa25c18693ba55d754cd689020505ddbefb714cb219621bd70f604",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:saas-development",
+      "title": "SaaS Development",
+      "slug": "saas-development",
+      "category": "Application Development",
+      "summarySha256": "7c03315e27365846aa222bc8da442aa97b2844527994c0b29a8274df90391a26",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:devops-services",
+      "title": "DevOps Services",
+      "slug": "devops-services",
+      "category": "Infrastructure & Operations",
+      "summarySha256": "9efdc7fc652ae8d40782102a2df8a64dadc88ca0a0f3c3580d3c33acc0cd6a0a",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    },
+    {
+      "sourceId": "service:mlops-services",
+      "title": "MLOps Services",
+      "slug": "mlops-services",
+      "category": "Infrastructure & Operations",
+      "summarySha256": "f46ce5938a1dbf9ffedcc20c03afc4c0c2d280fcc267c5a824bb0baf5a88e0eb",
+      "_status": "draft",
+      "missingForDetailPage": [
+        "Reviewed service detail content",
+        "Page-specific SEO review"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "sourceId": "project:eudora-edutech",
+      "title": "Eudora · Edutech",
+      "slug": "eudora-edutech",
+      "bodySha256": "a12ac04e0db81af07ce44270f1ce80aa1c16e70fb9e5aa723d7989a4f24ba415",
+      "_status": "draft"
+    },
+    {
+      "sourceId": "project:adtech",
+      "title": "Adtech",
+      "slug": "adtech",
+      "bodySha256": "444feeaf50dfb5eea458823e1aeba54fbebea5520f4e8aaadc3f82e3622dd94c",
+      "_status": "draft"
+    },
+    {
+      "sourceId": "project:saas",
+      "title": "SaaS",
+      "slug": "saas",
+      "bodySha256": "b3510cc8d51c59d9c06953b85aef69ad258b5b3defffab57a55b268b61eff08b",
+      "_status": "draft"
+    },
+    {
+      "sourceId": "project:media-streaming",
+      "title": "Media & streaming",
+      "slug": "media-streaming",
+      "bodySha256": "8967aff7fe009e9e340754c64ec4c7086521ed49791ccf7edda624bc6d2999da",
+      "_status": "draft"
+    }
+  ],
+  "posts": [
+    {
+      "sourceId": "post:mvp-development-cost",
+      "slug": "mvp-development-cost",
+      "title": "MVP Development Cost: What Affects Your Budget?",
+      "excerptSha256": "4146615166ef4d5c0640af00da112d445205e6d415e27d140b0f5931ada72d80",
+      "bodySha256": "a2a3b26f73495455ffcf1ca502687f299a0811dbc787cb075686d1e700d3069a",
+      "metaTitle": "MVP Development Cost: What Affects Your Budget?",
+      "metaDescription": "Understand MVP development cost, compare estimates, and plan a budget for design, integrations, testing, launch, running costs, and future revisions.",
+      "category": "Planning an MVP",
+      "illustrationKind": "budget",
+      "_status": "draft",
+      "publishedAt": null
+    },
+    {
+      "sourceId": "post:mvp-feature-prioritization",
+      "slug": "mvp-feature-prioritization",
+      "title": "MVP Feature Prioritization: Which Features Belong in Your First MVP?",
+      "excerptSha256": "4bfd6d4bc5a9c1e4cc1b51a3d1b066a6389250ded5517371c6e142d233fe2ab6",
+      "bodySha256": "2761126c9037b215f9e2dfd2245ce9edb649b6e0ab1ff77d2957ba4285962144",
+      "metaTitle": "MVP Feature Prioritization: What to Build First",
+      "metaDescription": "Learn how to choose MVP features, compare priorities, plan manual work, and use a worksheet to agree on your first release with a developer.",
+      "category": "Planning an MVP",
+      "illustrationKind": "features",
+      "_status": "draft",
+      "publishedAt": null
+    },
+    {
+      "sourceId": "post:how-to-build-an-mvp",
+      "slug": "how-to-build-an-mvp",
+      "title": "How to Build an MVP With One Developer: Plan Your First Useful Version",
+      "excerptSha256": "a1b4db0e572b752bf231dc6adf4bf3d123a0732a122970ab835e803fedff682c",
+      "bodySha256": "6dc4ef23d7ffa6e4dfe5bbee0508811d37d636dd9a30c219625462822d7af5ce",
+      "metaTitle": "How to Build an MVP With One Developer: A Practical Guide",
+      "metaDescription": "Learn how to build an MVP with one developer, define the first useful release, review progress, test with users, and decide what to improve after launch.",
+      "category": "Planning an MVP",
+      "illustrationKind": "build",
+      "_status": "draft",
+      "publishedAt": null
+    },
+    {
+      "sourceId": "post:prototype-vs-mvp",
+      "slug": "prototype-vs-mvp",
+      "title": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?",
+      "excerptSha256": "7c2444b082ec9a34049ec21b9ff1645fec209ad17926c3a94959411c21a5b1a4",
+      "bodySha256": "499b1ae4ed66eef2ddbf5d904e54ca3810924e9b4f16a31c78e177396d559847",
+      "metaTitle": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?",
+      "metaDescription": "This Prototype vs MVP guide helps you choose what to build before committing to a larger software project. You'll learn what each approach tests, when a technical check or simpler experiment may be enough, and what can carry forward. It also explains what affects the work and what to agree with a developer before paying for the next step.",
+      "category": "Planning an MVP",
+      "illustrationKind": "prototype",
+      "_status": "draft",
+      "publishedAt": null
+    },
+    {
+      "sourceId": "post:how-to-hire-a-freelance-full-stack-developer",
+      "slug": "how-to-hire-a-freelance-full-stack-developer",
+      "title": "How to Hire a Freelance Full-Stack Developer Without a Technical Background",
+      "excerptSha256": "937e52ec3fcb2fbbecb40d03e2a68bfaec2b13ca4f83431373f229a6e9a65ee7",
+      "bodySha256": "bb1d8d12dc1fab8b059dbdf497f0a6b83bb07c537c5bbfabb15263b177904694",
+      "metaTitle": "How to Hire a Freelance Full-Stack Developer Without a Technical Background",
+      "metaDescription": "This guide explains how to hire a full stack developer when you don't have a technical background. You'll learn how to decide what help you need, assess a freelancer's work, and compare proposals. It also covers scope, costs, milestones, account access, launch, handover, and support, so you know what to agree on before committing to the build.",
+      "category": "Hiring a developer",
+      "illustrationKind": "hiring",
+      "_status": "draft",
+      "publishedAt": null
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/images/calendly.svg",
+      "bytes": 1649,
+      "sha256": "ef2004d8cc8278f8036e3a0a3f57aa1ce11a28289aa64f16356ae74712b7bcfd"
+    },
+    {
+      "path": "public/images/developer-workspace.png",
+      "bytes": 3369520,
+      "sha256": "e5d146870e0b97c1a0236ef237b706c32920493790877b8927efde41f49a05d8"
+    },
+    {
+      "path": "public/images/shibly-noman-avatar.jpg",
+      "bytes": 345368,
+      "sha256": "9879590b077f06e8af4cceca04d0a11d683d99a496075f3a117bf9637aeb0dda"
+    },
+    {
+      "path": "public/images/shibly-noman-full-stack-developer.jpg",
+      "bytes": 205561,
+      "sha256": "b47c4d8ebe2056fe45fbbddce4ea0f6a696c872693c8de39dcf5da117867e2ed"
+    },
+    {
+      "path": "public/images/shibly-noman-full-stack-developer.png",
+      "bytes": 2044441,
+      "sha256": "3490ca8982e97d62b7a35a8579d5396bcac903022d7a1b7a94f44ae1ac316d0e"
+    },
+    {
+      "path": "public/images/technologies/angular.svg",
+      "bytes": 314,
+      "sha256": "5ceecb7e8030e88c622c1b87e597b840b5b1632bff01ac3f2f7a11e24e97d9fe"
+    },
+    {
+      "path": "public/images/technologies/antdesign.svg",
+      "bytes": 978,
+      "sha256": "d663c8a26455df2f4eb3fce4cdca58dad9294723bde2c01baac22b553014c3d4"
+    },
+    {
+      "path": "public/images/technologies/apachekafka.svg",
+      "bytes": 2740,
+      "sha256": "d04eeba9a428ddaefdd30e7eadc69c325c48f8fade092d71fc29547d2966ac8d"
+    },
+    {
+      "path": "public/images/technologies/atlassian.svg",
+      "bytes": 394,
+      "sha256": "35dc37d8eebf829604e68622b077ec85883c88c959a47a1c50bb4eebec591300"
+    },
+    {
+      "path": "public/images/technologies/aws.png",
+      "bytes": 3061,
+      "sha256": "f80d3ec6c5b2adee55267ecfcf2fc4131aa8551a546b7a1971b5e465c05c2403"
+    },
+    {
+      "path": "public/images/technologies/bamboo.svg",
+      "bytes": 581,
+      "sha256": "a64266f97b4ee1c195424ed00ee72dd0c61585ff94c1e296a2b95200ccc62b15"
+    },
+    {
+      "path": "public/images/technologies/css.svg",
+      "bytes": 1495,
+      "sha256": "a8be3738d0dc9ecdaa444505489376c9101ebd6c21eb2c055a92333ab6a9a518"
+    },
+    {
+      "path": "public/images/technologies/d3.svg",
+      "bytes": 640,
+      "sha256": "3b435961d1542dc9b0f0b8650874ad2a54ef4de5c4e1ec9811272d5ed49936c5"
+    },
+    {
+      "path": "public/images/technologies/django.svg",
+      "bytes": 597,
+      "sha256": "d04841fd656ba799b60bb82ff4e35a59ddfbcfdb53c65715a9fb4b625a595d3e"
+    },
+    {
+      "path": "public/images/technologies/docker.svg",
+      "bytes": 1781,
+      "sha256": "142d54231e11f6bbec26731a55388fdec65452928b2b2ea5e7916a5c16a0841f"
+    },
+    {
+      "path": "public/images/technologies/elasticsearch.svg",
+      "bytes": 493,
+      "sha256": "a97f76ffde05f0c6bee8ad26c92880d594a669fded0e674dac3b255a89185dfc"
+    },
+    {
+      "path": "public/images/technologies/fastapi.svg",
+      "bytes": 363,
+      "sha256": "cd86c7ea7680e917a61efcaf58e066640f483c5ff5d82540e5e4a2802acef60b"
+    },
+    {
+      "path": "public/images/technologies/firebase.svg",
+      "bytes": 1943,
+      "sha256": "5b76fc9d59da2860ad52020346503602736b4720cd5349ef51d875355bc44254"
+    },
+    {
+      "path": "public/images/technologies/git.svg",
+      "bytes": 442,
+      "sha256": "67a08f837064a99509cbadb514976665c176b95ee3e06a24b0a4b762f07b01f0"
+    },
+    {
+      "path": "public/images/technologies/githubactions.svg",
+      "bytes": 1743,
+      "sha256": "daf95cac72aa01f9e639cb6485195ab1b786b5759d4f6e3d55e9d90683d61184"
+    },
+    {
+      "path": "public/images/technologies/gitlab.svg",
+      "bytes": 589,
+      "sha256": "90958a5451c44efd40122757ba09d172fda1a8f7ab1a93142ad366ee521510e8"
+    },
+    {
+      "path": "public/images/technologies/go.svg",
+      "bytes": 1652,
+      "sha256": "c0c397d3062a3be651e8e7024e64c604559361b016ad76df12447bf172760d99"
+    },
+    {
+      "path": "public/images/technologies/googlecloud.svg",
+      "bytes": 699,
+      "sha256": "6380eff3d6ae146f2f4c98366987334def3cecce66bc64d6c1b9e67bcc9a88e8"
+    },
+    {
+      "path": "public/images/technologies/huggingface.svg",
+      "bytes": 3043,
+      "sha256": "6ced531aafc55003e503d7ab088dfb7c1cc061c403f5bac7694b5df5abbaf283"
+    },
+    {
+      "path": "public/images/technologies/jenkins.svg",
+      "bytes": 4684,
+      "sha256": "dd3e48f21d33c75ddd9140f0413090c9f34b4e9a6bf7bfec5f681b7179d51cfc"
+    },
+    {
+      "path": "public/images/technologies/kubernetes.svg",
+      "bytes": 3581,
+      "sha256": "947241dc140f355d2dcae54d356704baedf67096bb7016e3685a553e762002cb"
+    },
+    {
+      "path": "public/images/technologies/langchain.svg",
+      "bytes": 543,
+      "sha256": "814309dc7a7ef400a4841d8dcba64d19415ada81903fa5b028e752e64094fceb"
+    },
+    {
+      "path": "public/images/technologies/langgraph.svg",
+      "bytes": 218,
+      "sha256": "183e2e3694fd76668014be0f5a16f5c094cd1b809e797285b174d8d95aa67f57"
+    },
+    {
+      "path": "public/images/technologies/mongodb.svg",
+      "bytes": 543,
+      "sha256": "dac2aac5542f0ff660c86a33a2a99a7ad50c79106f59c20c43339db1d0ad800e"
+    },
+    {
+      "path": "public/images/technologies/motion.svg",
+      "bytes": 622,
+      "sha256": "01958f3da9eb8e0529fdb561bdd314853f20728fefdddbf4fc2d784160bdfa9d"
+    },
+    {
+      "path": "public/images/technologies/nestjs.svg",
+      "bytes": 6333,
+      "sha256": "6b6fede07e36003ac17e246d2381ec7b957fea3e9e1ccc890b956a34fc398ebd"
+    },
+    {
+      "path": "public/images/technologies/nextdotjs.svg",
+      "bytes": 338,
+      "sha256": "9eb3f746ca1a7be39ffa98273f1cd3aaad30a63eb3e7df54cd9ef88bf54b06dd"
+    },
+    {
+      "path": "public/images/technologies/nodedotjs.svg",
+      "bytes": 1624,
+      "sha256": "5e6af20da4b3eed4fb4567023fe60585123a48908e5dd31767425f120371d252"
+    },
+    {
+      "path": "public/images/technologies/postgresql.svg",
+      "bytes": 5221,
+      "sha256": "381038f4454c5e33d47687e0f693da5f0276b1efdf2a77f17b73fafa37e86727"
+    },
+    {
+      "path": "public/images/technologies/prisma.svg",
+      "bytes": 584,
+      "sha256": "d6c1f52a0991d481b44e0f59632daca65fddcaa0b05aebb7d24d2a825db27e3d"
+    },
+    {
+      "path": "public/images/technologies/python.svg",
+      "bytes": 1534,
+      "sha256": "25b9fb6fe3b9e8f18cdc26ad984a0bea6cd18e8c2123ce91395191dcc9edf3e8"
+    },
+    {
+      "path": "public/images/technologies/rabbitmq.svg",
+      "bytes": 576,
+      "sha256": "674c7481fbc1b668a387d871bf1ba12430c0f12e1d67c4ef67262a8073333667"
+    },
+    {
+      "path": "public/images/technologies/react.svg",
+      "bytes": 2942,
+      "sha256": "88faba65eac814fbcc5c5366fa704ac32124f09414fc2517927dff46f616f616"
+    },
+    {
+      "path": "public/images/technologies/redis.svg",
+      "bytes": 754,
+      "sha256": "fa656f58d508f7d303c97dbcc107b95b9ec60450535d4c722d388e8ac1f9ffd9"
+    },
+    {
+      "path": "public/images/technologies/remix.svg",
+      "bytes": 508,
+      "sha256": "3fd71b0ef5e048df3c4815766e10beb41263a309e123e60a4725cdd2323467b5"
+    },
+    {
+      "path": "public/images/technologies/sass.svg",
+      "bytes": 1239,
+      "sha256": "b9fa8d9e93f225baeea6216dac9372764e46bd40953642c45944b1f3ad21db33"
+    },
+    {
+      "path": "public/images/technologies/shadcnui.svg",
+      "bytes": 431,
+      "sha256": "e0b4fbcd5840e566610a22d6d9287da7a413eddeefe880e597833e103c245cbb"
+    },
+    {
+      "path": "public/images/technologies/storybook.svg",
+      "bytes": 667,
+      "sha256": "4035ef9de1ba5b6827833871ce9e74a03848a6a81999f166362eecd435cd6bfd"
+    },
+    {
+      "path": "public/images/technologies/supabase.svg",
+      "bytes": 319,
+      "sha256": "5ea616282b55e9e92adb6981e33563e66465b01e50a22c6369be63e2f628eca7"
+    },
+    {
+      "path": "public/images/technologies/tailwindcss.svg",
+      "bytes": 618,
+      "sha256": "714a814cd2569323200407a4caeed6c7e4e224cc07856c511beb7ae560cc37e5"
+    },
+    {
+      "path": "public/images/technologies/teamcity.svg",
+      "bytes": 573,
+      "sha256": "fff3ea7c01a35fbf888d178b6e3498c9ea876f9f83f8911f93304ebe7ac1edad"
+    },
+    {
+      "path": "public/images/technologies/terraform.svg",
+      "bytes": 269,
+      "sha256": "c4fea7a0e7ec2b36fe40a160ff5f46cb44c4a24a6a7c736e02e3c3c6d4110bce"
+    },
+    {
+      "path": "public/images/technologies/typeorm.svg",
+      "bytes": 6020,
+      "sha256": "7a769275d35f7c37d18c363c4fe27516c0bc341d887ccc5399a1afe268aa9451"
+    },
+    {
+      "path": "public/images/technologies/typescript.svg",
+      "bytes": 1310,
+      "sha256": "1060d1deeb46685047d37b2823626a35a3d42ede485e13b0484b01ba0d1f4534"
+    },
+    {
+      "path": "public/images/technologies/vuedotjs.svg",
+      "bytes": 218,
+      "sha256": "5606687a0bf1427be3abf0b491da3e6a5d71baa66287c113aeea84f77560a00f"
+    }
+  ],
+  "constraints": [
+    "No publication dates inferred from local previews.",
+    "Import preserves approved strings exactly.",
+    "Source manuscripts remain retained.",
+    "Calculator inputs never enter CMS storage.",
+    "Hardcoded component copy must migrate through explicit fields; inspect src/App.tsx and src/blog.tsx."
+  ]
+}

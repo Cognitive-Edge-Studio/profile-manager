@@ -1,0 +1,90 @@
+{
+  "result": "passed",
+  "date": "2026-10-26",
+  "scope": "Local production build. Complete service template reviewed using disposable published fixtures on port 3002; actual owner data only inspected in authenticated draft previews on port 3000.",
+  "responsive": [
+    {
+      "h1": "Disposable SEO service",
+      "overflow": false,
+      "page": "published disposable service",
+      "scrollWidth": 1265,
+      "width": 1280
+    },
+    {
+      "h1": "Disposable SEO service",
+      "overflow": false,
+      "page": "published disposable service",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "h1": "Disposable SEO service",
+      "overflow": false,
+      "page": "published disposable service",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "cardColumns": "373.6px 373.6px 373.6px",
+      "overflow": false,
+      "page": "published disposable service index",
+      "scrollWidth": 1265,
+      "width": 1280
+    },
+    {
+      "cardColumns": "332.4px 332.4px",
+      "overflow": false,
+      "page": "published disposable service index",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "cardColumns": "335.2px",
+      "overflow": false,
+      "page": "published disposable service index",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "overflow": false,
+      "page": "actual private service draft",
+      "robots": "noindex, nofollow",
+      "width": 1280
+    },
+    {
+      "overflow": false,
+      "page": "actual private service draft",
+      "robots": "noindex, nofollow",
+      "width": 768
+    },
+    {
+      "overflow": false,
+      "page": "actual private service draft",
+      "robots": "noindex, nofollow",
+      "width": 390
+    }
+  ],
+  "interactions": [
+    "Local owner sign-in",
+    "Publishing panel shows two blocking service errors and nonblocking SEO suggestions",
+    "Re-check saved draft completes",
+    "Service detail review issue opens Content and focuses its checkbox without changing it",
+    "Canonical address label retained; SEO has no generation buttons",
+    "Service index renders three/two/one card columns at desktop/tablet/phone widths",
+    "Service cards open corresponding detail pages",
+    "Service FAQ expands with Enter and exposes its answer",
+    "Service mobile navigation opens and closes",
+    "Actual Services navigation selects the private Services index; all nine draft service links remain private preview URLs",
+    "Actual incomplete service preview shows reviewed-copy requirement and noindex/nofollow",
+    "Actual private service preview had no browser warnings/errors",
+    "Temporary viewport overrides reset; disposable browser tab closed",
+    "Site settings Portrait error opens Profile and contact without changing content"
+  ],
+  "screenshots": [
+    "screenshots/slice5/publishing-checks.png",
+    "screenshots/slice5/services-preview-desktop.png",
+    "screenshots/slice5/disposable-service-mobile.png",
+    "screenshots/slice5/service-draft-mobile.png"
+  ],
+  "limits": "No real service copy was invented or published; no contact message sent. Phone/tablet/desktop checks do not replace hosted staging accessibility/performance review."
+}

@@ -1,0 +1,37 @@
+{
+  "build": "passed",
+  "desktop": [
+    {
+      "bottomSpace": 15,
+      "ctaVisible": true,
+      "height": 480,
+      "overflow": false,
+      "scrollable": true,
+      "tocHeight": 184
+    },
+    {
+      "bottomSpace": 15,
+      "ctaVisible": true,
+      "height": 600,
+      "overflow": false,
+      "scrollable": true,
+      "tocHeight": 304
+    },
+    {
+      "bottomSpace": 27,
+      "ctaVisible": true,
+      "height": 720,
+      "overflow": false,
+      "scrollable": true,
+      "tocHeight": 358
+    },
+    {
+      "bottomSpace": 27,
+      "ctaVisible": true,
+      "height": 900,
+      "overflow": false,
+      "scrollable": true,
+      "tocHeight": 538
+    }
+  ]
+}

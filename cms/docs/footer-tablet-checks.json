@@ -1,0 +1,85 @@
+{
+  "build": "passed",
+  "widths": [
+    {
+      "allControlsInside": true,
+      "areas": "none",
+      "layout": "flex",
+      "overflow": false,
+      "overlap": false,
+      "width": 390
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand\" \"navigation\" \"social\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 562
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand\" \"navigation\" \"social\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 700
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 702
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 768
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 800
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 802
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 1024
+    },
+    {
+      "allControlsInside": true,
+      "areas": "\"brand social\" \"navigation navigation\"",
+      "layout": "grid",
+      "overflow": false,
+      "overlap": false,
+      "width": 1100
+    },
+    {
+      "allControlsInside": true,
+      "areas": "none",
+      "layout": "flex",
+      "overflow": false,
+      "overlap": false,
+      "width": 1280
+    }
+  ]
+}

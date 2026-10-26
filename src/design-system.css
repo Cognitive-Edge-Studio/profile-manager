@@ -1,0 +1,415 @@
+/* Shared design foundations: spacious, readable, and quietly expressive. */
+.calculator-inquiry-note { padding: 14px 16px; border-radius: 12px; background: #f0f5ff; color: #4d6489; font-size: 13px; line-height: 1.7; margin: 0 0 20px; }
+.calculator-inquiry-note a { text-decoration: underline; text-underline-offset: 3px; color: #0b57d0; }
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #202124;
+  --color-primary: #0b57d0;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #f1f3f4;
+  --color-muted-foreground: #5f6368;
+  --color-border: #dadce0;
+  --font-sans: 'Google Sans', 'Manrope Variable', 'Segoe UI', sans-serif;
+}
+
+:root {
+  --font-sans: 'Google Sans', 'Manrope Variable', 'Segoe UI', sans-serif;
+  --ink: #202124;
+  --muted: #5f6368;
+  --accent: #0b57d0;
+  --surface: #f8fafd;
+  --line: #dadce0;
+  color: var(--ink);
+  background: #fff;
+  font-family: var(--font-sans);
+}
+
+html { scroll-padding-top: 32px; }
+::selection { background: #d3e3fd; color: #041e49; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.container { width: min(1240px, calc(100% - 96px)); }
+.section-space { padding-block: 104px; }
+h1, h2, h3, h4 { color: var(--ink); font-weight: 500; }
+h1 { letter-spacing: -.045em; line-height: 1.1; }
+h2 { font-size: clamp(32px, 3.2vw, 46px); letter-spacing: -.035em; line-height: 1.2; }
+h3, h4 { letter-spacing: -.02em; }
+.serif, .experience-margin em {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: var(--accent);
+}
+.eyebrow { font-size: 12px; letter-spacing: .075em; font-weight: 600; color: var(--accent); }
+.section-number { width: 28px; height: 28px; font-size: 10px; border-color: #d3e3fd; background: #edf3fe; color: var(--accent); }
+.section-heading { gap: 48px; align-items: start; }
+.section-heading h2 { max-width: 720px; margin-top: 18px; }
+.section-description { font-size: 16px; line-height: 1.7; color: var(--muted); }
+.prose, .intro-copy .prose, .purpose-copy .prose, .experience-layout .prose,
+.about-hero .prose, .contact-intro > .prose, .home-contact-aside > .prose {
+  font-size: 16px; line-height: 1.8; color: #444746;
+}
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose li::before { color: var(--accent); }
+.prose a { color: var(--accent); }
+.text-link { min-height: 44px; font-size: 14px; font-weight: 500; color: var(--accent); }
+.button { border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: 0; box-shadow: none; }
+.button-default { min-height: 48px; padding: 14px 24px; }
+.button-sm { min-height: 44px; padding: 12px 20px; font-size: 13px; }
+.button-icon { width: 44px; height: 44px; }
+.button-primary { background: var(--accent); color: white; box-shadow: none; }
+.button-primary:hover { background: #0842a0; transform: none; box-shadow: 0 2px 6px #20212418; }
+.button-outline { background: #fff; color: var(--accent); border-color: #c4c7c5; }
+.button-outline:hover { background: #edf3fe; border-color: var(--accent); transform: none; }
+.button-ghost:hover { background: #edf3fe; }
+
+.site-header { height: 96px; border-bottom-color: #eef0f2; gap: 24px; }
+.brand { font-size: 14px; letter-spacing: -.02em; }
+.brand small { font-size: 11px; color: var(--muted); }
+.brand-portrait { border-color: var(--line); }
+.desktop-nav { gap: 24px; }
+.desktop-nav a { font-size: 14px; color: #444746; min-height: 44px; display: inline-flex; align-items: center; }
+.desktop-nav a:hover, .desktop-nav a.active { color: var(--accent); }
+.desktop-nav a.active { text-decoration: underline; text-underline-offset: 9px; text-decoration-thickness: 2px; }
+.header-cta { color: var(--accent); }
+.hero { padding-block: 80px 96px; gap: clamp(40px, 5vw, 76px); }
+.hero h1 { font-size: clamp(42px, 4.3vw, 62px); line-height: 1.12; letter-spacing: -.045em; text-wrap: pretty; max-width: 820px; }
+.hero-description { font-size: 18px; line-height: 1.7; max-width: 620px; color: #444746; margin-top: 28px; }
+.remote-line { font-size: 14px; color: var(--muted); margin-top: 22px; }
+.hero-actions { margin-top: 32px; }
+.hero-tools { margin-top: 32px; padding-top: 22px; border-color: #e8eaed; }
+.hero-tools > p { font-size: 12px; color: var(--muted); font-weight: 500; margin-bottom: 12px; }
+.hero-tools > div { gap: 8px; }
+.hero-tools > div > span { font-size: 12px; color: #444746; background: #f1f3f4; padding: 7px 12px; border-radius: 999px; }
+.workspace-art, .hero > .workspace-art { background: #eaf1fb; border: 0; border-radius: 28px; padding: 16px; box-shadow: none; transform: none; }
+.art-topline { color: #444746; padding: 4px 4px 16px; }
+.art-topline > span { font-size: 9px; letter-spacing: .08em; }
+.small-dot { width: 6px; height: 6px; background: #188038; }
+.workspace-image-wrap { border-radius: 18px; background: #d3e3fd; }
+.workspace-caption { padding: 20px 6px 8px; }
+.workspace-caption > span:first-child { font-size: 14px; }
+.workspace-caption small { font-size: 11px; color: var(--muted); margin-top: 6px; }
+.art-arrow { color: var(--accent); border-color: #c2d7fa; width: 38px; height: 38px; }
+.floating-note { font-size: 11px; color: #174ea6; background: #fff; border: 0; border-radius: 999px; padding: 12px 16px; box-shadow: 0 2px 8px #20212414; transform: none; }
+.intro-section { gap: 80px; }
+.intro-heading h2 { font-size: clamp(32px, 3.2vw, 44px); }
+.intro-heading .text-link { color: var(--accent); }
+.intro-symbol { color: #d3e3fd; font-family: var(--font-sans); }
+.services-section, .experience-section { background: #f8fafd; border-color: #edf1f7; }
+.service-group { grid-template-columns: 240px minmax(0, 1fr); gap: 40px; border-color: #e1e6ef; padding-block: 36px; }
+.service-icon { width: 48px; height: 48px; background: #d3e3fd; color: #174ea6; border: 0; border-radius: 16px; }
+.service-group-heading h3 { font-size: 22px; max-width: 220px; }
+.group-count, .service-index { font-size: 12px; color: var(--muted); }
+.service-cards { gap: 20px; }
+.service-card { background: #fff; border: 1px solid #e1e6ef; border-radius: 24px; padding: 28px; }
+.service-card h4 { font-size: 19px; line-height: 1.4; }
+.service-card .prose { font-size: 15px; line-height: 1.75; color: #444746; margin-top: 16px; }
+.work-grid { gap: 24px; margin-top: 44px; }
+.work-card { border: 0; border-radius: 28px; padding: 36px; background: #edf3fe; }
+.work-tone-1 { background: #e8f0fe; }
+.work-tone-2 { background: #e9f3ed; }
+.work-tone-3 { background: #f0ebfa; }
+.work-card h3 { font-size: 34px; margin-top: 38px; }
+.work-card .prose, .work-tone-1 .prose, .work-tone-2 .prose, .work-tone-3 .prose { font-size: 15px; line-height: 1.75; max-width: 440px; color: #444746; }
+.work-card .prose strong { font-size: 12px; color: #444746; }
+.work-card .work-icon { color: #174ea6; }
+.work-index { font-size: 12px; color: var(--muted); }
+.work-card-decoration { color: #cadcf8; opacity: .55; }
+.work-tone-1 .work-card-decoration { color: #b5cdf5; }
+.work-tone-2 .work-card-decoration { color: #bddbc8; }
+.work-tone-3 .work-card-decoration { color: #d0bfeb; }
+.process-section { background: #f8fafd; border-color: #edf1f7; }
+.process-section .section-heading h2 { font-size: clamp(32px, 3.2vw, 44px); }
+.step-number { border-color: #d3e3fd; color: var(--accent); font-size: 28px; }
+.step-number svg { color: var(--accent); }
+.process-step h3 { font-size: 19px; line-height: 1.5; min-height: 84px; }
+.process-step .prose, .maintenance .prose { font-size: 15px; line-height: 1.75; color: #444746; }
+.maintenance { border-color: #dadce0; }
+.maintenance > span { color: var(--accent); border-color: #d3e3fd; }
+.faq-section { gap: 80px; }
+.faq-email { font-size: 14px; color: var(--accent); overflow-wrap: anywhere; }
+.faq-item summary { padding-block: 24px; }
+.faq-item summary h3 { font-size: 17px; line-height: 1.5; }
+.faq-item summary > span { width: 32px; height: 32px; background: #edf3fe; color: var(--accent); }
+.faq-item .prose { font-size: 15px; color: #444746; }
+.home-contact { background: #edf3fe; border-color: #e1e9f9; }
+.home-contact-grid { gap: 72px; }
+.home-contact .section-heading h2 { font-size: clamp(32px, 3.2vw, 44px); }
+.email-link { font-size: clamp(20px, 2vw, 28px); color: var(--accent); border-color: #c2d7fa; overflow-wrap: anywhere; }
+.email-link svg { flex-shrink: 0; }
+.social-links { gap: 20px; flex-wrap: wrap; }
+.social-links a { font-size: 13px; color: #444746; min-height: 44px; }
+.social-links a:hover { color: var(--accent); }
+.form-surface { background: #fff; border: 1px solid #e1e6ef; border-radius: 28px; padding: 36px; box-shadow: none; }
+.form-title { border-color: #e8eaed; }
+.form-title h3 { font-size: 22px; }
+.form-title h2 { font-size: 30px; }
+.form-title .eyebrow, .booking .eyebrow, .next-steps .eyebrow { font-size: 12px; }
+.form-title > svg { color: var(--accent); }
+.inquiry-form label { font-size: 14px; color: #3c4043; }
+.inquiry-form label > span { color: var(--muted); }
+.inquiry-form .optional { font-size: 12px; }
+.form-control { font-size: 16px; color: var(--ink); border-color: #c4c7c5; background: #fff; border-radius: 12px; padding: 14px 16px; min-height: 52px; }
+.form-control::placeholder { color: #747775; }
+.form-control:focus { border-color: var(--accent); box-shadow: 0 0 0 2px #0b57d026; }
+.inquiry-form label small, .form-delivery-note { font-size: 12px; line-height: 1.65; color: var(--muted); }
+.inquiry-actions > .button, .booking .button { font-size: 14px; }
+.form-status { font-size: 14px; color: #0d652d; background: #e6f4ea; border-color: #ceead6; }
+.form-error { font-size: 14px; color: #a50e0e; background: #fce8e6; }
+.booking .prose, .contact-intro .booking .prose, .next-steps .prose { font-size: 15px; color: #444746; }
+.booking-icon { color: var(--accent); background: #edf3fe; border-color: #d3e3fd; }
+.breadcrumb { font-size: 13px; color: var(--muted); }
+.breadcrumb span { color: #9aa0a6; }
+.about-hero { padding-block: 48px 96px; }
+.about-hero h1, .contact-intro h1 { font-size: clamp(48px, 5vw, 72px); letter-spacing: -.04em; }
+.about-intro-actions { flex-wrap: wrap; }
+.about-intro-actions .button { font-size: 14px; min-height: 48px; }
+.experience-margin { color: var(--accent); }
+.experience-margin > span { color: #a8c7fa; }
+.technology-section > .prose, .benefit-card .prose, .about-cta .prose { font-size: 16px; color: #444746; }
+.technology-groups > div > p { font-size: 14px; color: #3c4043; }
+.technology-groups .technology-badge { border-radius: 999px; font-size: 13px; color: #3c4043; background: #fff; padding: 9px 13px; border-color: #dadce0; }
+.benefit-number { color: var(--accent); }
+.benefit-card h3 { font-size: 23px; }
+.interest-card { border: 0; background: #f1f5fc; border-radius: 24px; padding: 24px; }
+.interest-card > span { color: var(--accent); }
+.interest-card h3 { font-size: 16px; line-height: 1.55; }
+.about-cta > div { padding: 48px; border: 0; border-radius: 28px; background: #edf3fe; }
+.contact-page { padding-block: 48px 104px; gap: 72px; }
+.contact-subtitle { font-size: 23px; }
+.direct-email { font-size: 14px; color: var(--muted); }
+.direct-email a { font-size: 16px; color: var(--accent); overflow-wrap: anywhere; }
+.contact-form-surface .form-title h2 { font-size: 30px; }
+.site-footer { padding-block: 48px 32px; }
+.footer-name { font-size: 15px; }
+.footer-name span { font-size: 12px; color: var(--muted); }
+.footer-top nav { font-size: 13px; color: #444746; flex-wrap: wrap; }
+.footer-top .social-links a { font-size: 13px; }
+.footer-bottom, .footer-bottom > span, .footer-bottom button { font-size: 12px; color: var(--muted); }
+
+/* Scoped rules also apply when the blog route's stylesheet loads on demand. */
+.journal-page { --journal-orange: var(--accent); --journal-ink: var(--ink); --journal-muted: var(--muted); }
+.journal-page .journal-intro { padding-block: 48px 64px; }
+.journal-page .journal-intro-grid { gap: 72px; }
+.journal-page .journal-intro h1 { font-size: clamp(44px, 4.5vw, 64px); letter-spacing: -.04em; }
+.journal-page .journal-intro-aside > p { font-size: 17px; line-height: 1.75; color: #444746; }
+.journal-author { font-size: 13px; }
+.journal-author small { font-size: 12px; color: var(--muted); }
+.journal-page .featured-link { background: #edf3fe; border: 0; border-radius: 28px; }
+.journal-page .featured-link:hover { box-shadow: 0 4px 14px #20212412; }
+.journal-page .featured-copy { padding: 44px; }
+.journal-page .featured-copy h2 { font-size: clamp(28px, 2.8vw, 38px); letter-spacing: -.03em; }
+.journal-page .featured-copy > p:not(.eyebrow) { font-size: 16px; color: #444746; line-height: 1.75; }
+.journal-meta, .journal-page .journal-meta, .related-blog-card .journal-meta { font-size: 12px; color: var(--muted); }
+.journal-meta > span:first-child { color: var(--accent); }
+.journal-page .featured-action { font-size: 14px; color: var(--accent); border-color: #a8c7fa; }
+.journal-page .journal-controls { padding-block: 20px; gap: 24px; border-color: #e8eaed; flex-wrap: wrap; }
+.journal-page .journal-filters { gap: 8px; }
+.journal-page .journal-filters button { font-size: 14px; min-height: 44px; padding: 12px 18px; color: #444746; }
+.journal-page .journal-filters button:hover { background: #edf3fe; color: var(--accent); }
+.journal-page .journal-filters button.selected { background: #d3e3fd; color: #041e49; }
+.journal-page .journal-search { width: 280px; background: #f1f3f4; border-color: transparent; min-height: 48px; padding: 12px 18px; color: var(--muted); }
+.journal-page .journal-search input { font-size: 14px; color: var(--ink); }
+.journal-page .journal-search:focus-within { outline-color: var(--accent); }
+.journal-page .journal-library-heading > p, .journal-page .journal-result-count { font-size: 13px; color: var(--muted); }
+.journal-page .article-count { color: var(--muted); border-color: var(--line); font-size: 12px; }
+.journal-page .journal-cards { gap: 28px; }
+.journal-card { background: #fff; border-color: #e1e6ef; border-radius: 24px; }
+.journal-card:hover { transform: translateY(-3px); border-color: #a8c7fa; box-shadow: 0 4px 14px #20212412; }
+.journal-page .journal-card-copy, .related-blog-card .journal-card-copy { padding: 28px; }
+.journal-page .journal-card-copy h3, .related-blog-card .journal-card-copy h3 { font-size: 23px; line-height: 1.35; letter-spacing: -.02em; color: var(--ink); }
+.journal-page .journal-card-copy > p, .related-blog-card .journal-card-copy > p { font-size: 15px; line-height: 1.75; color: #444746; }
+.related-blog-card .journal-card-copy > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+.journal-page .journal-read, .related-blog-card .journal-read { font-size: 14px; color: var(--accent); padding-top: 24px; }
+.journal-page .journal-contact > div { padding-block: 48px; }
+.journal-page .journal-contact p:not(.eyebrow) { font-size: 16px; color: #444746; }
+.journal-page .journal-empty > p { font-size: 16px; }
+.journal-article.container { max-width: 960px; padding-block: 48px 96px; }
+.journal-article .article-heading { max-width: 760px; margin-block: 40px; }
+.journal-article .article-heading h1 { font-size: clamp(34px, 4vw, 52px); line-height: 1.15; letter-spacing: -.035em; }
+.journal-article .article-heading .journal-meta { font-size: 13px; }
+.journal-article > .journal-art { border-radius: 28px; }
+.journal-article .journal-article-body { max-width: 720px; font-size: 18px; line-height: 1.85; color: #3c4043; margin-block: 48px; }
+.article-reading-layout { display: grid; gap: 32px; margin-block: 48px; }
+.journal-article .article-reading-layout .journal-article-body { min-width: 0; width: 100%; margin-block: 0; }
+.article-contact-rail { min-width: 0; width: 100%; max-width: 720px; margin-inline: auto; align-self: stretch; }
+.article-contact-card { max-width: 360px; padding: 22px; border: 1px solid #d3e3fd; border-radius: 24px; background: #edf3fe; }
+.article-contact-card h2 { font-size: 24px; line-height: 1.25; letter-spacing: -.025em; color: #202124; }
+.article-contact-card > p { margin-top: 8px; font-size: 13px; line-height: 1.5; color: #444746; }
+.article-contact-card .button { width: 100%; min-height: 44px; padding: 11px 12px; font-size: 14px; }
+.article-contact-services { display: grid; gap: 12px; margin: 20px 0 0; padding: 0; list-style: none; }
+.article-contact-services li { display: flex; align-items: start; gap: 9px; font-size: 13px; line-height: 1.5; color: #3c4043; }
+.article-contact-services svg { flex: 0 0 15px; margin-top: 2px; color: #0b57d0; }
+.article-contact-actions { display: grid; gap: 10px; margin-top: 22px; }
+@media (min-width: 1101px) {
+  .journal-article.container { max-width: 1048px; }
+  .journal-article .article-heading { max-width: none; margin-inline: auto; }
+  .article-reading-layout { grid-template-columns: minmax(0, 1fr) 264px; gap: 64px; }
+  .article-contact-card { position: sticky; top: 24px; }
+}
+.journal-article .journal-article-body h2 { font-size: 32px; color: var(--ink); letter-spacing: -.025em; }
+.journal-article .journal-article-body h3 { font-size: 25px; color: var(--ink); }
+.journal-article .journal-article-body h4 { font-size: 21px; }
+.journal-article .journal-article-body a { color: var(--accent); }
+.journal-article .journal-article-body blockquote { background: #edf3fe; border-left-color: var(--accent); border-radius: 0 16px 16px 0; padding: 16px 24px; }
+.journal-article .article-table { border-color: var(--line); border-radius: 16px; }
+.journal-article .article-table table { font-size: 14px; }
+.journal-article .article-table th { background: #edf3fe; }
+.journal-article .article-table td, .journal-article .article-table th { border-color: #e8eaed; padding: 16px; }
+.journal-article .estimate-table table { table-layout: fixed; min-width: 640px; }
+.journal-article .estimate-table col:first-child { width: 35%; }
+.journal-article .estimate-table col:nth-child(2) { width: 65%; }
+.journal-article .pricing-table table { table-layout: fixed; min-width: 680px; }
+.journal-article .pricing-table col:first-child { width: 27%; }
+.journal-article .pricing-table col:nth-child(2) { width: 26%; }
+.journal-article .pricing-table col:nth-child(3) { width: 47%; }
+.journal-article .pricing-table td:nth-child(2) { white-space: nowrap; }
+.journal-article .pricing-table td:first-child em { display: block; margin-top: 4px; font-size: 12px; line-height: 1.5; font-style: normal; color: var(--muted); }
+.journal-article .related-blogs { max-width: none; border-color: var(--line); }
+.journal-article .related-blogs-controls button { width: 44px; height: 44px; color: var(--accent); border-color: #c4c7c5 !important; background: white; }
+.journal-article .related-blogs-controls button:hover:not(:disabled) { background: #edf3fe; border-color: var(--accent) !important; color: var(--accent); }
+.journal-article .related-blogs-track { scrollbar-color: #a8c7fa transparent; }
+.journal-article .related-blogs-footer > .text-link { font-size: 14px; color: var(--accent); }
+
+@media (min-width: 1101px) {
+  .journal-article .related-blog-card { flex-basis: calc((100% - 36px) / 3); }
+  .journal-article .related-blog-card .journal-card-copy { padding: 24px; }
+  .journal-article .related-blog-card .journal-card-copy h3 { font-size: 21px; }
+  .journal-article .related-blog-card .journal-meta { flex-wrap: wrap; gap: 8px; }
+}
+
+@media (min-width: 768px) {
+  .hero { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+}
+@media (max-width: 1100px) {
+  .container { width: calc(100% - 64px); }
+  .header-cta { display: none; }
+  .desktop-nav { gap: 20px; }
+  .hero { padding-block: 64px 80px; gap: 36px; }
+  .hero h1 { font-size: clamp(38px, 4.6vw, 52px); }
+  .hero-description { font-size: 17px; }
+  .service-group { grid-template-columns: 200px minmax(0, 1fr); gap: 28px; }
+  .service-card { padding: 24px; }
+  .intro-section, .home-contact-grid, .contact-page, .about-hero, .experience-layout, .purpose-section, .faq-section { gap: 48px; }
+  .form-surface { padding: 28px; }
+  .journal-page .journal-intro-grid { gap: 40px; }
+  .journal-page .featured-copy { padding: 32px; }
+  .journal-page .journal-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .section-space { padding-block: 72px; }
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: inline-flex; }
+  .site-header { height: 80px; }
+  .mobile-nav { position: absolute; top: 72px; left: 0; right: 0; display: flex; flex-direction: column; padding: 12px; gap: 4px; border: 1px solid #e1e6ef; border-radius: 24px; background: #fff; box-shadow: 0 8px 24px #20212414; }
+  .mobile-nav > a { padding: 14px 16px; font-size: 15px; border-radius: 12px; color: #444746; }
+  .mobile-nav > a.active, .mobile-nav > a:hover { background: #edf3fe; color: var(--accent); }
+  .mobile-nav .mobile-contact { display: flex; justify-content: space-between; align-items: center; background: #edf3fe; color: var(--accent); }
+  .service-group { grid-template-columns: minmax(0, 1fr); }
+  .service-group-heading h3 { max-width: none; margin-top: 0; }
+  .hero h1 { font-size: 40px; }
+  .hero-description { font-size: 16px; }
+  .intro-section, .home-contact-grid, .contact-page { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .faq-section { gap: 36px; }
+  .process-step h3 { min-height: 0; }
+  .form-row { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .contact-form-surface { margin-top: 0; }
+  .journal-page .journal-controls { align-items: stretch; }
+  .journal-page .journal-search { width: 100%; max-width: none; }
+  .journal-page .journal-contact .button { font-size: 14px; }
+}
+@media (max-width: 767px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 48px 64px; gap: 40px; }
+  .hero h1 { font-size: clamp(36px, 7.2vw, 52px); }
+  .hero > .workspace-art { width: 100%; max-width: 480px; justify-self: center; }
+  .hero > .workspace-art .workspace-image-wrap { aspect-ratio: 4 / 4.5; }
+}
+@media (max-width: 560px) {
+  .container { width: calc(100% - 40px); }
+  .section-space { padding-block: 56px; }
+  .brand { font-size: 13px; gap: 10px; }
+  .brand small { font-size: 10px; }
+  .eyebrow { font-size: 11px; }
+  .section-heading h2, .intro-heading h2, .home-contact .section-heading h2, .process-section .section-heading h2 { font-size: 32px; }
+  .section-description, .prose, .intro-copy .prose, .purpose-copy .prose, .experience-layout .prose, .about-hero .prose, .contact-intro > .prose, .home-contact-aside > .prose { font-size: 16px; }
+  .hero h1 { font-size: clamp(34px, 9vw, 44px); }
+  .hero .hero-actions { align-items: start; gap: 12px 20px; }
+  .hero-actions .button { font-size: 14px; min-height: 48px; padding-inline: 20px; }
+  .hero-actions .text-link { font-size: 14px; }
+  .hero-tools > div > span { font-size: 12px; }
+  .remote-line { font-size: 13px; }
+  .workspace-art { width: 100%; padding: 12px; }
+  .workspace-caption > span:first-child { font-size: 13px; }
+  .workspace-caption small { font-size: 10px; }
+  .art-topline > span { font-size: 8px; }
+  .floating-note { font-size: 10px; }
+  .service-cards, .work-grid, .benefits-grid { grid-template-columns: minmax(0, 1fr); }
+  .service-card { padding: 24px; border-radius: 20px; }
+  .service-group-heading h3 { font-size: 21px; }
+  .service-card h4 { font-size: 19px; }
+  .service-card .prose, .work-card .prose, .process-step .prose, .maintenance .prose, .faq-item .prose { font-size: 15px; }
+  .work-card { padding: 28px; border-radius: 24px; }
+  .work-card h3 { font-size: 30px; }
+  .work-card .prose strong { font-size: 12px; }
+  .process-step h3 { font-size: 20px; }
+  .faq-item summary h3 { font-size: 16px; }
+  .form-surface { padding: 26px 22px; border-radius: 24px; }
+  .form-row { grid-template-columns: minmax(0, 1fr); }
+  .inquiry-form label { font-size: 14px; }
+  .form-control { font-size: 16px; }
+  .inquiry-form label small, .form-delivery-note { font-size: 12px; }
+  .inquiry-actions > .button, .about-intro-actions .button, .booking .button { font-size: 14px; }
+  .inquiry-actions > .button { width: 100%; }
+  .about-hero { padding-block: 32px 56px; gap: 40px; }
+  .about-hero h1, .contact-intro h1 { font-size: 52px; }
+  .about-hero .workspace-art { justify-self: stretch; }
+  .technology-section > .prose, .benefit-card .prose, .about-cta .prose { font-size: 16px; }
+  .technology-groups > div > p { font-size: 14px; }
+  .interest-card { padding: 22px; }
+  .interest-card h3 { font-size: 15px; }
+  .about-cta > div { padding: 32px 24px; gap: 24px; }
+  .about-cta .button { font-size: 14px; }
+  .contact-page { padding-block: 32px 56px; }
+  .contact-subtitle { font-size: 22px; }
+  .direct-email, .direct-email a { font-size: 14px; }
+  .footer-name { font-size: 14px; }
+  .footer-name span { font-size: 11px; }
+  .footer-top nav, .footer-top .social-links a { font-size: 13px; }
+  .footer-bottom, .footer-bottom > span, .footer-bottom button { font-size: 11px; }
+  .journal-page .journal-intro { padding-block: 32px 40px; }
+  .journal-page .journal-intro-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .journal-page .journal-intro h1 { font-size: 44px; }
+  .journal-page .journal-intro-aside > p { font-size: 16px; }
+  .journal-page .featured-copy { padding: 28px; }
+  .journal-page .featured-copy h2 { font-size: 29px; }
+  .journal-page .featured-copy > p:not(.eyebrow) { font-size: 16px; }
+  .journal-page .featured-link { grid-template-columns: minmax(0, 1fr); border-radius: 24px; }
+  .journal-page .journal-filters button { padding: 12px 14px; font-size: 13px; }
+  .journal-page .journal-meta, .related-blog-card .journal-meta { font-size: 12px; }
+  .journal-page .journal-cards { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .journal-page .journal-card-copy, .related-blog-card .journal-card-copy { padding: 24px; }
+  .journal-page .journal-card-copy h3 { font-size: 24px; }
+  .journal-page .journal-card-copy > p { font-size: 15px; }
+  .journal-page .journal-library-heading > p { display: block; font-size: 13px; margin-top: 12px; }
+  .journal-page .journal-contact > div { display: block; }
+  .journal-page .journal-contact p:not(.eyebrow) { font-size: 16px; max-width: none; }
+  .journal-article.container { padding-block: 32px 56px; }
+  .journal-article .article-heading { margin-block: 28px; }
+  .journal-article .article-heading h1 { font-size: 34px; }
+  .journal-article .journal-article-body { font-size: 17px; line-height: 1.8; margin-block: 32px; }
+  .journal-article .journal-article-body h2 { font-size: 28px; }
+  .journal-article .journal-article-body h3 { font-size: 23px; }
+  .journal-article .related-blogs-heading h2 { font-size: 26px; }
+  .journal-article .related-blogs-controls { padding-top: 28px; }
+  .journal-article .related-blogs-footer .button { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journal-card:hover, .related-blog-card:hover { transform: none; }
+}

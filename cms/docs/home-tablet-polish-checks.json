@@ -1,0 +1,82 @@
+{
+  "build": "passed",
+  "tabletAbout": [
+    {
+      "graphicBesideHeading": true,
+      "groupWidth": 482,
+      "overflow": false,
+      "width": 562
+    },
+    {
+      "graphicBesideHeading": true,
+      "groupWidth": 560,
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "graphicBesideHeading": true,
+      "groupWidth": 560,
+      "overflow": false,
+      "width": 1024
+    },
+    {
+      "graphicBesideHeading": true,
+      "groupWidth": 560,
+      "overflow": false,
+      "width": 1100
+    }
+  ],
+  "faq": {
+    "description": "A few practical questions about full-stack development, project fit, estimates, ownership, and ongoing costs. The details will depend on the work you're bringing.",
+    "emailLinks": 0,
+    "emailRow": false,
+    "questions": 7
+  },
+  "blogCTAs": [
+    {
+      "id": 2,
+      "actions": [
+        "Contact me"
+      ],
+      "copy": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+      "heading": "Hire Shibly as your developer",
+      "matches": true
+    },
+    {
+      "id": 3,
+      "actions": [
+        "Contact me"
+      ],
+      "copy": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+      "heading": "Hire Shibly as your developer",
+      "matches": true
+    },
+    {
+      "id": 4,
+      "actions": [
+        "Contact me"
+      ],
+      "copy": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+      "heading": "Hire Shibly as your developer",
+      "matches": true
+    },
+    {
+      "id": 5,
+      "actions": [
+        "Contact me"
+      ],
+      "copy": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+      "heading": "Hire Shibly as your developer",
+      "matches": true
+    },
+    {
+      "id": 1,
+      "actions": [
+        "Contact me"
+      ],
+      "copy": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+      "heading": "Hire Shibly as your developer",
+      "matches": true
+    }
+  ]
+}

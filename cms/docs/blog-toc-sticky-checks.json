@@ -1,0 +1,95 @@
+{
+  "build": "passed",
+  "mobileJump": {
+    "active": "heading-2-find-the-need-behind-each-feature-request",
+    "collapsed": true,
+    "highlighted": "2. Find the Need Behind Each Feature Request",
+    "overflow": false,
+    "targetTop": 160,
+    "targetVisibleBelowTOC": true,
+    "tocBottom": 98,
+    "tocTop": 12
+  },
+  "responsive": [
+    {
+      "ctaBottom": 19913,
+      "ctaFullyVisible": false,
+      "height": 700,
+      "linkScrollable": false,
+      "overflow": false,
+      "tocHeight": 90,
+      "tocTop": 12,
+      "toggleVisible": true,
+      "width": 320,
+      "desktopCTARequired": false
+    },
+    {
+      "ctaBottom": 9613,
+      "ctaFullyVisible": false,
+      "height": 900,
+      "linkScrollable": false,
+      "overflow": false,
+      "tocHeight": 86,
+      "tocTop": 12,
+      "toggleVisible": true,
+      "width": 768,
+      "desktopCTARequired": false
+    },
+    {
+      "ctaBottom": 9423,
+      "ctaFullyVisible": false,
+      "height": 700,
+      "linkScrollable": false,
+      "overflow": false,
+      "tocHeight": 86,
+      "tocTop": 12,
+      "toggleVisible": true,
+      "width": 1100,
+      "desktopCTARequired": false
+    },
+    {
+      "ctaBottom": 465,
+      "ctaFullyVisible": true,
+      "height": 480,
+      "linkScrollable": true,
+      "overflow": false,
+      "tocHeight": 184,
+      "tocTop": 15,
+      "toggleVisible": false,
+      "width": 1280,
+      "desktopCTARequired": true
+    },
+    {
+      "ctaBottom": 538,
+      "ctaFullyVisible": true,
+      "height": 600,
+      "linkScrollable": true,
+      "overflow": false,
+      "tocHeight": 260,
+      "tocTop": 15,
+      "toggleVisible": false,
+      "width": 1280,
+      "desktopCTARequired": true
+    },
+    {
+      "ctaBottom": 591,
+      "ctaFullyVisible": true,
+      "height": 900,
+      "linkScrollable": true,
+      "overflow": false,
+      "tocHeight": 260,
+      "tocTop": 27,
+      "toggleVisible": false,
+      "width": 1280,
+      "desktopCTARequired": true
+    }
+  ],
+  "independentListScroll": true,
+  "afterPageScroll": {
+    "ctaFullyVisible": true,
+    "ctaTop": 303,
+    "overflow": false,
+    "pageScroll": 5360,
+    "tocTop": 27
+  }
+}

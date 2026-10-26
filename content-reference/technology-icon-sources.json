@@ -1,0 +1,330 @@
+{
+  "checkedOn": "2026-10-24",
+  "library": "simple-icons",
+  "version": "16.35.0",
+  "icons": [
+    {
+      "name": "Python",
+      "slug": "python",
+      "color": "3776AB",
+      "source": "https://www.python.org/community/logos/",
+      "guidelines": "https://www.python.org/community/logos/"
+    },
+    {
+      "name": "Django",
+      "slug": "django",
+      "color": "092E20",
+      "source": "https://www.djangoproject.com/community/logos/",
+      "guidelines": null
+    },
+    {
+      "name": "FastAPI",
+      "slug": "fastapi",
+      "color": "009688",
+      "source": "https://github.com/tiangolo/fastapi/blob/ffb4f77a11f83132b521ba0aac6c95792c19e797/docs/en/docs/img/icon-white.svg",
+      "guidelines": null
+    },
+    {
+      "name": "TypeScript",
+      "slug": "typescript",
+      "color": "3178C6",
+      "source": "https://www.typescriptlang.org/branding",
+      "guidelines": "https://www.typescriptlang.org/branding"
+    },
+    {
+      "name": "Node.js",
+      "slug": "nodedotjs",
+      "color": "5FA04E",
+      "source": "https://nodejs.org/en/about/branding",
+      "guidelines": "https://nodejs.org/en/about/branding"
+    },
+    {
+      "name": "React",
+      "slug": "react",
+      "color": "61DAFB",
+      "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "guidelines": null
+    },
+    {
+      "name": "Next.js",
+      "slug": "nextdotjs",
+      "color": "000000",
+      "source": "https://vercel.com/design/brands#next-js",
+      "guidelines": "https://vercel.com/design/brands#next-js"
+    },
+    {
+      "name": "Go (Golang)",
+      "slug": "go",
+      "color": "00ADD8",
+      "source": "https://blog.golang.org/go-brand",
+      "guidelines": "https://blog.golang.org/go-brand"
+    },
+    {
+      "name": "Vue.js",
+      "slug": "vuedotjs",
+      "color": "4FC08D",
+      "source": "https://github.com/vuejs/art/blob/a1c78b74569b70a25300925b4eacfefcc143b8f6/logo.svg",
+      "guidelines": "https://github.com/vuejs/art/blob/a1c78b74569b70a25300925b4eacfefcc143b8f6/README.md"
+    },
+    {
+      "name": "Angular",
+      "slug": "angular",
+      "color": "0F0F11",
+      "source": "https://angular.dev/press-kit",
+      "guidelines": "https://angular.dev/press-kit"
+    },
+    {
+      "name": "NestJS",
+      "slug": "nestjs",
+      "color": "E0234E",
+      "source": "https://nestjs.com",
+      "guidelines": null
+    },
+    {
+      "name": "Remix",
+      "slug": "remix",
+      "color": "000000",
+      "source": "https://drive.google.com/drive/u/0/folders/1pbHnJqg8Y1ATs0Oi8gARH7wccJGv4I2c",
+      "guidelines": null
+    },
+    {
+      "name": "React Native",
+      "slug": "react",
+      "color": "61DAFB",
+      "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "guidelines": null
+    },
+    {
+      "name": "PostgreSQL",
+      "slug": "postgresql",
+      "color": "4169E1",
+      "source": "https://wiki.postgresql.org/wiki/Logo",
+      "guidelines": "https://www.postgresql.org/about/policies/trademarks/"
+    },
+    {
+      "name": "Supabase",
+      "slug": "supabase",
+      "color": "3FCF8E",
+      "source": "https://github.com/supabase/supabase/blob/4031a7549f5d46da7bc79c01d56be4177dc7c114/packages/common/assets/images/supabase-logo-wordmark--light.svg",
+      "guidelines": null
+    },
+    {
+      "name": "MongoDB",
+      "slug": "mongodb",
+      "color": "47A248",
+      "source": "https://www.mongodb.com/pressroom",
+      "guidelines": null
+    },
+    {
+      "name": "Redis",
+      "slug": "redis",
+      "color": "FF4438",
+      "source": "https://redis.io/brand-guidelines",
+      "guidelines": "https://redis.io/brand-guidelines"
+    },
+    {
+      "name": "Elasticsearch",
+      "slug": "elasticsearch",
+      "color": "005571",
+      "source": "https://www.elastic.co/brand",
+      "guidelines": null
+    },
+    {
+      "name": "TypeORM",
+      "slug": "typeorm",
+      "color": "FE0803",
+      "source": "https://github.com/typeorm/typeorm/blob/e7649d2746f907ff36b1efb600402dedd5f5a499/resources/logo_big.png",
+      "guidelines": null
+    },
+    {
+      "name": "Prisma",
+      "slug": "prisma",
+      "color": "2D3748",
+      "source": "https://github.com/prisma/presskit/tree/4bcb64181f266723439d955d60afa1c55fefa715",
+      "guidelines": null
+    },
+    {
+      "name": "RabbitMQ",
+      "slug": "rabbitmq",
+      "color": "FF6600",
+      "source": "https://www.rabbitmq.com",
+      "guidelines": "https://www.rabbitmq.com/trademark-guidelines.html"
+    },
+    {
+      "name": "Kafka",
+      "slug": "apachekafka",
+      "color": "231F20",
+      "source": "https://apache.org/logos",
+      "guidelines": "https://www.apache.org/foundation/marks"
+    },
+    {
+      "name": "LangChain",
+      "slug": "langchain",
+      "color": "7FC8FF",
+      "source": "https://www.langchain.com/langchain",
+      "guidelines": null
+    },
+    {
+      "name": "LangGraph",
+      "slug": "langgraph",
+      "color": "7FC8FF",
+      "source": "https://www.langchain.com/langgraph",
+      "guidelines": null
+    },
+    {
+      "name": "Hugging Face",
+      "slug": "huggingface",
+      "color": "FFD21E",
+      "source": "https://huggingface.co/brand",
+      "guidelines": "https://huggingface.co/brand"
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "slug": "googlecloud",
+      "color": "4285F4",
+      "source": "https://cloud.google.com",
+      "guidelines": null
+    },
+    {
+      "name": "Terraform",
+      "slug": "terraform",
+      "color": "844FBA",
+      "source": "https://www.hashicorp.com/brand",
+      "guidelines": "https://www.hashicorp.com/brand"
+    },
+    {
+      "name": "Firebase",
+      "slug": "firebase",
+      "color": "DD2C00",
+      "source": "https://firebase.google.com/brand-guidelines",
+      "guidelines": "https://firebase.google.com/brand-guidelines"
+    },
+    {
+      "name": "Atlassian Suite",
+      "slug": "atlassian",
+      "color": "0052CC",
+      "source": "https://atlassian.design/resources/logo-library",
+      "guidelines": "https://atlassian.design/foundations/logos"
+    },
+    {
+      "name": "Git",
+      "slug": "git",
+      "color": "F03C2E",
+      "source": "https://git-scm.com/community/logos",
+      "guidelines": null
+    },
+    {
+      "name": "GitHub Actions",
+      "slug": "githubactions",
+      "color": "2088FF",
+      "source": "https://github.com/features/actions",
+      "guidelines": null
+    },
+    {
+      "name": "GitLab CI",
+      "slug": "gitlab",
+      "color": "FC6D26",
+      "source": "https://about.gitlab.com/press/press-kit/",
+      "guidelines": "https://about.gitlab.com/handbook/marketing/corporate-marketing/brand-activation/trademark-guidelines/"
+    },
+    {
+      "name": "Bamboo",
+      "slug": "bamboo",
+      "color": "0052CC",
+      "source": "https://www.atlassian.design/guidelines/marketing/resources/logo-files",
+      "guidelines": null
+    },
+    {
+      "name": "TeamCity",
+      "slug": "teamcity",
+      "color": "000000",
+      "source": "https://www.jetbrains.com/company/brand/logos",
+      "guidelines": "https://www.jetbrains.com/company/brand"
+    },
+    {
+      "name": "Jenkins",
+      "slug": "jenkins",
+      "color": "D24939",
+      "source": "https://get.jenkins.io/art/",
+      "guidelines": "https://www.jenkins.io/press/"
+    },
+    {
+      "name": "Docker",
+      "slug": "docker",
+      "color": "2496ED",
+      "source": "https://www.docker.com/company/newsroom/media-resources",
+      "guidelines": null
+    },
+    {
+      "name": "Kubernetes",
+      "slug": "kubernetes",
+      "color": "326CE5",
+      "source": "https://github.com/kubernetes/kubernetes/tree/cac53883f4714452f3084a22e4be20d042a9df33/logo",
+      "guidelines": null
+    },
+    {
+      "name": "CSS",
+      "slug": "css",
+      "color": "663399",
+      "source": "https://github.com/CSS-Next/logo.css/blob/bacc20878227204b283c68a6b935f8279e06b0cd/css.svg",
+      "guidelines": "https://github.com/CSS-Next/logo.css"
+    },
+    {
+      "name": "SCSS",
+      "slug": "sass",
+      "color": "CC6699",
+      "source": "https://sass-lang.com/styleguide/brand",
+      "guidelines": "https://sass-lang.com/styleguide/brand"
+    },
+    {
+      "name": "Tailwind CSS",
+      "slug": "tailwindcss",
+      "color": "06B6D4",
+      "source": "https://tailwindcss.com/brand",
+      "guidelines": "https://tailwindcss.com/brand"
+    },
+    {
+      "name": "shadcn/ui",
+      "slug": "shadcnui",
+      "color": "000000",
+      "source": "https://ui.shadcn.com",
+      "guidelines": null
+    },
+    {
+      "name": "Ant Design (Antd)",
+      "slug": "antdesign",
+      "color": "0170FE",
+      "source": "https://ant.design",
+      "guidelines": null
+    },
+    {
+      "name": "Storybook",
+      "slug": "storybook",
+      "color": "FF4785",
+      "source": "https://github.com/storybookjs/brand/tree/6f4d67f65f8275c53c310a73a8da6c6e96c8488c",
+      "guidelines": null
+    },
+    {
+      "name": "D3.js",
+      "slug": "d3",
+      "color": "F9A03C",
+      "source": "https://github.com/d3/d3-logo/tree/6d9c471aa852033501d00ca63fe73d9f8be82d1d",
+      "guidelines": null
+    },
+    {
+      "name": "AWS",
+      "source": "https://aws.amazon.com/",
+      "asset": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+    },
+    {
+      "name": "Framer Motion",
+      "source": "https://motion.dev/",
+      "asset": "https://motion.dev/favicon.svg"
+    }
+  ],
+  "unbrandedSymbols": {
+    "pgvector": "Database symbol; the upstream pgvector project does not supply a distinct brand mark.",
+    "charts": "Chart symbol; a general concept, not a brand.",
+    "DAG visualization": "Graph symbol; a general concept, not a brand."
+  }
+}

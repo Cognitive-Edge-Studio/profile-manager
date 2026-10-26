@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "actions": [
+        "Contact me"
+      ],
+      "bookingRemoved": true,
+      "heading": "Hire Shibly as your developer"
+    },
+    {
+      "id": 2,
+      "actions": [
+        "Contact me"
+      ],
+      "bookingRemoved": true,
+      "heading": "Hire Shibly as your developer"
+    },
+    {
+      "id": 3,
+      "actions": [
+        "Contact me"
+      ],
+      "bookingRemoved": true,
+      "heading": "Hire Shibly as your developer"
+    },
+    {
+      "id": 5,
+      "actions": [
+        "Contact me"
+      ],
+      "bookingRemoved": true,
+      "heading": "Hire Shibly as your developer"
+    },
+    {
+      "id": 4,
+      "actions": [
+        "Contact me"
+      ],
+      "bookingRemoved": true,
+      "heading": "Hire Shibly as your developer"
+    }
+  ]
+}

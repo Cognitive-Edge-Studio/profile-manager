@@ -1,0 +1,158 @@
+{
+  "viewports": [
+    {
+      "viewport": 1280,
+      "collection": "pages",
+      "id": 1,
+      "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 1280,
+      "collection": "pages",
+      "id": 2,
+      "heading": "Hi, I'm Shibly.",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 1280,
+      "collection": "pages",
+      "id": 3,
+      "heading": "Contact me",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 1280,
+      "collection": "pages",
+      "id": 4,
+      "heading": "Blog",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 1280,
+      "collection": "pages",
+      "id": 5,
+      "heading": "MVP cost calculator\nPlan your first version",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 1280,
+      "collection": "posts",
+      "id": 1,
+      "heading": "MVP Development Cost: What Affects Your Budget?",
+      "overflow": false,
+      "width": 1280
+    },
+    {
+      "viewport": 768,
+      "collection": "pages",
+      "id": 1,
+      "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 768,
+      "collection": "pages",
+      "id": 2,
+      "heading": "Hi, I'm Shibly.",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 768,
+      "collection": "pages",
+      "id": 3,
+      "heading": "Contact me",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 768,
+      "collection": "pages",
+      "id": 4,
+      "heading": "Blog",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 768,
+      "collection": "pages",
+      "id": 5,
+      "heading": "MVP cost calculator\nPlan your first version",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 768,
+      "collection": "posts",
+      "id": 1,
+      "heading": "MVP Development Cost: What Affects Your Budget?",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "viewport": 390,
+      "collection": "pages",
+      "id": 1,
+      "heading": "I'm a freelance full-stack developer building web applications and AI systems.",
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": 390,
+      "collection": "pages",
+      "id": 2,
+      "heading": "Hi, I'm Shibly.",
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": 390,
+      "collection": "pages",
+      "id": 3,
+      "heading": "Contact me",
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": 390,
+      "collection": "pages",
+      "id": 4,
+      "heading": "Blog",
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": 390,
+      "collection": "pages",
+      "id": 5,
+      "heading": "MVP cost calculator\nPlan your first version",
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": 390,
+      "collection": "posts",
+      "id": 1,
+      "heading": "MVP Development Cost: What Affects Your Budget?",
+      "overflow": false,
+      "width": 390
+    }
+  ],
+  "interactions": [
+    "CMS owner login and imported content controls",
+    "private full-design preview with uploaded images",
+    "calculator summary handoff to Contact",
+    "return to plan retains example inputs and review step",
+    "reload clears the plan",
+    "mobile CMS navigation closes after selection",
+    "blog topic filter works within protected preview URL"
+  ],
+  "messagesSent": 0
+}

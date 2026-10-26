@@ -1,0 +1,53 @@
+{
+  "note": "Article H1 titles, summaries, metadata, and body copy are taken verbatim from the retained user article documents. Original source snapshots and SHA-256 hashes are retained. The five ongoing-cost items use the numbered formatting explicitly requested by the user. UI labels and the related-slider heading are separate from article copy. Do not rewrite or shorten titles, excerpts, metadata, or body copy without explicit user instructions.",
+  "sources": [
+    {
+      "slug": "mvp-development-cost",
+      "source": "C:\\Users\\Vivasoft\\Documents\\Codex\\2026-10-23\\mvp-development-cost\\outputs\\mvp-development-cost.md",
+      "snapshot": "content-reference/blog-copies/mvp-development-cost.md",
+      "sha256": "253fae3af0c57a589f87a2eaf6965fa009f6bc35d85c0eff471f303c1a256d04",
+      "title": "MVP Development Cost: What Affects Your Budget?",
+      "websiteEdits": [
+        "Rewrote the tax/currency and estimate-validity FAQs to answer directly, using the retained MVP cost research assessment and proposed outline. No tax rates or standard estimate expiry period were introduced. Source manuscript snapshot preserved."
+      ]
+    },
+    {
+      "slug": "mvp-feature-prioritization",
+      "source": "C:\\Users\\Vivasoft\\Documents\\Codex\\2026-10-18\\mvp-feature-prioritization\\outputs\\mvp-feature-prioritization.md",
+      "snapshot": "content-reference/blog-copies/mvp-feature-prioritization.md",
+      "sha256": "e485316c48d3f36cb6c7879fc4cbd5da4f5005207e6d279a5599e944c45f69d7",
+      "title": "MVP Feature Prioritization: Which Features Belong in Your First MVP?"
+    },
+    {
+      "slug": "how-to-build-an-mvp",
+      "source": "C:\\Users\\Vivasoft\\Documents\\Codex\\2026-10-18\\build-an-mvp\\outputs\\how-to-build-an-mvp-draft.md",
+      "snapshot": "content-reference/blog-copies/how-to-build-an-mvp.md",
+      "sha256": "941170c8ee13e04b6e61bb571f5fddc051cd1b09373aab3812ad7a2cbe57b57f",
+      "title": "How to Build an MVP With One Developer: Plan Your First Useful Version"
+    },
+    {
+      "slug": "prototype-vs-mvp",
+      "source": "C:\\Users\\Vivasoft\\Documents\\Codex\\2026-10-17\\prototype-vs-mvp\\outputs\\prototype-vs-mvp-draft.md",
+      "snapshot": "content-reference/blog-copies/prototype-vs-mvp.md",
+      "sha256": "89f339a3bfded13808157d286476e0f42964afde1d0c701c2c1e12a127db25c9",
+      "title": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?"
+    },
+    {
+      "slug": "how-to-hire-a-freelance-full-stack-developer",
+      "source": "C:\\Users\\Vivasoft\\Documents\\Codex\\2026-10-17\\article\\outputs\\how-to-hire-a-freelance-full-stack-developer.md",
+      "snapshot": "content-reference/blog-copies/how-to-hire-a-freelance-full-stack-developer.md",
+      "sha256": "0e8e6c51baf5c3840fbee4512bbeabce8f893b17e7b3e89812403757293ebe17",
+      "title": "How to Hire a Freelance Full-Stack Developer Without a Technical Background",
+      "websiteEdits": [
+        "User requested the pricing row label Software development company with According to Clutch displayed beneath it. The source manuscript snapshot is preserved."
+      ]
+    }
+  ],
+  "calculatorCards": {
+    "note": "The user requested shorter text for the two calculator reading cards. These short UI descriptions apply only to the calculator. Article manuscripts, original excerpts, and other blog cards remain unchanged.",
+    "descriptions": {
+      "mvp-feature-prioritization": "Choose what to build now and what can wait.",
+      "how-to-build-an-mvp": "Plan your first version with one developer."
+    }
+  }
+}

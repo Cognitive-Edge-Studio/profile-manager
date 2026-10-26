@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "scope": "Existing homepage and Contact page on a disposable published local test site. Email disabled; no owner content published and no new public pages.",
+  "responsive": [
+    {
+      "formWidth": 474.8000183105469,
+      "overflow": false,
+      "page": "finalized Contact route",
+      "width": 1280
+    },
+    {
+      "formWidth": 631.2000122070312,
+      "overflow": false,
+      "page": "finalized Contact route",
+      "width": 768
+    },
+    {
+      "formWidth": 289.6000061035156,
+      "overflow": false,
+      "page": "finalized Contact route",
+      "width": 390
+    },
+    {
+      "formWidth": 529.6500244140625,
+      "overflow": false,
+      "page": "finalized homepage inquiry section",
+      "width": 1280
+    },
+    {
+      "formWidth": 631.2000122070312,
+      "overflow": false,
+      "page": "finalized homepage inquiry section",
+      "width": 768
+    },
+    {
+      "formWidth": 289.6000061035156,
+      "overflow": false,
+      "page": "finalized homepage inquiry section",
+      "width": 390
+    }
+  ],
+  "interactions": [
+    "Contact form saves an inquiry and clears accepted input",
+    "Homepage form accepts its existing optional timeline",
+    "Calculator made-up example reaches Contact with editable summary",
+    "Failed submission keeps name, email and edited calculator summary and focuses an alert",
+    "Retry of unchanged input succeeds after storage availability is restored",
+    "Accepted calculator summary clears without modifying calculator arithmetic",
+    "Private administrator can inspect stored original fields and notification failure",
+    "Notification retry is separate from visitor resubmission",
+    "Inquiry workflow changes to replied and persists; no reply email is sent",
+    "Published settings labels/help/next-step note appear in both finalized forms",
+    "Temporary viewport overrides reset",
+    "Final build: notification retry followed by workflow save succeeds without stale-document prompt",
+    "Actual owner Site settings exposes the new contact controls and remains an unchanged saved draft",
+    "Actual finalized Contact draft retains approved content, editable fields and a disabled preview submit button"
+  ],
+  "screenshots": [
+    "screenshots/slice6/contact-accepted.png",
+    "screenshots/slice6/home-form-mobile.png",
+    "screenshots/slice6/inquiry-notification.png",
+    "screenshots/slice6/contact-form-settings.png"
+  ],
+  "note": "Background notification bookkeeping was separated from the workflow timestamp. Final browser verification confirms Retry notification followed by a replied-status save succeeds without a stale-document interruption."
+}

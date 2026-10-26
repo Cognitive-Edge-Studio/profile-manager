@@ -1,0 +1,39 @@
+{
+  "result": "passed",
+  "counts": {
+    "pages": {
+      "records": 5,
+      "drafts": 5,
+      "privateImages": 0
+    },
+    "services": {
+      "records": 0,
+      "drafts": 0,
+      "privateImages": 0
+    },
+    "projects": {
+      "records": 4,
+      "drafts": 4,
+      "privateImages": 0
+    },
+    "posts": {
+      "records": 5,
+      "drafts": 5,
+      "privateImages": 0
+    },
+    "media": {
+      "records": 3,
+      "drafts": 0,
+      "privateImages": 3
+    }
+  },
+  "settingsStatus": "draft",
+  "publicProjectionEmpty": true,
+  "actualInquiryCount": 0,
+  "expiredInquiryCount": 0,
+  "noNewPublicPages": true,
+  "notificationRecipientConfigured": true,
+  "notificationProvider": "disabled",
+  "realEmailSentByVerification": false,
+  "note": "Read-only local audit. All submissions, email transport simulations and deletion tests used disposable databases."
+}

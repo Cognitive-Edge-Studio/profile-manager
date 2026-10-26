@@ -1,0 +1,85 @@
+{
+  "heading": "Hire Shibly as your developer",
+  "tablet": [
+    {
+      "actionsInside": true,
+      "availableWidth": 265,
+      "cardWidth": 265,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": false,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "actionsInside": true,
+      "availableWidth": 482,
+      "cardWidth": 482,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": true,
+      "overflow": false,
+      "width": 562
+    },
+    {
+      "actionsInside": true,
+      "availableWidth": 561,
+      "cardWidth": 561,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": true,
+      "overflow": false,
+      "width": 640
+    },
+    {
+      "actionsInside": true,
+      "availableWidth": 689,
+      "cardWidth": 689,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": true,
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "actionsInside": true,
+      "availableWidth": 720,
+      "cardWidth": 720,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": true,
+      "overflow": false,
+      "width": 1024
+    },
+    {
+      "actionsInside": true,
+      "availableWidth": 720,
+      "cardWidth": 720,
+      "fillsAvailableWidth": true,
+      "horizontalLayout": true,
+      "overflow": false,
+      "width": 1100
+    }
+  ],
+  "desktop": [
+    {
+      "ctaFullyVisible": true,
+      "heading": "Hire Shibly as your developer",
+      "height": 480,
+      "overflow": false,
+      "tocHeight": 188
+    },
+    {
+      "ctaFullyVisible": true,
+      "heading": "Hire Shibly as your developer",
+      "height": 720,
+      "overflow": false,
+      "tocHeight": 362
+    },
+    {
+      "ctaFullyVisible": true,
+      "heading": "Hire Shibly as your developer",
+      "height": 900,
+      "overflow": false,
+      "tocHeight": 542
+    }
+  ],
+  "build": "passed",
+  "unitTests": 14,
+  "content": "Existing shared Blog draft updated; no pages created or published."
+}

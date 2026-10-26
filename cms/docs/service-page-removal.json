@@ -1,0 +1,70 @@
+{
+  "action": "apply",
+  "pillar": {
+    "id": 6,
+    "title": "Services"
+  },
+  "servicePages": [
+    {
+      "id": 1,
+      "title": "AI Integration Services",
+      "path": "/services/ai-integration-services/"
+    },
+    {
+      "id": 2,
+      "title": "AI Workflow Automation",
+      "path": "/services/ai-workflow-automation/"
+    },
+    {
+      "id": 3,
+      "title": "AI Agent Development",
+      "path": "/services/ai-agent-development/"
+    },
+    {
+      "id": 4,
+      "title": "Web Application Development",
+      "path": "/services/web-application-development/"
+    },
+    {
+      "id": 5,
+      "title": "Mobile App Development",
+      "path": "/services/mobile-app-development/"
+    },
+    {
+      "id": 6,
+      "title": "TV App Development",
+      "path": "/services/tv-app-development/"
+    },
+    {
+      "id": 7,
+      "title": "SaaS Development",
+      "path": "/services/saas-development/"
+    },
+    {
+      "id": 8,
+      "title": "DevOps Services",
+      "path": "/services/devops-services/"
+    },
+    {
+      "id": 9,
+      "title": "MLOps Services",
+      "path": "/services/mlops-services/"
+    }
+  ],
+  "homepageSummaryCount": 9,
+  "recreatedByImporter": false,
+  "result": "passed",
+  "updatedReferences": [
+    {
+      "collection": "pages",
+      "id": 1
+    },
+    {
+      "collection": "posts",
+      "id": 5
+    }
+  ],
+  "privateBackup": ".local/backups/removed-service-pages-1793002203427.json",
+  "remainingPages": 5,
+  "remainingServicePages": 0
+}

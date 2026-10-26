@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "database": "Disposable UTF8 fixture; removed after verification.",
+  "checks": [
+    "draft-only public 404",
+    "authenticated full-design preview",
+    "private preview cache headers",
+    "private/public image access",
+    "ten published routes and complete manuscripts",
+    "signed-in public requests exclude drafts",
+    "edited headings, emphasis, anchor text, internal buttons and fragments",
+    "section order and image-description override",
+    "private editorial field isolation from HTML/RSC",
+    "published updates on next request",
+    "unpublished article 404 and listing removal"
+  ]
+}

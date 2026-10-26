@@ -1,0 +1,38 @@
+{
+  "counts": {
+    "pages": {
+      "imported": 5,
+      "draft": 5,
+      "private": 0,
+      "uniqueSourceIds": 5
+    },
+    "services": {
+      "imported": 9,
+      "draft": 9,
+      "private": 0,
+      "uniqueSourceIds": 9
+    },
+    "projects": {
+      "imported": 4,
+      "draft": 4,
+      "private": 0,
+      "uniqueSourceIds": 4
+    },
+    "posts": {
+      "imported": 5,
+      "draft": 5,
+      "private": 0,
+      "uniqueSourceIds": 5
+    },
+    "media": {
+      "imported": 3,
+      "draft": 0,
+      "private": 3,
+      "uniqueSourceIds": 3
+    }
+  },
+  "settingsStatus": "draft",
+  "publicPages": 0,
+  "publicArticles": 0,
+  "publicImages": 0
+}
