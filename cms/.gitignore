@@ -1,8 +1,0 @@
-node_modules/
-.next/
-.local/
-.env
-.env.local
-uploads/
-*.tsbuildinfo
-.npm-cache/

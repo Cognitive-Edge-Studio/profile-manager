@@ -1,75 +1,115 @@
-# Shibly Mohammad Noman
+# Shibly Noman website and CMS
 
-## MVP cost calculator
+Owner-requested service-page removal: the generated Services pillar and nine service drafts are deleted. Five original Pages remain; Services is empty. Original service cards are editable in Home's Services section, and navigation points to `/#services`. The importer does not recreate standalone service pages. Empty CMS templates are retained for the owner's manual additions later. Evidence: `docs/service-page-removal.json` and `docs/service-page-removal-checks.json`.
 
-The local tool is at `/tools/mvp-cost-calculator/`. The cost article has a separate tool link, and the footer links to the calculator. Retained article text and metadata are unchanged.
+This repository contains one self-contained Next.js/Payload application at its root. It serves the public website, private admin, and API together. The older Vite application has been removed; its shared styles, calculator logic, content sources, assets, and verification tools now live inside this application. No production site, DNS, email provider, or hosting account has been changed.
 
-This first version is a supplied-cost planner: visitors enter costs or effort hours and their own planning rate. There are no default service rates, feature-hour estimates, or automatic price claims. The imaginary example is clearly labelled throughout the results, contact summary, and download.
+## Repository layout
 
-Scope choices feed an itemized build budget, a configurable operating period, and a smaller-release build comparison. Unknown and invalid amounts stay unresolved. Included items require a containing entered line. Shared work is counted once. All monetary inputs use a single selected currency; switching currencies clears amounts rather than converting them. Switching between costs and hours clears build figures. Amounts support up to two decimals.
+- `src/app/`: website routes, admin, and API endpoints.
+- `src/website/`: website components, runtime, and styles; `styles/` contains the shared design, blog, and calculator CSS.
+- `src/lib/`: shared calculator arithmetic.
+- `src/content/`: retained approved copy and icon mappings. Content import tools use the original copy; public pages read published CMS records.
+- `src/migrations/`: database migrations.
+- `public/`: website images, technology icons, and favicon.
+- `migration/` and `content-reference/`: importer, reviewed source inventory, and original manuscripts.
+- `scripts/` and `tests/`: local tools and unit, integration, and website verification.
+- `docs/`: editing guides, planning history, and verification evidence.
 
-Answers remain in module memory while navigating the SPA and clear on reload/close. Download produces a plain-text summary. Print / save PDF uses the browser print dialog and a report-only stylesheet. Discuss this scope passes an editable summary into the existing contact form using router state, without sending it. Calendly remains a separate route. No new analytics or network submission was added.
+Run all npm commands from the repository root. No parent-directory files or separate frontend installation are required. The structural change is documented in [the refactor notes](docs/repository-structure.md).
 
-Run `npm run test:calculator` for the budgeting regression cases. `npm run build` type-checks, builds, and prerenders the calculator route with readable initial HTML and page-specific metadata. The build needs Node.js with TypeScript stripping support to run the test script (verified with Node 24). Prerendering uses the installed Vite and React packages and introduces no dependency.
+## What works now
 
-Before public deployment, use the real production domain for canonical URLs and sitemap configuration. An automatic service-price estimator would additionally need Shibly's reviewed effort baselines, cost basis, and supported-scope rules. This implementation does not establish those inputs.
+- Private administrator sign-in and administrator/editor roles.
+- Pages, services, articles, project mentions, images, site settings, redirects, and private inquiry records.
+- A single Content / Links / SEO / Publishing tab bar on page/service/article editors.
+- Rich-text editing, internal/external links, heading choices, image descriptions, and section anchors.
+- Search titles/descriptions/images, optional social overrides, canonical/indexing fields, and the SEO plugin's indicative preview. Plugin length indicators are suggestions; they do not guarantee search appearance or ranking.
+- Saving drafts, administrator publishing, revisions/restoration, and authenticated previews in the website design for saved pages/articles. Service previews include their detail design; project mentions remain homepage cards.
+- Validated addresses/links, draft/private-data isolation, private-by-default image uploads, login throttling, closed public signup, and a guard against removing the final administrator.
+- Initial PostgreSQL migration, checked-in generated Payload types/import map, and repeatable source-inventory checks.
 
-A local Vite website for Shibly Noman, freelance full-stack developer. Built with React, TypeScript, Tailwind CSS v4, reusable shadcn-style components, and Motion. Fonts are bundled locally.
+Public routes read published Payload content: page sections, service summaries, projects, articles, navigation, buttons, images, titles, and descriptions. Draft edits appear only in protected previews. Imported records/images remain draft/private until reviewed; unavailable public pages return 404. See [the editing guide](docs/content-editing.md). Service index/detail templates, SEO policies, sitemap/robots, HTTP redirects and Publishing checks are connected. Public data refreshes on the next request. The existing homepage and Contact forms save inquiries privately with notification retry handling. Actual email activation needs sending-service configuration; deployment is Slice 7. No new public pages were added in Slice 6. See [contact delivery](docs/contact-delivery.md). See [SEO and publishing](docs/seo-and-publishing.md).
 
-## Run
+## Public design migration
 
-```sh
+Open <http://127.0.0.1:3000/admin/> to review imported drafts and use Preview. `src/website/content.ts` is the server-only entrypoint to published CMS queries. Live content does not import legacy JSON. Styles, calculator arithmetic, and technology-icon mappings are local to this repository. Full article manuscripts stay on the server; interactive lists receive summaries. Original article dates remain blank.
+
+The migration uses the original styles and Google Sans stylesheet, with locally bundled Manrope as fallback. Copied image/icon files remain unchanged; responsive portraits use Next.js image optimization. Existing trailing-slash URLs remain valid. Local deployments and private previews remain noindex. Production indexing requires an explicit HTTPS SITE_URL and PUBLIC_INDEXING_ENABLED=true.
+
+One existing tablet layout defect was corrected: between 561px and 800px, the Contact introduction and form now stack without overlap. Desktop and phone layouts retain the original arrangement. Both existing contact forms now save private inquiries through the application backend when enabled. Preview submission is disabled; production submission requires published source pages/settings. Without JavaScript the form is disabled and offers a direct email link. Calculator plans remain in memory, including the editable contact handoff; reloading clears them.
+
+Browser comparisons and interaction evidence are recorded in `docs/slice3-browser-checks.json`, with screenshots in `docs/screenshots/slice3/`. Checks cover desktop, tablet, phone, blog filters, keyboard access, mobile navigation, and calculator download/print-report/contact/return behavior. No contact message was sent during verification.
+
+## Local setup
+
+Use a compatible Node runtime (`^22.23.4 || >=24.22.1`) for deployment. On Windows this project also installs its own optional Node 24.22.1 binary; the command launcher selects it automatically without changing the system Node installation. npm installation itself may show engine warnings if the system Node is older; the application commands use the local runtime.
+
+From this directory:
+
+```powershell
 npm install
+npm run setup:local
+npm run db:local
+```
+
+Leave the database command running. In another terminal in this directory:
+
+```powershell
+npm run payload -- migrate
+npm run bootstrap
 npm run dev
 ```
 
-`npm run build` type-checks and builds `dist/`. `npm run preview` serves the production build. Static hosting must fall back to `index.html` for the About, Contact, and Blog routes.
+Open <http://127.0.0.1:3000/admin/>. The one-time bootstrap stores the generated local sign-in details in `.local/owner-credentials.json`; open that private file locally. Passwords are not printed, and rerunning bootstrap retains the existing account. Do not commit, share, or deploy the local credentials file.
 
-## Approved content
+`setup:local` preserves existing configuration. PostgreSQL listens only on loopback at port 55432 and persists data in `.local/postgres`. This embedded PostgreSQL package is a development dependency, not the production database strategy. Stop the database/application commands with Ctrl+C. Uploaded files are local to `uploads/`; production persistent object storage is still required.
 
-The three finalized documents from the website planning project were imported into `src/content/approved.json`. Unmodified source snapshots are in `content-reference/`:
-
-- `homepage-copy.md`
-- `about-page-content-plan.md`
-- `contact-page-copy.md`
-
-Public copy preserves the finalized wording. Editorial notes and frontend instructions are excluded from the rendered pages. The homepage follows the planned section order. Services are grouped into AI Systems & Integration, Application Development, and Infrastructure & Operations. Actual project mentions distinguish personal, previous-employer, and client work. They do not claim case-study outcomes or link to invented case studies.
-
-Home, About, Contact, and Blog are implemented. The blog includes search, topic filters, and local article reading routes. Navigation to Services and Selected Work uses homepage section anchors while their standalone pages remain future work. Privacy is omitted until a policy based on the actual deployment exists.
-
-## Contact
-
-The email address, LinkedIn, GitHub, and Calendly URL come from the approved copy and wireframe. Name, email, and project description are required. Budget is optional. The homepage form also includes the planned optional timeline.
-
-Without a backend, submission opens a prefilled draft addressed to `shibly.work@gmail.com`. The page clearly says the visitor must send it from their email application. It never displays the approved success confirmation as though a message was received.
-
-To enable real delivery, copy `.env.example` to `.env.local` and set `VITE_CONTACT_ENDPOINT` to a JSON POST endpoint you control. The endpoint must return a successful HTTP status only after accepting the message. Only then is the approved submission confirmation displayed. Failed submissions keep the visitor's details. Credentials belong on the server, never in Vite environment variables.
-
-## Artwork and portrait
-
-The homepage hero uses the supplied portrait, `public/images/shibly-noman-full-stack-developer.jpg`. The header, footer, and favicon use the supplied close-up, `public/images/shibly-noman-avatar.jpg`. A bespoke workspace illustration remains on About. See `ASSETS.md` for asset details.
-
-Both photographs were supplied by the user and copied unchanged. Set `VITE_PORTRAIT_URL` to use a supplied portrait in the About illustration slot as well.
+Local secrets live in the ignored `.env.local`. The example has no usable credentials. Keep the CMS URL consistent when sharing a local preview. Raw settings APIs require authentication. Public rendering uses a narrow projection of the published settings version.
 
 ## Verification
 
-The production build and source-to-rendered-content checks pass. The Blog landing page was visually checked on desktop, 768px tablet, and 390px mobile viewports. Topic filtering, empty search results, resetting filters, and article navigation were verified in the browser.
+```powershell
+npm test
+npm run verify:inventory
+npm run typecheck
+npm run test:integration
+npm run build
+npm run verify:http
+npm run verify:seo
+npm run verify:contact
+```
+
+The CMS HTTP command requires the database, local owner account, and application at port 3000. It creates and removes one temporary service record; it does not edit approved content. Website verification checks ten routes, complete article wording/tables, initial metadata, real 404 responses, filter URLs, responsive images, and client bundle isolation. Its local timings are diagnostics, not real-user Core Web Vitals.
+
+Integration tests create a uniquely named database on the loopback PostgreSQL server, apply the committed migration, verify access/publication rules and image privacy, then remove only that test database. The test runner exits explicitly because the Payload adapter retains PostgreSQL reconnect clients. No production database is accepted by the test script.
+
+To run the production build locally after stopping the dev server:
+
+```powershell
+npm run start
+```
+
+`npm test` includes the twelve calculator regressions alongside the CMS unit tests. `npm run test:calculator` runs those cases alone. `npm run verify:inventory` checks retained source content, shared logic, styles, and assets against the reviewed baseline. Regenerate that baseline only after intentionally reviewing source changes. `npm run sync:icons` regenerates the technology icon assets and their source references.
+
+## Administration and remaining deployment work
+
+The initial administrator is created locally rather than through a public first-user setup page. New team members can be added by an administrator. Editors can save drafts and revise published content in draft mode, but cannot publish/unpublish, change roles, or access inquiries. Administrators manage global settings, redirects, and public media visibility. Search/social/canonical/indexing metadata and structured data render from CMS values. Required reference guards, reviewed service copy requirements and actual HTTP redirects are enforced on the server.
+
+Email delivery is intentionally disabled rather than logging password-reset emails or tokens to the terminal. Inquiry notification delivery/retries are implemented but require a configured provider for real email. Account-recovery email and production bootstrap still need release setup. Software updates, backups/restoration, provider credentials, and production operations remain developer responsibilities.
+
+Before deployment, select the production domain, supported hosting, PostgreSQL, persistent uploads, and email delivery. Run migrations separately; development schema push is disabled. Review actual privacy wording, publication state, service detail copy, and article publication dates before making content public. Never deploy `.local`, `.env.local`, or the development database.
+
+## Content import and verification
+
+From the repository root, run `npm run import:content` for a dry run, or `npm run import:content -- --apply` to create missing drafts. Stable source IDs cover records and images. Re-running retains existing records and later edits. Reports in docs/slice4-import-*.json identify differences. `--apply --update-source` explicitly replaces imported fields in draft revisions; it never publishes those revisions. Use that mode only after reviewing editorial changes. Import tools accept local loopback databases only.
+
+`npm run verify:content` starts the production build on port 3002 against a uniquely named disposable UTF8 database. It checks all ten published routes and manuscript wording, then exercises draft/public isolation, edited headings/links/buttons/anchors, image descriptions, section ordering, navigation/footer changes, publishing, and unpublishing. It removes its database and uploaded fixtures. Local owner content is not used. A database-name guard runs before writes. `npm run test:integration` also checks repeat import behavior and retained editorial changes. Run `npm run build` first. The older `verify:website` command expects a reviewed, published content set; draft-only local data intentionally cannot pass its public-route expectations.
+
+The Windows development database initially used WIN1252. The local data was copied and row counts verified in a UTF8 database so existing Unicode copy can be stored. The original database and private table/configuration backups remain in .local/backups. New local databases and test databases explicitly use UTF8. The local encoding repair script is scripts/upgrade-local-encoding.ts; never apply it to a hosted database.
+
+During development, an early test loaded database configuration before selecting its disposable database. Its identified homepage/settings test changes were restored to drafts and its fixture account removed. Tests now assert their database name before mutation. No external site or account was changed.
 
 
 
-## Recent interface updates
 
-Technology badges include current brand marks stored locally, with icon version and source links in content-reference/technology-icon-sources.json. On Contact, the Calendly booking button is inside the form card alongside the send action; the separate left booking section has been removed. The About introduction uses a solid primary orange Contact me button.
-
-
-
-## Blog
-
-The blog landing page is at `/blog/`, linked in the desktop/mobile header and footer. Search and topic filters persist in URL parameters. Illustrations use local HTML/CSS. Blog code and the five retained manuscripts load separately from the main website. Article readers support headings, lists, tables, and related article links; research and SEO metadata are excluded. Reading times are calculated at 220 words per minute. Source references are in `content-reference/blog-source-notes.json`. This is a local preview; publication dates and published status are not asserted.
-
-
-## Blog copy requirements
-
-Use the original article H1 titles, At a glance summaries, metadata, and body wording from the saved manuscripts. Do not rewrite or shorten article titles or excerpts. This applies to article pages, featured articles, blog lists, and related cards. Original snapshots and hashes are recorded in `content-reference/blog-source-notes.json` and `content-reference/blog-copies/`. The requested numbered ongoing-cost list is retained as a formatting change. Decorative blog illustrations contain no authored slogans.
-
-The homepage contact links now include the official Calendly icon beside GitHub and LinkedIn. The separate homepage booking block has been removed. The existing Contact form booking button retains its place and uses the same inline official icon.

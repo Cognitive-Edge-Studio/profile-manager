@@ -10,11 +10,11 @@ Manage website content, services, blog posts, projects, media, SEO, site setting
 
 Selected CMS: Payload. Proposed application stack: Next.js App Router, PostgreSQL, persistent object storage for uploads, and a server-side email provider. Confirm compatible package versions and hosting requirements when implementation starts. Provider selection and operating costs remain open decisions; no paid services are assumed to be authorized.
 
-The seven slices below follow the previously proposed implementation order. Complete each slice's acceptance checks before moving to dependent work. Keep the existing Vite application runnable until the replacement passes staging verification.
+The seven slices below follow the previously proposed implementation order. Complete each slice's acceptance checks before moving to dependent work. Repository consolidation was subsequently requested by the owner: the Next.js/Payload application is now at the root and the retired Vite application is retained in Git history. See [repository structure](./repository-structure.md).
 
 The owner will use this dashboard without coding. The companion [Content and optimization controls plan](./content-and-optimization-plan.md) specifies each editing action, its required implementation, and its acceptance checks. It expands these same seven slices; it does not introduce a different implementation sequence.
 
-## Existing baseline and constraints
+## Original Vite baseline and constraints (historical)
 
 - Public application: `src/App.tsx`, React Router, Tailwind, and Motion.
 - Main content: `src/content/approved.json`; profile and contact links: `src/content/approved.ts`. Some display copy also lives directly in components and must be inventoried.

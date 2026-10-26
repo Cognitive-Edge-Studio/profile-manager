@@ -1,0 +1,66 @@
+{
+  "mode": "Local HTTP diagnostics; these are not real-user Core Web Vitals.",
+  "copiedAssets": 50,
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "htmlBytes": 117912,
+      "responseMs": 331
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "htmlBytes": 108478,
+      "responseMs": 177
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "htmlBytes": 48533,
+      "responseMs": 89
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "htmlBytes": 57767,
+      "responseMs": 121
+    },
+    {
+      "path": "/tools/mvp-cost-calculator/",
+      "status": 200,
+      "htmlBytes": 56800,
+      "responseMs": 99
+    },
+    {
+      "path": "/blog/mvp-development-cost/",
+      "status": 200,
+      "htmlBytes": 116159,
+      "responseMs": 148
+    },
+    {
+      "path": "/blog/mvp-feature-prioritization/",
+      "status": 200,
+      "htmlBytes": 134313,
+      "responseMs": 163
+    },
+    {
+      "path": "/blog/how-to-build-an-mvp/",
+      "status": 200,
+      "htmlBytes": 109196,
+      "responseMs": 142
+    },
+    {
+      "path": "/blog/prototype-vs-mvp/",
+      "status": 200,
+      "htmlBytes": 101932,
+      "responseMs": 145
+    },
+    {
+      "path": "/blog/how-to-hire-a-freelance-full-stack-developer/",
+      "status": 200,
+      "htmlBytes": 119343,
+      "responseMs": 145
+    }
+  ]
+}

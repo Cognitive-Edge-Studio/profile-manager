@@ -1,8 +1,10 @@
-node_modules
-dist
+node_modules/
+.next/
+.local/
 .env
 .env.local
-*.local
-.npm-cache
-.next/
+uploads/
 *.tsbuildinfo
+.npm-cache/
+dist/
+*.local
