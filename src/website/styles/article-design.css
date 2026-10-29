@@ -1,0 +1,161 @@
+/* Approved article layout. Keep these rules scoped to blog detail pages. */
+.blog-article.journal-article.container { width: calc(100% - 96px); max-width: 1280px; margin-inline: auto; padding: 0 0 72px; }
+.blog-article > .breadcrumb { max-width: 1048px; margin: 28px auto 0; min-height: 32px; align-items: center; gap: 12px; font-size: 12px; line-height: 1.5; color: #5f6368; }
+.blog-article > .breadcrumb a { display: inline-flex; align-items: center; min-height: 32px; }
+.blog-article .article-heading { max-width: 1048px; margin: 36px auto 32px; }
+.blog-article .article-heading .journal-meta { justify-content: flex-start; gap: 20px; font-size: 12px; }
+.blog-article .article-date { margin-top: 10px; font-size: 12px; color: #5f6368; }
+.blog-article .article-heading h1 { font-size: clamp(34px, 3.7vw, 50px); line-height: 1.17; letter-spacing: -.035em; font-weight: 500; margin: 18px 0 24px; text-wrap: pretty; }
+.blog-article .article-heading .journal-author { gap: 11px; margin: 0; font-size: 13px; font-weight: 500; }
+.blog-article .article-heading .journal-author small { font-size: 11px; margin-top: 3px; }
+.blog-article .article-heading .journal-author img { width: 36px; height: 36px; }
+.blog-article .article-feature-image, .blog-article .article-calculator-link { max-width: 1048px; margin-inline: auto; }
+.blog-article .article-feature-image > .journal-art { height: 280px; border-radius: 24px; }
+.blog-article .article-feature-image > .journal-art > div:not(.art-grid) { transform: scale(1.15); }
+.blog-article .article-feature-image img { display: block; width: 100%; height: 280px; object-fit: cover; border-radius: 24px; }
+.article-reading-progress { position: fixed; top: var(--site-header-height); inset-inline: 0; height: 2px; z-index: 51; pointer-events: none; }
+.article-reading-progress span { display: block; height: 100%; background: #0b57d0; transform: scaleX(0); transform-origin: left; }
+
+.blog-article .article-layout { display: grid; max-width: 1194px; margin: 48px auto 0; gap: 32px; align-items: stretch; }
+.blog-article .article-layout--contact { grid-template-columns: minmax(0, 1fr) 210px; }
+.blog-article .article-reading-layout { display: grid; grid-template-columns: minmax(0, 720px); justify-content: center; gap: 32px; margin: 0; min-width: 0; }
+.blog-article .article-reading-layout--contents { grid-template-columns: 200px minmax(0, 720px); }
+.blog-article .article-toc-rail { min-width: 0; }
+.blog-article .article-toc { position: sticky; top: calc(var(--site-header-height) + 24px); display: flex; flex-direction: column; width: 100%; margin: 0; padding: 0; min-height: 0; max-height: calc(100dvh - var(--site-header-height) - 48px); border: 0; border-radius: 0; background: #fff; box-shadow: none; overflow: hidden; }
+.blog-article .article-toc__header { flex-shrink: 0; gap: 12px; padding: 0 0 16px; }
+.blog-article .article-toc__title { font-size: 13px; font-weight: 500; letter-spacing: 0; gap: 8px; }
+.blog-article .article-toc__title svg { width: 17px; height: 17px; color: #5f6368; }
+.blog-article .article-toc__toggle { display: none; }
+.blog-article .article-toc__links { display: block; flex: 1; min-height: 0; max-height: none; overflow-y: auto; overscroll-behavior-y: contain; scrollbar-width: thin; scrollbar-color: #c4cbd5 transparent; padding: 0 8px 4px 0; margin: 0; list-style: none; }
+.blog-article .article-toc[data-enhanced="true"][data-open="false"] .article-toc__links { display: block; }
+.blog-article .article-toc__links li { margin: 0; padding: 0; }
+.blog-article .article-toc__links a { display: flex; align-items: baseline; gap: 8px; min-height: 44px; padding: 10px 10px 10px 12px; border-left: 2px solid #e6e9ee; border-radius: 0; font-size: 12px; line-height: 1.55; color: #5f6368; text-decoration: none; }
+.blog-article .article-toc__links a:hover { background: #f5f8fe; color: #0b57d0; }
+.blog-article .article-toc__links a[aria-current="location"] { background: #edf3fe; border-left-color: #0b57d0; color: #0b57d0; font-weight: 500; }
+.blog-article .article-toc__number { flex: 0 0 17px; min-width: 17px; font-size: 10px; color: inherit; opacity: .75; }
+.blog-article .article-toc__links ol { list-style: none; padding: 0 0 0 20px; margin: 0; }
+.blog-article .article-toc__links ol a { font-size: 11px; line-height: 1.55; min-height: 40px; padding: 8px 10px; }
+.blog-article .article-contact-rail { width: 210px; min-width: 0; margin: 0; }
+.blog-article .article-contact-card { position: sticky; top: calc(var(--site-header-height) + 24px); width: 100%; max-width: none; padding: 22px 19px; border: 1px solid #e0e9f7; border-radius: 20px; background: #f2f6fc; margin: 0; }
+.blog-article .article-contact-title { font-size: 20px; font-weight: 500; line-height: 1.3; letter-spacing: -.02em; text-wrap: pretty; }
+.blog-article .article-contact-card > p { font-size: 13px; line-height: 1.75; margin: 14px 0 20px; color: #5f6368; }
+.blog-article .article-contact-actions { margin: 0; }
+.blog-article .article-contact-actions .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 46px; padding: 11px 14px; font-size: 13px; white-space: nowrap; }
+.blog-article .article-contact-actions svg { flex-shrink: 0; width: 16px; height: 16px; margin: 0; }
+
+.blog-article .journal-article-body { width: 100%; max-width: 720px; min-width: 0; margin: 0; padding: 0; color: #444746; font-size: 18px; line-height: 1.85; overflow-wrap: anywhere; }
+.blog-article .journal-article-body > p { margin: 0 0 24px; }
+.blog-article .journal-article-body h2 { font-size: 30px; line-height: 1.3; font-weight: 500; letter-spacing: -.025em; margin: 48px 0 18px; color: #202124; }
+.blog-article .journal-article-body h3 { font-size: 23px; line-height: 1.4; font-weight: 500; margin: 34px 0 14px; color: #202124; }
+/* html reserves the header + 16px; this adds 8px on desktop, 72px for the floating TOC. */
+.blog-article #article-content, .blog-article .journal-article-body [id^="heading-"] { scroll-margin-top: 8px; }
+.blog-article .journal-article-body:focus, .blog-article .journal-article-body [id^="heading-"]:focus { outline: none; }
+.blog-article .journal-article-body strong { font-weight: 600; color: #202124; }
+.blog-article .journal-article-body blockquote { margin: 0 0 28px; padding: 22px 24px; border: 1px solid #dce7fa; border-left: 3px solid #0b57d0; border-radius: 0 14px 14px 0; background: #f5f8fe; font-size: 15px; line-height: 1.8; }
+.blog-article .journal-article-body blockquote > strong:first-child { display: block; margin-bottom: 10px; font-size: 13px; line-height: 1.5; color: #0b57d0; font-weight: 500; letter-spacing: .015em; }
+.blog-article .journal-article-body blockquote p { margin: 10px 0 0; }
+.blog-article .article-template-nav { padding: 24px; border-radius: 18px; margin: 32px 0 40px; background: #f8fafd; }
+.blog-article .article-template-nav__title { font-weight: 500; }
+.blog-article .article-template-nav__groups { gap: 20px; }
+.blog-article .journal-article-body .article-template-nav a { min-height: 48px; border-radius: 10px; font-size: 13px; }
+.blog-article .journal-article-body .article-template-nav__label { font-size: 14px; }
+.blog-article .journal-article-body .article-template-nav__description { font-size: 12px; line-height: 1.6; }
+.blog-article .article-table { margin: 26px 0 30px; max-width: 100%; overflow: auto; overscroll-behavior-x: contain; border: 1px solid #dfe4eb; border-radius: 12px; }
+.blog-article .article-table table { font-size: 14px; line-height: 1.75; }
+.blog-article .article-table th { background: #edf3fe; color: #202124; font-weight: 500; }
+.blog-article .article-table th, .blog-article .article-table td { padding: 16px 18px; border-bottom-color: #e7ebf1; }
+.blog-article .article-table tr:last-child td { border-bottom: 0; }
+.blog-article .journal-article-body li { margin: 12px 0; }
+.blog-article .journal-article-body a { text-underline-offset: 4px; }
+
+.blog-article .related-blogs { max-width: 1048px; margin: 72px auto 0; border-top: 1px solid #e3e7ed; padding-top: 40px; }
+.blog-article .related-blogs-heading { gap: 24px; margin-bottom: 28px; align-items: flex-end; }
+.blog-article .related-blogs-heading .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .08em; }
+.blog-article .related-blogs-heading .related-blogs-title { font-size: 32px; line-height: 1.2; max-width: none; margin-top: 12px; letter-spacing: -.025em; }
+.blog-article .related-blogs-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; overflow: visible; padding: 4px 0; scrollbar-width: none; }
+.blog-article .related-blogs-track::-webkit-scrollbar { display: none; width: 0; height: 0; }
+.blog-article .related-blogs-controls { display: none; }
+.blog-article .related-blog-card { min-width: 0; border: 1px solid #e1e6ed; border-radius: 18px; box-shadow: none; }
+.blog-article .related-blog-card:hover { transform: none; box-shadow: 0 4px 16px #2021240a; border-color: #a8c7fa; }
+.blog-article .related-blog-card .journal-art { height: 132px; flex-shrink: 0; }
+.blog-article .related-blog-card .journal-card-copy { padding: 18px; display: flex; flex-direction: column; }
+.blog-article .related-blog-card .journal-meta { font-size: 10px; gap: 8px; }
+.blog-article .related-blog-card .related-blog-title { font-size: 19px; line-height: 1.4; margin: 10px 0 0; letter-spacing: -.02em; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-article .related-blog-card .journal-card-copy > p { font-size: 13px; line-height: 1.65; margin-top: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.blog-article .related-blog-card .journal-read { display: flex; justify-content: flex-start; gap: 8px; font-size: 12px; font-weight: 500; padding-top: 16px; margin-top: auto; }
+.blog-article .related-blogs-footer { display: flex; justify-content: flex-end; margin-top: 22px; }
+.blog-article .related-blogs-footer .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: fit-content; max-width: 100%; min-height: 44px; padding: 10px 16px; font-size: 13px; border-radius: 999px; }
+
+@media (max-width: 1100px) {
+  .blog-article.journal-article.container { width: calc(100% - 64px); }
+  .blog-article .article-heading { margin-top: 30px; }
+  .blog-article .article-layout { display: block; max-width: 760px; margin-top: 32px; }
+  .blog-article .article-reading-layout { display: flex; flex-direction: column; gap: 0; }
+  .blog-article .article-toc-rail { position: sticky; top: calc(var(--site-header-height) + 8px); z-index: 20; width: 100%; max-width: 720px; margin: 0 auto 28px; }
+  .blog-article .article-toc { position: static; min-height: 0; max-height: none; padding: 6px 12px; border: 1px solid #e1e6ef; border-radius: 12px; background: #fffffffa; backdrop-filter: blur(14px); box-shadow: 0 4px 18px #2021240a; }
+  .blog-article .article-toc__header { padding: 0; min-height: 44px; gap: 8px; }
+  .blog-article .article-toc__title { font-size: 14px; gap: 7px; line-height: 1.5; letter-spacing: -.015em; }
+  .blog-article .article-toc__title svg { width: 16px; height: 16px; color: #0b57d0; }
+  .blog-article .article-toc__toggle { display: inline-flex; gap: 5px; min-height: 44px; padding: 8px; border: 0; border-radius: 8px; background: #edf3fe; color: #0b57d0; font-size: 12px; }
+  .blog-article .article-toc__links, .blog-article .article-toc[data-enhanced="true"] .article-toc__links { flex: 0 1 auto; max-height: min(48dvh, 360px, calc(100dvh - var(--site-header-height) - 112px)); margin: 8px 0 0; padding: 0 4px 0 0; }
+  .blog-article .article-toc[data-enhanced="true"][data-open="false"] .article-toc__links { display: none; }
+  .blog-article .article-toc__links a { font-size: 13px; }
+  .blog-article .article-toc__links ol a { font-size: 12px; }
+  .blog-article .journal-article-body { margin-inline: auto; }
+  .blog-article #article-content, .blog-article .journal-article-body [id^="heading-"] { scroll-margin-top: 72px; }
+  .blog-article .article-contact-rail { width: 100%; max-width: 720px; margin: 40px auto 0; }
+  .blog-article .article-contact-card { position: static; display: grid; grid-template-columns: minmax(0, 1fr) 170px; column-gap: 32px; padding: 26px 28px; }
+  .blog-article .article-contact-title { font-size: 23px; grid-column: 1; }
+  .blog-article .article-contact-card > p { grid-column: 1; margin: 10px 0 0; max-width: 430px; font-size: 14px; }
+  .blog-article .article-contact-actions { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+  .blog-article .related-blogs { margin-top: 56px; }
+}
+
+@media (max-width: 800px) {
+  .blog-article .related-blogs-heading { align-items: center; gap: 12px; }
+  .blog-article .related-blogs-heading > div:first-child { min-width: 0; flex: 1; }
+  .blog-article .related-blogs-controls { display: flex; flex-shrink: 0; gap: 8px; padding: 0; }
+  .blog-article .related-blogs-controls button { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; padding: 0; border: 1px solid #c4c7c5 !important; border-radius: 50%; background: #fff; color: #0b57d0; }
+  .blog-article .related-blogs-controls button:disabled { opacity: .35; cursor: default; }
+  .blog-article .related-blogs-controls button:hover:not(:disabled) { background: #edf3fe; border-color: #0b57d0 !important; color: #0b57d0; }
+  .blog-article .related-blogs-track { display: flex; gap: 16px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 0; cursor: grab; }
+  .blog-article .related-blogs-track .related-blog-card { flex: 0 0 87%; scroll-snap-align: start; scroll-snap-stop: always; }
+  .blog-article .related-blogs-track a { cursor: grab; }
+  .blog-article .related-blogs-track.is-dragging { scroll-snap-type: none; scroll-behavior: auto; user-select: none; }
+  .blog-article .related-blogs-track.is-dragging, .blog-article .related-blogs-track.is-dragging a { cursor: grabbing; }
+}
+
+@media (max-width: 600px) {
+  .blog-article.journal-article.container { width: calc(100% - 40px); padding-bottom: 44px; }
+  .blog-article > .breadcrumb { margin-top: 20px; font-size: 11px; gap: 9px; }
+  .blog-article > .breadcrumb > span:last-child, .blog-article > .breadcrumb > span:nth-last-child(2) { display: none; }
+  .blog-article .article-heading { margin: 22px auto 28px; }
+  .blog-article .article-heading .journal-meta { font-size: 11px; gap: 16px; }
+  .blog-article .article-heading h1 { font-size: 34px; line-height: 1.17; margin: 16px 0 22px; }
+  .blog-article .article-heading .journal-author { font-size: 12px; }
+  .blog-article .article-heading .journal-author small { font-size: 10px; }
+  .blog-article .article-feature-image > .journal-art, .blog-article .article-feature-image img { height: 230px; border-radius: 18px; }
+  .blog-article .article-feature-image > .journal-art > div:not(.art-grid) { transform: scale(.95); }
+  .blog-article .article-layout { margin-top: 28px; }
+  .blog-article .article-toc-rail { margin-bottom: 24px; }
+  .blog-article .journal-article-body { font-size: 17px; line-height: 1.85; }
+  .blog-article .journal-article-body > p { margin-bottom: 22px; }
+  .blog-article .journal-article-body h2 { font-size: 26px; margin-top: 40px; line-height: 1.35; }
+  .blog-article .journal-article-body h3 { font-size: 21px; line-height: 1.4; }
+  .blog-article .journal-article-body blockquote { padding: 19px 20px; margin-bottom: 24px; font-size: 14px; line-height: 1.85; }
+  .blog-article .article-template-nav { padding: 20px; }
+  .blog-article .article-template-nav__groups { grid-template-columns: 1fr; gap: 22px; }
+  .blog-article .article-table table { font-size: 13px; }
+  .blog-article .article-table td, .blog-article .article-table th { padding: 14px; }
+  .blog-article .article-contact-card { display: block; padding: 24px; }
+  .blog-article .article-contact-title { font-size: 24px; }
+  .blog-article .article-contact-card > p { margin: 12px 0 20px; font-size: 14px; }
+  .blog-article .article-contact-actions .button { min-height: 48px; font-size: 14px; }
+  .blog-article .related-blogs { margin-top: 44px; padding-top: 32px; }
+  .blog-article .related-blogs-heading .related-blogs-title { font-size: 26px; line-height: 1.25; }
+  .blog-article .related-blogs-heading .eyebrow { font-size: 10px; }
+  .blog-article .related-blog-card .related-blog-title { font-size: 20px; }
+  .blog-article .related-blogs-footer { margin-top: 20px; }
+}
+@media (max-width: 400px) { .blog-article .related-blogs-controls button { width: 44px; height: 44px; } }
+@media (max-width: 360px) { .blog-article .article-heading h1 { font-size: 30px; } }

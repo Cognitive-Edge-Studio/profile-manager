@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-29",
+  "scope": "Approved blog article design implemented in the actual Next.js/Payload website; CMS content and publication states preserved.",
+  "preview": "http://127.0.0.1:3000/preview?collection=posts&id=6",
+  "build": "Passed: next build, including TypeScript",
+  "standaloneTypecheck": "Passed: tsc --noEmit",
+  "changedSourceWhitespaceCheck": "Passed; the whole-tree check still reports an existing extra blank line in styles/design-system.css.",
+  "focusedTests": { "passed": 9, "failed": 0 },
+  "unitSuite": {
+    "passed": 29,
+    "failed": 1,
+    "existingFailure": "Migration inventory contains older checksums for styles/blog.css and styles/design-system.css. Both files had existing changes before this implementation; neither was changed by this implementation."
+  },
+  "desktop": {
+    "viewport": 1440,
+    "tocWidth": 200,
+    "readingWidth": 720,
+    "contactWidth": 210,
+    "featureImage": [1048, 280],
+    "relatedCards": 3,
+    "relatedLayout": "Static three-column grid",
+    "pageOverflow": false
+  },
+  "tablet": {
+    "testedWidths": [768, 1024],
+    "collapsedTocHeight": 57.6,
+    "expandedListMaximumHeight": 360,
+    "tocCornerRadius": 12,
+    "sectionJumpClearsFloatingToc": true,
+    "contactOutsideStickyReadingBoundary": true,
+    "pageOverflow": false
+  },
+  "mobile": {
+    "testedWidths": [350, 390],
+    "collapsedTocHeight": 57.6,
+    "mouseDragForwardAndBack": true,
+    "dragDoesNotOpenArticle": true,
+    "arrowAndKeyboardNavigation": true,
+    "horizontalScrollbar": "Hidden",
+    "tocEscapeClosesDisclosure": true,
+    "menuHeaderGap": 8,
+    "menuCornerRadius": 24,
+    "menuCta": "Brand blue",
+    "pageOverflow": false
+  },
+  "content": {
+    "completeCurrentArticleWordParity": true,
+    "comparison": "Compared the existing port 3000 article before restart against the new implementation on port 3001 using the same current CMS draft.",
+    "headingTargets": 24,
+    "uniqueHeadingTargets": 24,
+    "externalArticleLinksWithNofollow": "4/4",
+    "faqQuestionsRemainInArticle": true,
+    "faqQuestionsOmittedFromToc": true,
+    "otherNestedTocHeadingsPreserved": true,
+    "secondPostAndBudgetToolVerified": true,
+    "relatedPostAndViewAllBlogsLinksVerified": true
+  }
+}

@@ -23,11 +23,11 @@
     },
     {
       "path": "src/website/styles/design-system.css",
-      "sha256": "d94332d394e2e83cb70e64e736a25bf07a8c4110ac619ebe266ea922e00b3a9f"
+      "sha256": "1687b9d707b209ac9f05ba226fa0e9d433bdd16d0c2bfd490ea0af0b9b60cc34"
     },
     {
       "path": "src/website/styles/blog.css",
-      "sha256": "522ba2f22478f885779829e93173330565f763e40f08fd7edfbc6df96bbde0c6"
+      "sha256": "81d359d9ab95c65ac0d80121857393d46ce15dd3b38535642cd64d8e42ef84aa"
     },
     {
       "path": "src/website/styles/calculator.css",

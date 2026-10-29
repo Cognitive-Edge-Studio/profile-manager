@@ -42,7 +42,7 @@ export default buildConfig({
   editor: lexicalEditor({ features: ({ defaultFeatures }) => [
     ...defaultFeatures.filter(feature => !['heading', 'link'].includes(feature.key)),
     HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
-    LinkFeature({ enabledCollections: ['pages', 'services', 'posts'], fields: ({ defaultFields }) => [...defaultFields, { name: 'fragment', label: 'Section anchor (optional)', type: 'text' }, { name: 'requiredForPublishing', label: 'This link must be available before publishing', type: 'checkbox', defaultValue: false }, { name: 'rel', label: 'Advanced link type', type: 'select', hasMany: true, options: ['nofollow', 'sponsored'], admin: { description: 'Normal links can leave this empty.' } }] }),
+    LinkFeature({ enabledCollections: ['pages', 'services', 'posts'], fields: ({ defaultFields }) => [...defaultFields, { name: 'fragment', label: 'Section anchor (optional)', type: 'text' }, { name: 'requiredForPublishing', label: 'This link must be available before publishing', type: 'checkbox', defaultValue: false }, { name: 'rel', label: 'Advanced link type', type: 'select', hasMany: true, options: ['nofollow', 'sponsored'], admin: { description: 'Select nofollow to mark a link, or sponsored for paid links. External links within articles always include nofollow, even when this field is empty.' } }] }),
     FixedToolbarFeature(),
     EXPERIMENTAL_TableFeature(),
   ] }),

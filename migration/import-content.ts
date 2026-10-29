@@ -105,8 +105,8 @@ export async function importContent(payload: Payload, { apply = false, update = 
       await payload.update({ collection: 'pages', id, draft: true, data: { actions: actions as any, sections, ...(key === 'home' ? { heroImage: media['shibly-noman-full-stack-developer.jpg'] } : {}) }, ...privileged })
     }
     if (!retainSettings || update) {
-      const headerLinks = [internal('Services', 'home', 'services'), internal('Selected Work', 'home', 'selected-work'), internal('About Me', 'about'), internal('Blog', 'page:blog'), internal('Contact', 'contact')]
-      await payload.updateGlobal({ slug: 'site-settings', draft: true, data: { ...settings, avatar: media['shibly-noman-avatar.jpg'], portrait: media['shibly-noman-full-stack-developer.jpg'], workspaceImage: media['developer-workspace.png'], headerLinks, headerAction: [internal('Discuss your project', 'contact')], footerLinks: [...headerLinks.slice(0, 4), internal('Cost calculator', 'page:calculator'), headerLinks[4]] } as any, ...privileged })
+      const headerLinks = [internal('Services', 'home', 'services'), internal('MVP Calculator', 'page:calculator'), internal('Selected Works', 'home', 'selected-work'), internal('Blog', 'page:blog'), internal('About Me', 'about')]
+      await payload.updateGlobal({ slug: 'site-settings', draft: true, data: { ...settings, avatar: media['shibly-noman-avatar.jpg'], portrait: media['shibly-noman-full-stack-developer.jpg'], workspaceImage: media['developer-workspace.png'], headerLinks, headerAction: [internal('Discuss your project', 'contact')], footerLinks: [...headerLinks, internal('Contact', 'contact')] } as any, ...privileged })
     }
   }
   return { mode: apply ? 'apply-drafts' : 'dry-run', updateExisting: update, entries: report, notes: ['No publication dates inferred.', 'Media imported privately.', 'SVG technology marks and decorative article illustrations remain code assets.', 'Source snapshots retain the complete original manuscripts and page sections.'] }

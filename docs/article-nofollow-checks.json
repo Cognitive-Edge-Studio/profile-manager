@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "external": [
+      {
+        "href": "https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html",
+        "rel": "nofollow",
+        "text": "AWS Pricing Calculator"
+      },
+      {
+        "href": "https://supabase.com/docs/guides/platform/cost-control",
+        "rel": "nofollow",
+        "text": "Supabase's cost-control documentation"
+      }
+    ],
+    "internalNofollow": 0,
+    "missingNofollow": 0
+  },
+  {
+    "id": 2,
+    "external": [
+      {
+        "href": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+        "rel": "nofollow",
+        "text": "guidance on understanding user needs"
+      },
+      {
+        "href": "https://www.agilebusiness.org/resource/what-is-moscow-prioritization/",
+        "rel": "nofollow",
+        "text": "Agile Business Consortium's MoSCoW guidance"
+      },
+      {
+        "href": "https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers",
+        "rel": "nofollow",
+        "text": "Intercom's original explanation of RICE"
+      }
+    ],
+    "internalNofollow": 0,
+    "missingNofollow": 0
+  },
+  {
+    "id": 3,
+    "external": [
+      {
+        "href": "https://www.ycombinator.com/blog/startup-school-week-2-recap-michael-seibel-adora-cheung-and-ilya-volodarsky/",
+        "rel": "nofollow",
+        "text": "advice on planning an MVP"
+      },
+      {
+        "href": "https://www.gov.uk/service-manual/measuring-success/how-to-set-performance-metrics-for-your-service",
+        "rel": "nofollow",
+        "text": "guidance on setting performance measures"
+      }
+    ],
+    "internalNofollow": 0,
+    "missingNofollow": 0
+  },
+  {
+    "id": 4,
+    "external": [
+      {
+        "href": "https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/",
+        "rel": "nofollow",
+        "text": "guidance on prototype fidelity"
+      },
+      {
+        "href": "https://leanstartup.co/resources/articles/what-is-an-mvp/",
+        "rel": "nofollow",
+        "text": "explanation of an MVP"
+      },
+      {
+        "href": "https://www.ybrikman.com/blog/2025/02/10/mvp-is-a-process/",
+        "rel": "nofollow",
+        "text": "MVP learning process described by Yevgeniy Brikman"
+      },
+      {
+        "href": "https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works",
+        "rel": "nofollow",
+        "text": "guidance on testing risky assumptions"
+      },
+      {
+        "href": "https://theleanstartup.com/principles",
+        "rel": "nofollow",
+        "text": "build-measure-learn approach"
+      },
+      {
+        "href": "https://www.gov.uk/service-manual/design/making-prototypes",
+        "rel": "nofollow",
+        "text": "guidance on coded prototypes"
+      }
+    ],
+    "internalNofollow": 0,
+    "missingNofollow": 0
+  },
+  {
+    "id": 5,
+    "external": [],
+    "internalNofollow": 0,
+    "missingNofollow": 0
+  }
+]

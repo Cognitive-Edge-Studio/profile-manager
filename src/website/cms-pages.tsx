@@ -12,8 +12,8 @@ import { contentPath } from '../domain/contracts.mjs'
 
 type Context = { site: SiteData; page: any }
 type SectionContext = Context & { section: any; index: number }
-export function Actions({ site, values = [], className = 'hero-actions', primary = true }: { site: SiteData; values?: any[]; className?: string; primary?: boolean }) {
-  const links = values.map(value => resolvedLink(site, value)).filter(Boolean)
+export function Actions({ site, values = [], className = 'hero-actions', primary = true, nofollowExternal = false }: { site: SiteData; values?: any[]; className?: string; primary?: boolean; nofollowExternal?: boolean }) {
+  const links = values.map(value => resolvedLink(site, value, { nofollowExternal })).filter(Boolean)
   return links.length ? <div className={className}>{links.map((link, i) => i === 0 && primary ? <Button key={i} asChild><Link to={link!.href} target={link!.target} rel={link!.rel}>{link!.label} <ArrowUpRight size={17} /></Link></Button> : <Link key={i} className="text-link" to={link!.href} target={link!.target} rel={link!.rel}>{link!.label} <ArrowUpRight size={15} /></Link>)}</div> : null
 }
 export function WorkspaceArt({ site, compact = false, image }: { site: SiteData; compact?: boolean; image?: any }) {

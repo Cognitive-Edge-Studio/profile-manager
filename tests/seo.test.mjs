@@ -69,3 +69,17 @@ test('article contents follows section hierarchy and preserves exact anchors acr
   assert.deepEqual(articleContents({ root: { children: [heading('h3', 'Only section')] } }), [{ id: 'heading-only-section', title: 'Only section', children: [] }])
   assert.deepEqual(articleContents(body('No headings yet')), [])
 })
+
+test('FAQ questions retain their anchors but are omitted from contents, then normal sections resume', () => {
+  const heading = (tag, text) => ({ type: 'heading', tag, children: [{ type: 'text', text }] })
+  for (const title of ['Frequently Asked Questions', 'FAQ', 'FAQs']) {
+    const article = { root: { children: [heading('h2', 'Guide'), heading('h3', 'A useful step'), heading('h2', title), heading('h3', 'How do I begin?'), heading('h3', 'What does it cost?'), heading('h2', 'Resources'), heading('h3', 'A useful step')] } }
+    const contents = articleContents(article)
+    assert.equal(contents[0].children[0].title, 'A useful step')
+    assert.equal(contents[1].title, title)
+    assert.deepEqual(contents[1].children, [])
+    assert.equal(contents[2].children[0].id, 'heading-a-useful-step-2')
+    assert.ok(headingAnchors(article).includes('heading-how-do-i-begin'))
+    assert.ok(headingAnchors(article).includes('heading-what-does-it-cost'))
+  }
+})

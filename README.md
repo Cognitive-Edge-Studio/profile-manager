@@ -43,6 +43,8 @@ Browser comparisons and interaction evidence are recorded in `docs/slice3-browse
 
 ## Local setup
 
+For this already configured Windows checkout, double-click `Start Payload.cmd` to start the database and built application in the background and open the admin dashboard. Run it again after a PC restart. It reuses this project's running services and writes startup logs to the ignored `.local/` directory. It does not install a Windows service or start automatically at login. After source-code changes, rebuild with `npm run build` while the application server is stopped.
+
 Use a compatible Node runtime (`^22.23.4 || >=24.22.1`) for deployment. On Windows this project also installs its own optional Node 24.22.1 binary; the command launcher selects it automatically without changing the system Node installation. npm installation itself may show engine warnings if the system Node is older; the application commands use the local runtime.
 
 From this directory:

@@ -81,10 +81,13 @@ export function articleContents(body) {
   // Keep section hierarchy and useful steps, without listing deeper H4 detail.
   const level = Math.min(...headings.map(heading => heading.level))
   const contents = []
+  let faqSection = false
   for (const heading of headings.filter(heading => heading.level <= level + 1)) {
     const entry = { id: heading.id, title: heading.title, children: [] }
-    if (heading.level === level || !contents.length) contents.push(entry)
-    else contents[contents.length - 1].children.push(entry)
+    if (heading.level === level || !contents.length) {
+      contents.push(entry)
+      faqSection = /^(?:faqs?|frequently asked questions)(?:\s*[:—–-].*)?$/i.test(heading.title)
+    } else if (!faqSection) contents[contents.length - 1].children.push(entry)
   }
   return contents
 }

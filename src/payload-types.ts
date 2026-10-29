@@ -608,6 +608,9 @@ export interface Post {
   slug: string;
   excerpt: string;
   category: 'Planning an MVP' | 'Hiring a developer';
+  /**
+   * External website links in articles automatically use nofollow. Select a text link and edit Advanced link type to add sponsored or manually mark other links.
+   */
   body: {
     root: {
       type: string;

@@ -74,7 +74,9 @@ export function ArticleContents({ entries }: { entries: Entry[] }) {
   }
 
   if (!entries.length) return null
-  return <nav className="article-toc" aria-labelledby={`${id}-title`} data-enhanced={enhanced} data-open={open}>
+  return <nav className="article-toc" aria-labelledby={`${id}-title`} data-enhanced={enhanced} data-open={open} onKeyDown={event => {
+    if (event.key === 'Escape') { setOpen(false); event.currentTarget.querySelector<HTMLButtonElement>('button')?.focus() }
+  }}>
     <div className="article-toc__header">
       <div className="article-toc__title" id={`${id}-title`}><List size={18} aria-hidden="true" />Table of contents</div>
       <button className="article-toc__toggle" type="button" aria-controls={`${id}-links`} aria-expanded={open}

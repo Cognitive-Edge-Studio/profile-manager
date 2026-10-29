@@ -46,3 +46,26 @@
 .article-calculator-link p { font-size:12px;line-height:1.7;color:#777e88;margin-top:4px }
 .article-calculator-link .text-link { white-space:nowrap }
 @media(max-width:640px){.article-calculator-link{flex-wrap:wrap;padding:18px;gap:12px}.article-calculator-link>div{flex-basis:80%}.article-calculator-link .text-link{margin-left:35px}}
+
+/* The four template shortcuts form a small navigation panel within the article. */
+.article-template-nav { margin: 28px 0 36px; padding: 22px; border: 1px solid #dce5f4; border-radius: 16px; background: #f8faff; }
+.article-template-nav__title { display: flex; align-items: center; gap: 9px; color: #202124; font-size: 17px; font-weight: 600; line-height: 1.4; }
+.article-template-nav__title svg { flex-shrink: 0; color: #0b57d0; }
+.article-template-nav__groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 20px; }
+.journal-article-body .article-template-nav__label { margin: 0; color: #202124; font-size: 15px; font-weight: 600; line-height: 1.5; }
+.journal-article-body .article-template-nav__description { margin: 3px 0 12px; color: #5f6368; font-size: 13px; line-height: 1.5; }
+.journal-article-body .article-template-nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.journal-article-body .article-template-nav li { margin: 0; }
+.journal-article .journal-article-body .article-template-nav a { display: flex; justify-content: space-between; align-items: center; gap: 14px; min-height: 48px; padding: 11px 13px; border: 1px solid #dce5f4; border-radius: 9px; background: #fff; color: #0b57d0; font-size: 14px; font-weight: 500; line-height: 1.5; text-decoration: none; transition: border-color .15s, background .15s; }
+.article-template-nav a svg { flex-shrink: 0; }
+.journal-article .journal-article-body .article-template-nav a:hover { border-color: #a8c7fa; background: #edf3fe; }
+.journal-article .journal-article-body .article-template-nav a:focus-visible { outline: 2px solid #0b57d0; outline-offset: 3px; }
+@media (max-width: 560px) { .article-template-nav { padding: 18px; margin-block: 24px 32px; } .article-template-nav__groups { grid-template-columns: 1fr; gap: 20px; margin-top: 18px; } }
+@media (prefers-reduced-motion: reduce) { .journal-article .journal-article-body .article-template-nav a { transition: none; } }
+
+/* First-column labels remain readable before a mobile reader scrolls a table. */
+.journal-article .article-table:not(.pricing-table):not(.estimate-table) table { min-width: 560px; }
+.journal-article .article-table:not(.pricing-table):not(.estimate-table) th:first-child,
+.journal-article .article-table:not(.pricing-table):not(.estimate-table) td:first-child { width: 30%; min-width: 160px; }
+.journal-article .article-table th:first-child,
+.journal-article .article-table td:first-child { overflow-wrap: normal; word-break: normal; }

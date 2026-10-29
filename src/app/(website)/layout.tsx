@@ -3,6 +3,7 @@ import '@fontsource-variable/manrope'
 import '@/website/styles.css'
 import '@/website/styles/blog.css'
 import '@/website/styles/calculator.css'
+import '@/website/styles/article-design.css'
 export const metadata: Metadata = { title: 'Website', robots: { index: false, follow: false } }
 export const viewport = { themeColor: '#ffffff', width: 'device-width', initialScale: 1 }
 export const dynamic = 'force-dynamic'

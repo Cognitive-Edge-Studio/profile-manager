@@ -2,7 +2,8 @@ import { cache } from 'react'
 import { getPayload, type Payload } from 'payload'
 import { contentPath, isEditor, validateDestination, validateFragment } from '../domain/contracts.mjs'
 import type { Profile, ArticleSummary } from './types'
-import { anchorsFor } from '../domain/seo.mjs'
+import { anchorsFor, siteOrigin } from '../domain/seo.mjs'
+import { articleLinkRel } from '../domain/link-policy.mjs'
 
 export type SiteData = { pages: any[]; posts: any[]; services: any[]; projects: any[]; media: any[]; settings: any | null; preview: boolean; redirects?: any[] }
 const common = { title: true, id: true, slug: true, meta: true, actions: true, related: true, updatedAt: true, _status: true }
@@ -44,7 +45,7 @@ export function referenceDoc(site: SiteData, reference: any) {
   const list = ({ pages: site.pages, posts: site.posts, services: site.services, projects: site.projects } as Record<string, any[]>)[reference?.relationTo]
   return list?.find(item => String(item.id) === String(idOf(reference?.value)))
 }
-export function resolvedLink(site: SiteData, value: any) {
+export function resolvedLink(site: SiteData, value: any, { nofollowExternal = false } = {}) {
   if (!value) return undefined
   let href = value.url
   let target: any, collection: string | undefined
@@ -59,7 +60,8 @@ export function resolvedLink(site: SiteData, value: any) {
     if (validateFragment(value.fragment) !== true || (target && !anchorsFor(collection, target).has(value.fragment))) return undefined
     href = href.split('#')[0] + '#' + value.fragment
   }
-  const rel = [value.newTab ? 'noopener noreferrer' : '', ...(Array.isArray(value.rel) ? value.rel.filter((x: string) => ['nofollow', 'sponsored'].includes(x)) : []), ['nofollow', 'sponsored'].includes(value.relationship) ? value.relationship : ''].filter(Boolean).join(' ')
+  const selectedRel = [value.newTab ? 'noopener noreferrer' : '', ...(Array.isArray(value.rel) ? value.rel.filter((x: string) => ['nofollow', 'sponsored'].includes(x)) : []), ['nofollow', 'sponsored'].includes(value.relationship) ? value.relationship : ''].filter(Boolean).join(' ')
+  const rel = nofollowExternal ? articleLinkRel(href, selectedRel, siteOrigin()) : selectedRel
   return { href, label: String(value.label || ''), ...(value.newTab ? { target: '_blank' } : {}), ...(rel ? { rel } : {}) }
 }
 export function profileFor(site: SiteData): Profile {

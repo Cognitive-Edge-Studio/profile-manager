@@ -413,3 +413,9 @@ h3, h4 { letter-spacing: -.02em; }
 @media (prefers-reduced-motion: reduce) {
   .journal-card:hover, .related-blog-card:hover { transform: none; }
 }
+
+/* Primary header action on desktop and in the mobile menu. */
+.header-cta.button-primary,
+.mobile-nav .mobile-contact.button-primary{background:var(--accent);color:#fff}
+.header-cta.button-primary:hover,
+.mobile-nav .mobile-contact.button-primary:hover{background:#0842a0;color:#fff}
