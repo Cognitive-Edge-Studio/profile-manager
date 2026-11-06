@@ -69,7 +69,10 @@ function AboutSection({ site, page, section, index }: SectionContext) {
   return <section {...common} className="purpose-section container section-space"><Title section={section} index={index} /><Reveal className="purpose-copy"><RichText site={site} data={section.body} className="prose" /><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></Reveal></section>
 }
 export function About({ site, page }: Context) {
-  return <><section className="about-hero container"><Reveal><p className="breadcrumb"><Link to="/">Home</Link><span>/</span>{page.title}</p><Eyebrow>{page.eyebrow}</Eyebrow><Heading text={page.heading} /><RichText site={site} data={page.introduction} className="prose" /><div className="about-intro-actions"><span className="remote-line"><Globe2 size={14} />{site.settings?.remoteLabel}</span><Actions site={site} values={page.actions} /></div></Reveal><WorkspaceArt site={site} compact image={page.heroImage} /></section>{page.sections?.map((section: any, index: number) => <AboutSection key={section.id || index} {...{ site, page, section, index }} />)}</>
+  return <><section className="about-hero container"><Reveal><p className="breadcrumb"><Link to="/">Home</Link><span>/</span>{page.title}</p><Eyebrow>{page.eyebrow}</Eyebrow><Heading text={page.heading} /><RichText site={site} data={page.introduction} className="prose" /><div className="about-intro-actions">
+    <Actions site={site} values={page.actions} />
+    <span className="remote-line"><Globe2 size={14} />{site.settings?.remoteLabel}</span>
+  </div></Reveal><WorkspaceArt site={site} compact image={page.heroImage} /></section>{page.sections?.map((section: any, index: number) => <AboutSection key={section.id || index} {...{ site, page, section, index }} />)}</>
 }
 export function Contact({ site, page }: Context) {
   const profile = profileFor(site), intro = nodesOf(page.introduction), formSection = page.sections?.find((section: any) => section.template === 'contact'), bookingSection = page.sections?.find((section: any) => section.template === 'cta')

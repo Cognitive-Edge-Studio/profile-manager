@@ -195,6 +195,12 @@
   .website-root #about-brief .intro-copy { min-width: 0; }
 }
 
+@media (max-width: 560px) {
+  .website-root #about-brief.intro-section { row-gap: 16px; }
+  .website-root #about-brief .intro-heading > .hero-actions { margin-top: 12px; }
+  .website-root #about-brief .intro-heading .text-link { margin-top: 0; }
+}
+
 /* Reserve the same header space for anchor navigation and other sticky UI. */
 :root { --site-header-height: 96px; }
 html { scroll-padding-top: calc(var(--site-header-height) + 16px); }

@@ -3650,6 +3650,20 @@
         }
       },
       {
+        "id": "6ae0bcdb688d524530c0a489",
+        "label": "MVP Calculator",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 5
+        }
+      },
+      {
         "id": "6ae0bcdb688d524530c0a486",
         "label": "Selected Work",
         "kind": "internal",
@@ -3689,20 +3703,6 @@
         "page": {
           "relationTo": "pages",
           "value": 4
-        }
-      },
-      {
-        "id": "6ae0bcdb688d524530c0a489",
-        "label": "Contact",
-        "kind": "internal",
-        "url": null,
-        "fragment": null,
-        "newTab": false,
-        "requiredForPublishing": false,
-        "relationship": "normal",
-        "page": {
-          "relationTo": "pages",
-          "value": 3
         }
       }
     ],
@@ -3777,20 +3777,6 @@
         "page": {
           "relationTo": "pages",
           "value": 4
-        }
-      },
-      {
-        "id": "6ae0bcdb688d524530c0a48f",
-        "label": "Cost calculator",
-        "kind": "internal",
-        "url": null,
-        "fragment": null,
-        "newTab": false,
-        "requiredForPublishing": false,
-        "relationship": "normal",
-        "page": {
-          "relationTo": "pages",
-          "value": 5
         }
       },
       {

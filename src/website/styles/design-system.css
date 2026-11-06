@@ -162,7 +162,8 @@ h3, h4 { letter-spacing: -.02em; }
 .breadcrumb span { color: #9aa0a6; }
 .about-hero { padding-block: 48px 96px; }
 .about-hero h1, .contact-intro h1 { font-size: clamp(48px, 5vw, 72px); letter-spacing: -.04em; }
-.about-intro-actions { flex-wrap: wrap; }
+.about-intro-actions { flex-flow: row wrap; align-items: center; row-gap: 12px; }
+.about-intro-actions > .hero-actions { flex-wrap: wrap; margin: 0; }
 .about-intro-actions .button { font-size: 14px; min-height: 48px; }
 .experience-margin { color: var(--accent); }
 .experience-margin > span { color: #a8c7fa; }
