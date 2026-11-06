@@ -69,7 +69,8 @@ export function RichText({ data, site, className, inline = false, anchors = fals
     }
     if (node.type === 'tablerow') return <tr key={i}>{children}</tr>
     if (node.type === 'tablecell') { const Tag = Number(node.headerState) ? 'th' : 'td'; return <Tag key={i} colSpan={node.colSpan > 1 ? node.colSpan : undefined} rowSpan={node.rowSpan > 1 ? node.rowSpan : undefined}>{children}</Tag> }
-    if (node.type === 'upload') return <CMSImage key={i} site={site} value={node.value} />
+    if (node.type === 'code') return <pre key={i}><code>{node.text}</code></pre>
+    if (node.type === 'upload') return <CMSImage key={i} site={site} value={node.value} alt={node.alt} />
     return <Fragment key={i}>{children}</Fragment>
   }
   const nodes = nodesOf(data)

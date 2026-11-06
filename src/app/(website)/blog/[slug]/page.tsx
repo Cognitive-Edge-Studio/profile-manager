@@ -4,7 +4,11 @@ import { getSite } from '@/website/content'
 import { WebsiteShell } from '@/website/shell'
 import { pageMetadata, StructuredData } from '@/website/seo'
 type Props = { params: Promise<{ slug: string }> }
-export const dynamic = 'force-dynamic'
+export const dynamicParams = false
+export async function generateStaticParams() {
+  const site = await getSite()
+  return site.posts.map(article => ({ slug: article.slug }))
+}
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params, site = await getSite()
   const article = site.posts.find(item => item.slug === slug)

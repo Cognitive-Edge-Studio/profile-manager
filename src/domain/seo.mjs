@@ -1,14 +1,14 @@
 import { contentPath, slugify, validateDestination } from './contracts.mjs'
 
 export function siteOrigin(env = process.env) {
-  const value = env.SITE_URL || env.CMS_SERVER_URL || env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
+  const value = env.SITE_URL || 'http://localhost:3000'
   const url = new URL(value)
   if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.pathname !== '/' || url.search || url.hash) throw new Error('SITE_URL must be an http(s) origin without a path, credentials, query, or fragment.')
-  if (env.CMS_ENV === 'production' && (!env.SITE_URL || url.protocol !== 'https:' || ['localhost', '127.0.0.1'].includes(url.hostname))) throw new Error('Production requires an explicit HTTPS SITE_URL.')
+  if (deploymentIndexing(env) && (!env.SITE_URL || url.protocol !== 'https:' || ['localhost', '127.0.0.1'].includes(url.hostname))) throw new Error('Indexing requires a public HTTPS SITE_URL.')
   return url.origin
 }
-export const deploymentIndexing = (env = process.env) => env.CMS_ENV === 'production' && env.PUBLIC_INDEXING_ENABLED === 'true'
-export function robotsData(env = process.env) { return deploymentIndexing(env) ? { rules: { userAgent: '*', allow: '/', disallow: ['/admin/', '/api/', '/preview'] }, sitemap: siteOrigin(env) + '/sitemap.xml' } : { rules: { userAgent: '*', disallow: '/' } } }
+export const deploymentIndexing = (env = process.env) => (env.VERCEL_ENV || env.NODE_ENV) === 'production' && env.PUBLIC_INDEXING_ENABLED === 'true'
+export function robotsData(env = process.env) { return deploymentIndexing(env) ? { rules: { userAgent: '*', allow: '/' }, sitemap: siteOrigin(env) + '/sitemap.xml' } : { rules: { userAgent: '*', disallow: '/' } } }
 export const plainText = node => typeof node?.text === 'string' ? node.text : (node?.root?.children || node?.children || []).map(plainText).join(' ')
 export const identifier = value => typeof value === 'object' ? value?.id : value
 export const sameID = (a, b) => String(identifier(a)) === String(identifier(b))
@@ -28,7 +28,7 @@ export function effectiveSEO(site, collection, doc, { filtered = false, env = pr
   const canonical = own.canonicalURL || (collection === 'pages' && doc?.pageKey === 'home' ? defaults.canonicalURL : undefined) || normal
   const title = own.title || (collection === 'pages' && doc?.pageKey === 'home' ? defaults.title : undefined) || doc?.heading || doc?.title || defaults.title || settings.name || 'Website'
   const description = own.description || defaults.description || undefined
-  const imageID = own.image || defaults.image
+  const imageID = own.image || doc?.heroImage || defaults.image || settings.portrait || settings.avatar
   const image = site.media?.find(item => sameID(item.id, imageID))
   const social = image?.social || image
   const images = social?.url ? [{ url: new URL(social.url, origin).href, width: social.width || undefined, height: social.height || undefined, alt: image.decorative ? '' : image.alt || '' }] : []

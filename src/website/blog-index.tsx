@@ -1,24 +1,27 @@
 'use client'
 // Ported from the existing site; approved copy is unchanged.
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
 import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Calculator, Check, Clock3, Search, X } from 'lucide-react'
-import { Link, Reveal as Enter, useWebsiteRuntime } from './runtime'
+import { Link, Reveal as Enter } from './runtime'
 import { Button } from './components/ui/button'
 import { ArticleArt } from './components/article-art'
 import { Meta } from './article-meta'
 import type { ArticleSummary, Profile } from './types'
-const topics = ['All articles', 'Planning an MVP', 'Hiring a developer', 'AI integration']
+function BlogQuery({ onChange }: { onChange: (query: string) => void }) {
+  const query = useSearchParams().toString()
+  useEffect(() => onChange(query), [onChange, query])
+  return null
+}
 export function Blog({ articles, profile, contactTitle, contactBody, heading, eyebrow, introduction, contactActions, avatar, preview }: { articles: ArticleSummary[]; profile: Profile; contactTitle: string; contactBody: React.ReactNode; heading: string; eyebrow?: string; introduction?: React.ReactNode; contactActions?: React.ReactNode; avatar?: string; preview?: boolean }) {
-  const params = useSearchParams()
-  const { routeMap } = useWebsiteRuntime()
-  function setParams(next: URLSearchParams | Record<string, string>, _options?: unknown) {
-    const updated = new URLSearchParams(next)
-    const preview = routeMap['/blog']
-    if (preview) { const fixed = new URLSearchParams(preview.split('?')[1]); fixed.forEach((value, key) => updated.set(key, value)) }
-    const query = updated.toString()
-    window.history.replaceState(null, '', (routeMap['/blog'] ? '/preview' : '/blog/') + (query ? '?' + query : ''))
+  const topics = ['All articles', ...new Set(articles.map(article => article.category))]
+  const [searchQuery, setSearchQuery] = useState('')
+  const params = new URLSearchParams(searchQuery)
+  function setParams(next: URLSearchParams | Record<string, string>) {
+    const query = new URLSearchParams(next).toString()
+    setSearchQuery(query)
+    window.history.replaceState(null, '', '/blog/' + (query ? '?' + query : ''))
   }
   const query = params.get('q') || ''
   const topic = topics.includes(params.get('topic') || '') ? params.get('topic')! : topics[0]
@@ -28,12 +31,13 @@ export function Blog({ articles, profile, contactTitle, contactBody, heading, ey
     const next = new URLSearchParams(params)
     if (!value || value === topics[0]) next.delete(key)
     else next.set(key, value)
-    setParams(next, { replace: true, preventScrollReset: true })
+    setParams(next)
   }
   const visible = articles.filter(article => (topic === topics[0] || topic === article.category) && `${article.title} ${article.excerpt} ${article.category}`.toLowerCase().includes(query.toLowerCase().trim()))
   const featured = articles.find(article => article.kind === 'build') || articles[0]
   const browsing = Boolean(query || topic !== topics[0])
   return <div className="journal-page">
+    <Suspense fallback={null}><BlogQuery onChange={setSearchQuery} /></Suspense>
     <section className="journal-intro container">
       <p className="breadcrumb"><Link to="/">Home</Link><span>/</span>Blog</p>
       <Enter className="journal-intro-grid"><div><p className="eyebrow"><span className="journal-dash" />{eyebrow}</p><h1>{heading}</h1>{introduction}</div><div className="journal-intro-aside"><Link to="/about/" className="journal-author">{avatar && <Image unoptimized={preview} sizes="36px" src={avatar} alt="" width={36} height={36} />}<span>{profile.name}<small>{profile.role}</small></span><ArrowUpRight size={16} /></Link></div></Enter>

@@ -1,0 +1,3825 @@
+{
+  "pages": [
+    {
+      "id": 5,
+      "title": "MVP cost calculator",
+      "pageKey": "calculator",
+      "heading": "MVP cost calculator",
+      "eyebrow": "A little help with your next idea",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Describe what you want to build and add the costs you know. See your budget, try a smaller version, and find out what you still need to check.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "tools": [],
+      "heroImage": null,
+      "sections": [],
+      "actions": [],
+      "related": [],
+      "meta": {
+        "title": "MVP Cost Calculator | First-Release Budget | Shibly Noman",
+        "description": "Plan your first MVP, compare build costs, and add running costs using your own figures. See what’s included and what you still need to check.",
+        "image": null,
+        "socialTitle": null,
+        "socialDescription": null,
+        "hideFromSearch": false,
+        "canonicalURL": null,
+        "structuredData": true
+      },
+      "updatedAt": "2026-10-27T15:02:42.821Z"
+    },
+    {
+      "id": 4,
+      "title": "Blog",
+      "pageKey": "blog",
+      "heading": "Blog",
+      "eyebrow": "The journal",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "tools": [],
+      "heroImage": null,
+      "sections": [
+        {
+          "id": "6ae0bcd8688d524530c0a47b",
+          "template": "copy",
+          "eyebrow": null,
+          "sectionId": "article-contact",
+          "heading": "Hire Shibly as your developer",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Work directly with Shibly to turn your idea into useful software or improve a product you already have.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": [
+            {
+              "id": "6ae0bcdb688d524530c0a483",
+              "label": "Contact me",
+              "kind": "internal",
+              "url": null,
+              "fragment": null,
+              "newTab": false,
+              "requiredForPublishing": false,
+              "relationship": "normal",
+              "page": {
+                "relationTo": "pages",
+                "value": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a47c",
+          "template": "cta",
+          "eyebrow": null,
+          "sectionId": "budget-tool",
+          "heading": "Plan your first-release budget",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Organize your scope, supplied estimates, and running costs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": [
+            {
+              "id": "6ae0bcdb688d524530c0a484",
+              "label": "Open calculator",
+              "kind": "internal",
+              "url": null,
+              "fragment": null,
+              "newTab": false,
+              "requiredForPublishing": false,
+              "relationship": "normal",
+              "page": {
+                "relationTo": "pages",
+                "value": 5
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [],
+      "related": [],
+      "meta": {
+        "title": "Blog | Shibly Noman — Software & MVP Guides",
+        "description": "Practical guides from Shibly Noman on hiring a developer, planning an MVP, prioritizing features, and understanding development costs.",
+        "image": null,
+        "socialTitle": null,
+        "socialDescription": null,
+        "hideFromSearch": false,
+        "canonicalURL": null,
+        "structuredData": true
+      },
+      "updatedAt": "2026-10-27T15:02:42.918Z"
+    },
+    {
+      "id": 3,
+      "title": "Contact",
+      "pageKey": "contact",
+      "heading": "Contact me",
+      "eyebrow": "Let's talk",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Tell me what you have in mind.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "I'd like to hear what you're working on and where you need help. You can bring a new idea, an existing application, or a problem your team wants to solve. Describe it in your own words, and we can work through the technical questions together.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "tools": [],
+      "heroImage": null,
+      "sections": [
+        {
+          "id": "6ae0bcd8688d524530c0a479",
+          "template": "copy",
+          "eyebrow": "The next step",
+          "sectionId": "next-steps",
+          "heading": "What happens next",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I'll read your message and reply with any questions, or suggest a conversation to understand the work better. If I can help, I'll outline the proposed scope, estimated timeline, and pricing for you to review before development begins. If an assessment or prototype is needed first, we'll agree on that separately.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a47a",
+          "template": "contact",
+          "eyebrow": "Project inquiry",
+          "sectionId": "inquiry",
+          "heading": "Send me a message",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        }
+      ],
+      "actions": [],
+      "related": [],
+      "meta": {
+        "title": "Contact Shibly Mohammad Noman | Software Engineer",
+        "description": "Discuss a new idea, an existing application, or a problem your team wants to solve with Shibly Mohammad Noman.",
+        "image": null,
+        "socialTitle": null,
+        "socialDescription": null,
+        "hideFromSearch": false,
+        "canonicalURL": null,
+        "structuredData": true
+      },
+      "updatedAt": "2026-10-27T15:02:43.014Z"
+    },
+    {
+      "id": 2,
+      "title": "About Me",
+      "pageKey": "about",
+      "heading": "Hi, I'm Shibly",
+      "eyebrow": "About Me",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "If your Google search for a software developer in Bangladesh has taken you through company websites, directories, and lists, you may still be looking for an individual engineer you can hire directly. I made this website to help you get to know the person behind the work.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "That's the working relationship I offer. I'm Shibly Mohammad Noman, an independent software engineer based in Bangladesh. I build applications and AI systems, and you can explore my experience here before talking to me about your project.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "tools": [],
+      "heroImage": null,
+      "sections": [
+        {
+          "id": "6ae0bcd8688d524530c0a474",
+          "template": "purpose",
+          "eyebrow": "A person behind the work",
+          "sectionId": "purpose",
+          "heading": "Why this website exists",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Sometimes you need software built. Sometimes you need someone to make sense of what you already have. These are a few situations where an engineer can help:",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "ul",
+                  "type": "list",
+                  "start": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "You have a product idea and people willing to test it, but no developer. You need help defining and building a first version within your budget.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 2,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "You've paid for an application, but key features still fail. You need someone to review what exists and work out what can be fixed.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 3,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Your business depends on software maintained by one person, and you can't justify a full-time hire. You need another engineer to get familiar with it and help with agreed work.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 4,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "Your team wants automated reports or answers drawn from company documents. You need those AI tools connected to your data and reliable enough for everyday work.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "listitem",
+                      "value": 5,
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "You miss customer calls while working or meeting clients, and follow-ups slip. You want to explore an AI voice agent that captures enquiries and knows when to hand the call to a person.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": null
+                    }
+                  ],
+                  "listType": "bullet",
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I made this site so you can match that need with my services, check the work behind them, and ask whether I can help.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a475",
+          "template": "technology",
+          "eyebrow": "Background",
+          "sectionId": "experience",
+          "heading": "The experience I bring",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Most recently, I worked on AI features through Ontik Technology, assigned to Akij Venture Group. I built a way for business users to query an existing financial database in everyday language and developed a retrieval-augmented generation (RAG) prototype for domain-specific questions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Before that, at Vivasoft Limited, assigned to Azerion, I developed and maintained AdTech services, event-processing pipelines, and backend APIs. Earlier, at Gakk Media Limited, I worked on media and gaming applications, media delivery, and subscription integrations.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "My earlier role as a Technical Support Engineer at HealthOS brought me into pharmacies, diagnostic centres, and hospitals. I integrated clinical software and hardware, trained staff, and handled troubleshooting and maintenance. Working with technical, business, and marketing teams, I helped improve data-entry accuracy, reporting flow, and day-to-day operations.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Alongside that professional experience, my work includes Jonomot for a client and Eudora, the learning platform I built myself.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Technologies I've worked with",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "You don't need to choose a framework before we talk. I've used these technologies to build and maintain applications, backend APIs, data pipelines, and AI features. I can work across the product and its supporting systems, and explain which tools fit your requirements.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "table",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Area ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 1,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Technologies and tools ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 1,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Core development ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Python, Django, FastAPI, TypeScript, Node.js, React, Next.js ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Additional production experience ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Go (Golang), Vue.js, Angular, NestJS, Remix, React Native ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Databases, storage & data access ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " PostgreSQL, pgvector, Supabase, MongoDB, Redis, Elasticsearch, TypeORM, Prisma ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Messaging & queues ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " RabbitMQ, Kafka ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " AI & LLM tooling ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " LangChain, LangGraph, Hugging Face ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Cloud, infrastructure & tools ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " AWS, Google Cloud Platform (GCP), Terraform, Firebase, Atlassian Suite ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Version control & CI/CD ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Git, GitHub Actions, GitLab CI, Bamboo, TeamCity, Jenkins ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Containers & orchestration ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " Docker, Kubernetes ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    },
+                    {
+                      "type": "tablerow",
+                      "format": "",
+                      "indent": 0,
+                      "version": 1,
+                      "children": [
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " UI & visualization ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        },
+                        {
+                          "type": "tablecell",
+                          "format": "",
+                          "indent": 0,
+                          "colSpan": 1,
+                          "rowSpan": 1,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": " CSS, SCSS, Tailwind CSS, shadcn/ui, Ant Design (Antd), Storybook, Framer Motion, D3.js, charts, DAG visualization ",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": null,
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": null,
+                          "headerState": 0,
+                          "backgroundColor": null
+                        }
+                      ],
+                      "direction": null
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Explore my work",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 1
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": [
+            {
+              "id": "6ae0bcdb688d524530c0a480",
+              "label": "Explore my work",
+              "kind": "internal",
+              "url": null,
+              "fragment": "selected-work",
+              "newTab": false,
+              "requiredForPublishing": false,
+              "relationship": "normal",
+              "page": {
+                "relationTo": "pages",
+                "value": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a476",
+          "template": "benefits",
+          "eyebrow": "Working together",
+          "sectionId": "benefits",
+          "heading": "What that means for your project",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Choosing an engineer also means choosing someone to help you navigate costs, unfamiliar terms, and decisions that affect your product. Here are three ways I put my experience to work for you.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Lower costs",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I'll compare technologies and tools by what they cost to build with, maintain, and use. That includes development effort, hosting, storage, and AI or API usage. I'll look for options that meet your needs without paying for unnecessary complexity, and explain the tradeoffs. The aim is to keep costs manageable for you and the people using your product.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Technical terms explained",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "You shouldn't have to learn a developer's vocabulary just to make a decision about your own product. When I mention an API, hosting, or an AI model, I'll explain what it does in your project and what it means for the people using it. You can ask questions, understand the choices, and tell me when something doesn't fit your needs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Decisions explained",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "A recommendation should come with a reason. I'll explain why a particular approach fits your project, what the alternatives would change, and where the compromises are. We'll consider your timeline, budget, existing software, and future plans. That gives you a basis for agreeing to the work and understanding what a change in direction would involve.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a477",
+          "template": "interests",
+          "eyebrow": "Looking ahead",
+          "sectionId": "interests",
+          "heading": "Where I'd like to take my engineering work",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I dream of working in these fields and helping turn ambitious ideas into products people can use. If you're building something in one of them and need a software engineer to lend a hand, I'd love to connect. I'd bring the experience I have, learn what the work demands, and care about its progress as part of the future I want to build too.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Electrical systems",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Vehicle battery management systems",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Mobility and logistics",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "VLSI design",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Microprocessors",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a478",
+          "template": "cta",
+          "eyebrow": "A conversation",
+          "sectionId": "lets-talk",
+          "heading": "Let's talk",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Have a software project or an engineering opportunity in mind? Tell me what you're working on, and we can explore whether we're a good fit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": [
+            {
+              "id": "6ae0bcdb688d524530c0a481",
+              "label": "Discuss your project",
+              "kind": "internal",
+              "url": null,
+              "fragment": null,
+              "newTab": false,
+              "requiredForPublishing": false,
+              "relationship": "normal",
+              "page": {
+                "relationTo": "pages",
+                "value": 3
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "6ae0bcdb688d524530c0a482",
+          "label": "Contact me",
+          "kind": "internal",
+          "url": null,
+          "fragment": null,
+          "newTab": false,
+          "requiredForPublishing": false,
+          "relationship": "normal",
+          "page": {
+            "relationTo": "pages",
+            "value": 3
+          }
+        }
+      ],
+      "related": [],
+      "meta": {
+        "title": "About Shibly Mohammad Noman | Software Engineer",
+        "description": "Meet Shibly Mohammad Noman, an independent software engineer based in Bangladesh building applications and AI systems.",
+        "image": null,
+        "socialTitle": null,
+        "socialDescription": null,
+        "hideFromSearch": false,
+        "canonicalURL": null,
+        "structuredData": true
+      },
+      "updatedAt": "2026-10-27T15:02:43.090Z"
+    },
+    {
+      "id": 1,
+      "title": "Home",
+      "pageKey": "home",
+      "heading": "I'm a freelance full-stack developer building web applications and AI systems",
+      "eyebrow": "Freelance full-stack developer",
+      "introduction": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "I'm Shibly, an independent software engineer based in Bangladesh. Hire me to build a new product or improve the software you already have. You'll work with me directly from the first conversation through launch.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "tools": [
+        {
+          "id": "6ae0bcd8688d524530c0a45f",
+          "name": "Python"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a460",
+          "name": "TypeScript"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a461",
+          "name": "React"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a462",
+          "name": "Next.js"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a463",
+          "name": "Django"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a464",
+          "name": "FastAPI"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a465",
+          "name": "Node.js"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a466",
+          "name": "LangChain"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a467",
+          "name": "LangGraph"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a468",
+          "name": "PostgreSQL"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a469",
+          "name": "Redis"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a46a",
+          "name": "AWS"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a46b",
+          "name": "GCP"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a46c",
+          "name": "Docker"
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a46d",
+          "name": "Kubernetes"
+        }
+      ],
+      "heroImage": 2,
+      "sections": [
+        {
+          "id": "6ae0bcd8688d524530c0a46e",
+          "template": "copy",
+          "eyebrow": "About Me",
+          "sectionId": "about-brief",
+          "heading": "I help you understand what's worth building next",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I'm a freelance full-stack developer with over five years of experience across business software, advertising, media, and AI. In previous roles, I've improved application speed, connected subscription payments, and built a way for business users to ask questions about financial data in everyday language. I also built Eudora, my own AI learning platform.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "My full-stack development work covers the screens your customers use, the systems that manage their data, and the services the application needs to connect to. You can hire me as your freelance software engineer for planning, development, testing, and launch.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "For AI work, I offer LLM integration to add language features such as summaries to your product. I can build RAG systems that use your company documents to support answers. AI agent development can connect your business tools to carry out agreed tasks, with your review where needed.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "As a freelance software developer, I can help founders, startups, and established businesses with a website, a new application, or improvements to existing software. I'll explain the options and likely costs in plain language, so you can decide what makes sense for your business.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": [
+            {
+              "id": "6ae0bcdb688d524530c0a47d",
+              "label": "More about me",
+              "kind": "internal",
+              "url": null,
+              "fragment": null,
+              "newTab": false,
+              "requiredForPublishing": false,
+              "relationship": "normal",
+              "page": {
+                "relationTo": "pages",
+                "value": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a46f",
+          "template": "services",
+          "eyebrow": "My services",
+          "sectionId": "services",
+          "heading": "What can I help you build?",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Choose the support you need from a freelance full-stack developer, whether it's for a complete application, a specific feature, or a technical problem.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "AI Systems & Integration",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "AI Integration Services",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Add document search, summaries, or natural-language queries to your existing product, with AI models connected to your application, data, and APIs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "AI Workflow Automation",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "When a task repeats across several tools, an AI workflow can handle the routine steps. Move information between systems, process incoming data, and keep human review where decisions need your input.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "AI Agent Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "For tasks that need more than an answer, an AI agent can use your data and APIs to take agreed actions. Define what it should handle, which tools it can use, and when it needs your approval.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Application Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Web Application Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "A customer portal can let people manage requests without email back-and-forth. An internal application can give your team a place to track tasks, review information, and handle approvals.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Mobile App Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Your customers should be able to use your service comfortably on their phones. App screens, backend connections, and API integrations are developed around the features and tasks they need on mobile.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "TV App Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "On a television, readable screens and navigation that works with a remote matter. Connect your content, accounts, and backend services in an app designed for the way people use a TV.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "SaaS Development",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Support your SaaS customers with accounts, permissions, and workflows built around how they use the product. Give your team the tools to manage users and run the service.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Infrastructure & Operations",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "DevOps Services",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Set up your application's cloud environment and release pipeline. Monitoring and deployment checks help you understand service health and release updates through a repeatable process.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h4",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "MLOps Services",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Operate the models or AI services behind a production feature. Track response times, failures, and usage, and manage configuration and version updates around the application that depends on them.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a470",
+          "template": "projects",
+          "eyebrow": "Case Studies",
+          "sectionId": "selected-work",
+          "heading": "Selected work",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "A few project mentions across learning, advertising, business software, and streaming. They include personal work and work from previous employment.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a471",
+          "template": "process",
+          "eyebrow": "Collaboration Process",
+          "sectionId": "process",
+          "heading": "How I will Work as Your Full-stack Developer",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Each stage ends with a decision or a piece of work you can review.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "1 Tell me where you're starting",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Share the problem you want to solve, who the software is for, and what you already have. I'll ask about your priorities, budget, and preferred timeline so we can decide whether the project fits my skills and availability.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "2 We'll agree on the work and how it fits together",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "You'll receive an outline of the work, what's included, the estimated timeline, and pricing. I'll explain what I need from you. If important questions remain, we'll agree on a paid assessment or small prototype before committing to the build.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "3 I'll build it in stages, with you involved",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I'll show you progress at agreed review points and send a short weekly update. You can try the work and share feedback as it develops. If you want to add a feature, we'll agree on any changes to the cost and timeline before it joins the plan.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "4 We'll check it, launch it, and hand it over",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "I'll test the agreed features and give you time to review them before launch. For AI work, we'll check examples from its intended use. I'll handle the agreed deployment and hand over the code, documentation, and access included in our agreement.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Maintenance is a service, not a leash.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " If you'd like me to look after the software after launch, we can agree on support separately. You can also arrange a handover to your own team or another developer.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 1
+                }
+              ],
+              "direction": null
+            }
+          },
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a472",
+          "template": "faqs",
+          "eyebrow": "FAQs",
+          "sectionId": "faqs",
+          "heading": "Have Questions?",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "A few practical questions about full-stack development, project fit, estimates, ownership, and ongoing costs. The details will depend on the work you're bringing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "What is a full stack developer?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "A full stack developer builds the screens people use and the logic and data behind them. Specialists focus on one area. Look for relevant projects, API skills, testing, deployment experience, and clear explanations. Handling connected changes together can reduce handoffs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "How much will my project cost, and how long will it take?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Cost and timing depend on the features, integrations, existing code, technical unknowns, and review cycles. I'll assess the work and provide an estimated schedule and scoped price before development begins.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Can you improve software I already have?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Yes, subject to reviewing it first. I'll look at the relevant code, setup, and requirements to understand what can be kept and what needs changing. That review helps us choose between an improvement, an integration, or a rebuild.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Can one developer handle my project?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "That depends on its size, deadline, and specialist requirements. I take on work I can deliver within my available capacity. If your project needs a larger team, I'll tell you before we commit or suggest a smaller first phase.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Who owns the code, and which accounts will I need?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We'll record ownership, access, and handover arrangements in the project agreement. I'll identify the hosting and service accounts needed, including any third-party tools or licences, so you understand what belongs to you and what you pay for.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "What costs should I expect after the build?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Depending on the project, you may need to pay for hosting, domains, email, storage, or AI and other API usage. These are separate from development. I'll identify the likely services and their charging models when we plan the system.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "tag": "h3",
+                  "type": "heading",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "How will we know an AI feature works well enough?",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "We'll agree on representative tasks, expected behaviour, and acceptable limits before evaluating it. That can include answer quality, task completion, response time, and usage cost. The checks will reflect how people are actually meant to use it.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        },
+        {
+          "id": "6ae0bcd8688d524530c0a473",
+          "template": "contact",
+          "eyebrow": "Contact Me",
+          "sectionId": "lets-talk",
+          "heading": "Hire a freelance software developer for your project",
+          "body": {
+            "root": {
+              "type": "root",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "You don't need a technical brief to get in touch. Describe the problem in your own words and what you'd like to achieve, even if you're still deciding what the solution should be.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 0
+                },
+                {
+                  "type": "paragraph",
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "What happens next:",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 1,
+                      "version": 1
+                    },
+                    {
+                      "mode": "normal",
+                      "text": " I'll read your message and follow up with questions or suggest a conversation to see whether the project is a good fit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null,
+                  "textStyle": "",
+                  "textFormat": 1
+                }
+              ],
+              "direction": null
+            }
+          },
+          "note": null,
+          "image": null,
+          "imageAlt": null,
+          "actions": []
+        }
+      ],
+      "actions": [
+        {
+          "id": "6ae0bcdb688d524530c0a47e",
+          "label": "Discuss your project",
+          "kind": "internal",
+          "url": null,
+          "fragment": null,
+          "newTab": false,
+          "requiredForPublishing": false,
+          "relationship": "normal",
+          "page": {
+            "relationTo": "pages",
+            "value": 3
+          }
+        },
+        {
+          "id": "6ae0bcdb688d524530c0a47f",
+          "label": "Explore my work",
+          "kind": "internal",
+          "url": null,
+          "fragment": "selected-work",
+          "newTab": false,
+          "requiredForPublishing": false,
+          "relationship": "normal",
+          "page": {
+            "relationTo": "pages",
+            "value": 1
+          }
+        }
+      ],
+      "related": [],
+      "meta": {
+        "title": "Freelance Full-Stack Developer | Shibly Mohammad Noman",
+        "description": "Work directly with Shibly, a freelance full-stack developer, to build web applications, integrate AI, or improve existing software.",
+        "image": null,
+        "socialTitle": null,
+        "socialDescription": null,
+        "hideFromSearch": false,
+        "canonicalURL": null,
+        "structuredData": true
+      },
+      "updatedAt": "2026-10-27T15:02:43.235Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": 4,
+      "title": "Media & streaming",
+      "slug": "media-streaming",
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Work at a previous employer",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Shadhin Music",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                },
+                {
+                  "mode": "normal",
+                  "text": ": streaming and media platform.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "verifiedURL": null,
+      "displayOrder": 3,
+      "updatedAt": "2026-10-27T15:02:43.831Z"
+    },
+    {
+      "id": 3,
+      "title": "SaaS",
+      "slug": "saas",
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Work at previous employers:",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                },
+                {
+                  "mode": "normal",
+                  "text": " Fintech: Payroll and Omni Subscription for the Bangladesh market.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Client project:",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                },
+                {
+                  "mode": "normal",
+                  "text": " Jonomot: a survey platform.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "verifiedURL": null,
+      "displayOrder": 2,
+      "updatedAt": "2026-10-27T15:02:43.885Z"
+    },
+    {
+      "id": 2,
+      "title": "Adtech",
+      "slug": "adtech",
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Work at a previous employer",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Data Pipeline · Tracking Platform · Data Warehouse · Data Crawler · Pixel Server: a pixel tracking server",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "verifiedURL": null,
+      "displayOrder": 1,
+      "updatedAt": "2026-10-27T15:02:43.937Z"
+    },
+    {
+      "id": 1,
+      "title": "Eudora · Edutech",
+      "slug": "eudora-edutech",
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Personal project",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 1,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 1
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "AI-assisted learning platform · AI-assisted tutor persona",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": null
+        }
+      },
+      "image": null,
+      "verifiedURL": null,
+      "displayOrder": 0,
+      "updatedAt": "2026-10-27T15:02:43.989Z"
+    }
+  ],
+  "services": [],
+  "media": [
+    {
+      "id": 3,
+      "url": "/images/developer-workspace.png",
+      "alt": "Custom pen-and-ink illustration of a software engineering workspace with a laptop, code, and system sketches.",
+      "caption": null,
+      "decorative": false,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": 2,
+      "url": "/images/shibly-noman-full-stack-developer.jpg",
+      "alt": "Shibly Mohammad Noman",
+      "caption": null,
+      "decorative": false,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": 1,
+      "url": "/images/shibly-noman-avatar.jpg",
+      "alt": "Shibly Mohammad Noman",
+      "caption": null,
+      "decorative": false,
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "id": "data-paths-for-an-llm-feature.webp",
+      "url": "/images/blog/data-paths-for-an-llm-feature.webp",
+      "alt": "Three data paths: selected request notes, retrieved document passages, and current records read through application logic.",
+      "caption": "Use the data path the task requires. Apply existing access rules before sending information to the model.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "handling-llm-responses-and-failures.webp",
+      "url": "/images/blog/handling-llm-responses-and-failures.webp",
+      "alt": "A model request branches into a draft for review, an invalid response, or a timeout or failure, with manual alternatives.",
+      "caption": "A returned draft still needs review. Failures should leave the original request and manual workflow available.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-the-model-connects-to-your-application.webp",
+      "url": "/images/blog/how-the-model-connects-to-your-application.webp",
+      "alt": "A coordinator sends a request through the existing application to an LLM; the draft returns through the application for review.",
+      "caption": "The application controls access, prepares model input and checks the response before the coordinator reviews the draft.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-to-integrate-llm-into-your-existing-software-featured.jpg",
+      "url": "/images/blog/how-to-integrate-llm-into-your-existing-software-featured.jpg",
+      "alt": "A coordinator typing on a laptop positioned directly in front of her, using an existing application connected to an LLM service.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    }
+  ],
+  "settings": {
+    "name": "Shibly Mohammad Noman",
+    "role": "Freelance full-stack developer",
+    "email": "shibly.work@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/shibly-mohammad/",
+    "github": "https://github.com/Shibly-Noman",
+    "calendly": "https://calendly.com/shiblynoman/talk-to-shibly",
+    "portrait": 2,
+    "avatar": 1,
+    "workspaceImage": 3,
+    "remoteLabel": "Fully remote, anywhere.",
+    "portraitCaption": "Independent software engineer",
+    "headerLinks": [
+      {
+        "id": "6ae0bcdb688d524530c0a485",
+        "label": "Services",
+        "kind": "internal",
+        "url": null,
+        "fragment": "services",
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 1
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a486",
+        "label": "Selected Work",
+        "kind": "internal",
+        "url": null,
+        "fragment": "selected-work",
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 1
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a487",
+        "label": "About Me",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 2
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a488",
+        "label": "Blog",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 4
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a489",
+        "label": "Contact",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 3
+        }
+      }
+    ],
+    "headerAction": [
+      {
+        "id": "6ae0bcdb688d524530c0a48a",
+        "label": "Discuss your project",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 3
+        }
+      }
+    ],
+    "footerLinks": [
+      {
+        "id": "6ae0bcdb688d524530c0a48b",
+        "label": "Services",
+        "kind": "internal",
+        "url": null,
+        "fragment": "services",
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 1
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a48c",
+        "label": "Selected Work",
+        "kind": "internal",
+        "url": null,
+        "fragment": "selected-work",
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 1
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a48d",
+        "label": "About Me",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 2
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a48e",
+        "label": "Blog",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 4
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a48f",
+        "label": "Cost calculator",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 5
+        }
+      },
+      {
+        "id": "6ae0bcdb688d524530c0a490",
+        "label": "Contact",
+        "kind": "internal",
+        "url": null,
+        "fragment": null,
+        "newTab": false,
+        "requiredForPublishing": false,
+        "relationship": "normal",
+        "page": {
+          "relationTo": "pages",
+          "value": 3
+        }
+      }
+    ],
+    "footerText": null,
+    "meta": {
+      "title": null,
+      "description": null,
+      "image": null,
+      "socialTitle": null,
+      "socialDescription": null,
+      "hideFromSearch": false,
+      "canonicalURL": null,
+      "structuredData": true
+    },
+    "updatedAt": "2026-10-27T15:02:44.100Z"
+  },
+  "redirects": []
+}

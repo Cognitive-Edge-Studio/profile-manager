@@ -3,7 +3,7 @@ import test from 'node:test'
 import { canonicalValidation, effectiveSEO, pageMetadata, structuredData, safeJSON, headingAnchors, articleContents, sitemapEntries, robotsData } from '../src/domain/seo.mjs'
 import { redirectProblem, normalizePath, pathProblem } from '../src/domain/routing.mjs'
 
-const env = { CMS_ENV: 'production', SITE_URL: 'https://example.test', PUBLIC_INDEXING_ENABLED: 'true' }
+const env = { NODE_ENV: 'production', SITE_URL: 'https://example.test', PUBLIC_INDEXING_ENABLED: 'true' }
 const body = text => ({ root: { children: [{ type: 'paragraph', children: [{ type: 'text', text }] }] } })
 const page = { id: 1, title: 'About', pageKey: 'about', heading: 'About the engineer', meta: { title: 'Exact owner title', description: 'Exact description.', socialTitle: 'Share title', socialDescription: 'Share description', image: 1 } }
 const site = { settings: { name: 'Owner', role: 'Engineer', meta: { title: 'Site title', description: 'Site default', image: 1 } }, pages: [page], posts: [], services: [], media: [{ id: 1, url: '/api/media/file/photo.jpg?v=1', width: 800, height: 1000, alt: 'Portrait', social: { url: '/api/media/file/photo-social.jpg?v=1', width: 1200, height: 630 } }], preview: false }
@@ -19,12 +19,12 @@ test('metadata resolves manual overrides, defaults, one canonical and public soc
 })
 test('indexing requires production opt-in and respects previews, filters and noindex', () => {
   assert.equal(effectiveSEO(site, 'pages', page, { env }).indexable, true)
-  for (const modified of [{ ...env, CMS_ENV: 'local' }, { ...env, CMS_ENV: 'staging' }, { ...env, PUBLIC_INDEXING_ENABLED: 'false' }]) assert.equal(effectiveSEO(site, 'pages', page, { env: modified }).indexable, false)
+  for (const modified of [{ ...env, NODE_ENV: 'development' }, { ...env, VERCEL_ENV: 'preview' }, { ...env, PUBLIC_INDEXING_ENABLED: 'false' }]) assert.equal(effectiveSEO(site, 'pages', page, { env: modified }).indexable, false)
   assert.equal(effectiveSEO({ ...site, preview: true }, 'pages', page, { env }).indexable, false)
   assert.equal(effectiveSEO(site, 'pages', page, { env, filtered: true }).indexable, false)
   assert.equal(effectiveSEO(site, 'pages', { ...page, meta: { hideFromSearch: true } }, { env }).indexable, false)
-  assert.deepEqual(robotsData(env).rules.disallow, ['/admin/', '/api/', '/preview'])
-  assert.equal(robotsData({ ...env, CMS_ENV: 'staging' }).rules.disallow, '/')
+  assert.deepEqual(robotsData(env).rules, { userAgent: '*', allow: '/' })
+  assert.equal(robotsData({ ...env, VERCEL_ENV: 'preview' }).rules.disallow, '/')
 })
 test('sitemap excludes noindex, canonical overrides, redirect sources, incomplete services and private previews', () => {
   const content = { ...site, pages: [page, { ...page, id: 2, pageKey: 'contact', meta: { hideFromSearch: true } }], services: [{ id: 3, title: 'Unfinished', slug: 'unfinished', detailsReviewed: false, body: body('Some copy') }, { id: 4, title: 'Reviewed', slug: 'reviewed', detailsReviewed: true, body: body('Reviewed detail copy') }] }

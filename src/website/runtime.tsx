@@ -7,9 +7,7 @@ import { MotionConfig, motion, useReducedMotion } from 'motion/react'
 import { ArrowUp } from 'lucide-react'
 import type { Profile } from './types'
 
-type FormCopy = { formHeading?: string; homeFormHeading?: string; submitLabel?: string; acceptedMessage?: string; budgetHelp?: string; formHelp?: string; nameLabel?: string; emailLabel?: string; messageLabel?: string; homeMessageLabel?: string; budgetLabel?: string; timelineLabel?: string; messagePlaceholder?: string }
-type ContactRuntime = { enabled: boolean; preview: boolean; privacy: string }
-type Runtime = { profile: Profile; contact: ContactRuntime; summary: string; setSummary: (value: string) => void; routeMap: Record<string, string>; form: FormCopy }
+type Runtime = { profile: Profile; summary: string; setSummary: (value: string) => void }
 const RuntimeContext = createContext<Runtime | null>(null)
 // Page shells may remount during navigation. Keep the handoff in this browser
 // module, like the calculator plan; a reload starts a fresh module and clears it.
@@ -17,10 +15,10 @@ let memorySummary = ''
 // Only explicit page-link navigation resets scrolling. Browser history keeps
 // its restoration behavior, and links with fragments keep their section target.
 let pendingPageTop: string | null = null
-export function WebsiteRuntime({ profile, contact, children, routeMap = {}, form = {} }: { profile: Profile; contact: ContactRuntime; children: ReactNode; routeMap?: Record<string, string>; form?: FormCopy }) {
+export function WebsiteRuntime({ profile, children }: { profile: Profile; children: ReactNode }) {
   const [summary, updateSummary] = useState(() => memorySummary)
   const setSummary = (value: string) => { memorySummary = value; updateSummary(value) }
-  return <RuntimeContext.Provider value={{ profile, contact, summary, setSummary, routeMap, form }}><MotionConfig reducedMotion="user">{children}</MotionConfig></RuntimeContext.Provider>
+  return <RuntimeContext.Provider value={{ profile, summary, setSummary }}><MotionConfig reducedMotion="user">{children}</MotionConfig></RuntimeContext.Provider>
 }
 export function useWebsiteRuntime() {
   const value = useContext(RuntimeContext)
@@ -30,9 +28,8 @@ export function useWebsiteRuntime() {
 
 type LinkProps = Omit<ComponentProps<typeof NextLink>, 'href'> & { to: string; state?: { calculatorSummary: string } }
 export function Link({ to, state, onClick, onNavigate, ...props }: LinkProps) {
-  const { setSummary, routeMap } = useWebsiteRuntime()
-  const path = to.split(/[?#]/)[0].replace(/\/$/, '') || '/'
-  const href = !to.startsWith('#') && routeMap[path] ? routeMap[path] + (to.includes('#') ? '#' + to.split('#')[1] : '') : to
+  const { setSummary } = useWebsiteRuntime()
+  const href = to
   return <NextLink {...props} href={href} scroll={href.includes('#') ? props.scroll : false} onNavigate={event => {
     let cancelled = false
     onNavigate?.({ preventDefault() { cancelled = true; event.preventDefault() } })
@@ -67,7 +64,6 @@ export function BackToTop() {
 }
 export function AnchorEffects() {
   const pathname = usePathname()
-  const { routeMap } = useWebsiteRuntime()
   useEffect(() => {
     if (pendingPageTop === window.location.pathname + window.location.search && !window.location.hash) {
       pendingPageTop = null
@@ -82,6 +78,6 @@ export function AnchorEffects() {
       document.getElementById(anchor)?.scrollIntoView()
     })
     return () => cancelAnimationFrame(frame)
-  }, [pathname, routeMap])
+  }, [pathname])
   return null
 }

@@ -1,4 +1,3 @@
-import { Suspense } from 'react'
 import { Home, About, Contact } from './pages'
 import { Blog } from './blog-index'
 import MvpCalculator from './calculator'
@@ -19,7 +18,7 @@ function PageContent({ site, page }: { site: SiteData; page: any }) {
   if (page.pageKey === 'contact') return <Contact site={site} page={page} />
   if (page.pageKey === 'blog') {
     const about = site.pages.find(item => item.pageKey === 'about'), cta = about?.sections?.find((section: any) => section.template === 'cta')
-    return <Suspense fallback={<section className="container section-space" aria-busy="true">Loading articles…</section>}><Blog articles={summaries(site)} profile={profileFor(site)} heading={page.heading} eyebrow={page.eyebrow} introduction={<RichText site={site} data={page.introduction} />} contactTitle={cta?.heading || ''} contactBody={<RichText site={site} data={cta?.body} inline />} avatar={mediaFor(site, site.settings?.avatar)?.url} preview={site.preview} contactActions={<Actions site={site} values={cta?.actions} />} /></Suspense>
+    return <Blog articles={summaries(site)} profile={profileFor(site)} heading={page.heading} eyebrow={page.eyebrow} introduction={<RichText site={site} data={page.introduction} />} contactTitle={cta?.heading || ''} contactBody={<RichText site={site} data={cta?.body} inline />} avatar={mediaFor(site, site.settings?.avatar)?.url} preview={site.preview} contactActions={<Actions site={site} values={cta?.actions} />} />
   }
   if (page.pageKey === 'calculator') return <MvpCalculator readingArticles={summaries(site).filter(article => ['mvp-feature-prioritization', 'how-to-build-an-mvp'].includes(article.slug))} heading={page.heading} lead={textOf(page.introduction)} />
   return <section className="container section-space"><h1>{page.heading}</h1><RichText site={site} data={page.introduction} />{page.sections?.map((section: any, i: number) => <section key={section.id || i} id={section.sectionId}><h2>{section.heading}</h2><RichText site={site} data={section.body} /><Actions site={site} values={section.actions} /></section>)}</section>
