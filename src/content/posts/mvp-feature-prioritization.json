@@ -5610,11 +5610,11 @@
   "publishedAt": null,
   "actions": [],
   "related": [],
-  "heroImage": null,
+  "heroImage": "mvp-feature-list-featured.jpg",
   "meta": {
     "title": "MVP Feature Prioritization: What to Build First",
     "description": "Learn how to choose MVP features, compare priorities, plan manual work, and use a worksheet to agree on your first release with a developer.",
-    "image": null,
+    "image": "mvp-feature-list-featured.jpg",
     "socialTitle": null,
     "socialDescription": null,
     "hideFromSearch": false,

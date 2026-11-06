@@ -3620,6 +3620,60 @@
       "decorative": false,
       "width": 1200,
       "height": 628
+    },
+    {
+      "id": "mvp-budget-featured.jpg",
+      "url": "/images/blog/mvp-budget-featured.jpg",
+      "alt": "An estimate, software delivery, service renewals, and usage charts illustrate costs to include in an MVP budget.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    },
+    {
+      "id": "mvp-feature-list-featured.jpg",
+      "url": "/images/blog/mvp-feature-list-featured.jpg",
+      "alt": "A release boundary groups the essential features, with reminders and reporting outside it.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    },
+    {
+      "id": "mvp-development-process-featured.jpg",
+      "url": "/images/blog/mvp-development-process-featured.jpg",
+      "alt": "A quote sent from a phone becomes a saved response in a web application.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    },
+    {
+      "id": "mvp-vs-prototype-featured.jpg",
+      "url": "/images/blog/mvp-vs-prototype-featured.jpg",
+      "alt": "A developer reviews a clickable prototype alongside a user working with a usable MVP.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    },
+    {
+      "id": "what-to-ask-before-hiring-a-full-stack-developer-featured.jpg",
+      "url": "/images/blog/what-to-ask-before-hiring-a-full-stack-developer-featured.jpg",
+      "alt": "A client and a developer review a software interface together on a laptop.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
+    },
+    {
+      "id": "software-project-proposal-featured.jpg",
+      "url": "/images/blog/software-project-proposal-featured.jpg",
+      "alt": "A client and a developer compare a project brief and a proposal at a table.",
+      "caption": "",
+      "decorative": false,
+      "width": 1200,
+      "height": 628
     }
   ],
   "settings": {

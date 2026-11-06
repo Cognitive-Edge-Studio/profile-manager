@@ -3213,11 +3213,11 @@
   "publishedAt": null,
   "actions": [],
   "related": [],
-  "heroImage": null,
+  "heroImage": "mvp-budget-featured.jpg",
   "meta": {
     "title": "MVP Development Cost: What Affects Your Budget?",
     "description": "Understand MVP development cost, compare estimates, and plan a budget for design, integrations, testing, launch, running costs, and future revisions.",
-    "image": null,
+    "image": "mvp-budget-featured.jpg",
     "socialTitle": null,
     "socialDescription": null,
     "hideFromSearch": false,

@@ -2452,11 +2452,11 @@
   "publishedAt": null,
   "actions": [],
   "related": [],
-  "heroImage": null,
+  "heroImage": "mvp-vs-prototype-featured.jpg",
   "meta": {
     "title": "Prototype vs MVP: What Should You Build Before Paying for a Full Product?",
     "description": "This Prototype vs MVP guide helps you choose what to build before committing to a larger software project. You'll learn what each approach tests, when a technical check or simpler experiment may be enough, and what can carry forward. It also explains what affects the work and what to agree with a developer before paying for the next step.",
-    "image": null,
+    "image": "mvp-vs-prototype-featured.jpg",
     "socialTitle": null,
     "socialDescription": null,
     "hideFromSearch": false,

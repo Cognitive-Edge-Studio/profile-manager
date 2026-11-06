@@ -2725,11 +2725,11 @@
   "publishedAt": null,
   "actions": [],
   "related": [],
-  "heroImage": null,
+  "heroImage": "mvp-development-process-featured.jpg",
   "meta": {
     "title": "How to Build an MVP With One Developer: A Practical Guide",
     "description": "Learn how to build an MVP with one developer, define the first useful release, review progress, test with users, and decide what to improve after launch.",
-    "image": null,
+    "image": "mvp-development-process-featured.jpg",
     "socialTitle": null,
     "socialDescription": null,
     "hideFromSearch": false,
