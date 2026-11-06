@@ -10,6 +10,7 @@ import { SiteSettings } from './settings'
 import { contentPath } from './domain/contracts.mjs'
 import { publicationChecks } from './endpoints/publication-checks'
 import { inquiryNotifications } from './endpoints/inquiry-notifications'
+import { TableSizeFeature } from './editor/TableSizeFeature'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 if (!['local', 'test', 'staging', 'production'].includes(process.env.CMS_ENV || '')) throw new Error('Set CMS_ENV to local, test, staging, or production.')
@@ -45,6 +46,7 @@ export default buildConfig({
     LinkFeature({ enabledCollections: ['pages', 'services', 'posts'], fields: ({ defaultFields }) => [...defaultFields, { name: 'fragment', label: 'Section anchor (optional)', type: 'text' }, { name: 'requiredForPublishing', label: 'This link must be available before publishing', type: 'checkbox', defaultValue: false }, { name: 'rel', label: 'Advanced link type', type: 'select', hasMany: true, options: ['nofollow', 'sponsored'], admin: { description: 'Select nofollow to mark a link, or sponsored for paid links. External links within articles always include nofollow, even when this field is empty.' } }] }),
     FixedToolbarFeature(),
     EXPERIMENTAL_TableFeature(),
+    TableSizeFeature(),
   ] }),
   db: postgresAdapter({
     pool: { connectionString: process.env.DATABASE_URL, max: 8 },

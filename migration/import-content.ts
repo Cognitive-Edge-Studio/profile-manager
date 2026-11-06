@@ -7,6 +7,7 @@ import { profile, paragraphs, beforeAction } from '../src/content/approved'
 import { splitSections, slugify, SECTION_ANCHORS } from '../src/domain/contracts.mjs'
 import { pageMetadata } from './original-metadata'
 import { normalizeImportedEditorial } from '../src/domain/editorial.mjs'
+import { readBlogSnapshot, resolveSnapshotPost } from './blog-snapshot'
 
 type Entry = { collection: 'pages' | 'posts' | 'services' | 'projects'; data: any }
 const normalized = (value: string) => value.normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, ' ').trim().toLowerCase()
@@ -57,25 +58,32 @@ export async function buildImport(payload: Payload) {
   return { entries: entries.map(entry => ({ ...entry, data: normalizeImportedEditorial(entry.data) })), groups, rich, settings: { sourceId: 'settings:original', sourceSnapshot: { profile, source: 'src/App.tsx' }, ...profile, remoteLabel: 'Fully remote, anywhere.', portraitCaption: 'Independent software engineer', formHeading: 'Send me a message', submitLabel: 'Send your message', acceptedMessage: "Thank you for sharing your project. I'll review your message and get back to you by email.", budgetHelp: "A rough range helps me suggest an approach that fits what you're ready to spend. It's fine if you're still working this out.", _status: 'draft' } }
 }
 
-export async function importContent(payload: Payload, { apply = false, update = false, uploadPrefix = 'import' } = {}) {
+export async function importContent(payload: Payload, { apply = false, update = false, uploadPrefix = 'import', publishedBlogs = false } = {}) {
   if (!/^(?:import|cms_(?:content|http|seo)_test_\d+)$/.test(uploadPrefix)) throw new Error('Use a normal import or an isolated fixture upload prefix.')
   const { entries, settings } = await buildImport(payload)
+  const snapshot = publishedBlogs ? await readBlogSnapshot() : undefined
+  const importEntries: Entry[] = snapshot
+    ? [...entries.filter(entry => entry.collection !== 'posts'), ...snapshot.posts.map(data => ({ collection: 'posts' as const, data }))]
+    : entries
   const report: any[] = []
   const ids = new Map<string, number>()
   const created = new Set<string>()
   // Privileged writes are confined to this local import, always as drafts.
   const privileged = { overrideAccess: true as const, context: { localBootstrap: true } }
-  for (const entry of entries) {
+  for (const entry of importEntries) {
     const found = await payload.find({ collection: entry.collection, where: { sourceId: { equals: entry.data.sourceId } }, draft: true, limit: 1, depth: 0, overrideAccess: true })
     const existing: any = found.docs[0]
     if (!existing) {
       const collision = await payload.find({ collection: entry.collection, where: entry.collection === 'pages' ? { pageKey: { equals: entry.data.pageKey } } : { slug: { equals: entry.data.slug } }, draft: true, limit: 1, depth: 0, overrideAccess: true })
       if (collision.totalDocs) { report.push({ sourceId: entry.data.sourceId, action: 'conflict', reason: 'An editorial record already uses this page or slug; retained.' }); continue }
     }
-    const changed = existing ? Object.keys(entry.data).filter(key => !['sourceSnapshot', '_status'].includes(key) && JSON.stringify(sourceShape(existing[key], entry.data[key])) !== JSON.stringify(sourceShape(entry.data[key], entry.data[key]))) : []
+    const data = snapshot && entry.collection === 'posts'
+      ? await resolveSnapshotPost(payload, entry.data, snapshot.images, { apply: apply && (!existing || update), uploadPrefix })
+      : entry.data
+    const changed = existing ? Object.keys(data).filter(key => !['sourceSnapshot', '_status'].includes(key) && JSON.stringify(sourceShape(existing[key], data[key])) !== JSON.stringify(sourceShape(data[key], data[key]))) : []
     report.push({ sourceId: entry.data.sourceId, action: existing ? update ? 'update-as-draft' : 'retain' : 'create-draft', differingFields: changed })
     let doc = existing
-    if (apply && (!existing || update)) doc = existing ? await payload.update({ collection: entry.collection, id: existing.id, data: entry.data, draft: true, ...privileged }) : await payload.create({ collection: entry.collection, data: entry.data, draft: true, ...privileged })
+    if (apply && (!existing || update)) doc = existing ? await payload.update({ collection: entry.collection, id: existing.id, data, draft: true, ...privileged }) : await payload.create({ collection: entry.collection, data, draft: true, ...privileged })
     if (doc) ids.set(entry.data.sourceId, doc.id)
     if (apply && !existing && doc) created.add(entry.data.sourceId)
   }

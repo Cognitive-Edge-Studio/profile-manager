@@ -4,6 +4,7 @@ import * as migration_20261026_014139_slice4_reading_time from './20261026_01413
 import * as migration_20261026_020209_slice4_media_source_ids from './20261026_020209_slice4_media_source_ids';
 import * as migration_20261026_033350_slice5_seo_publishing from './20261026_033350_slice5_seo_publishing';
 import * as migration_20261026_063635_slice6_contact_delivery from './20261026_063635_slice6_contact_delivery';
+import * as migration_20261030_112159_llm_integration_category from './20261030_112159_llm_integration_category';
 
 export const migrations = [
   {
@@ -34,6 +35,11 @@ export const migrations = [
   {
     up: migration_20261026_063635_slice6_contact_delivery.up,
     down: migration_20261026_063635_slice6_contact_delivery.down,
-    name: '20261026_063635_slice6_contact_delivery'
+    name: '20261026_063635_slice6_contact_delivery',
+  },
+  {
+    up: migration_20261030_112159_llm_integration_category.up,
+    down: migration_20261030_112159_llm_integration_category.down,
+    name: '20261030_112159_llm_integration_category'
   },
 ];

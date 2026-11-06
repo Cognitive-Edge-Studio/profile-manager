@@ -9,7 +9,7 @@ import { Button } from './components/ui/button'
 import { ArticleArt } from './components/article-art'
 import { Meta } from './article-meta'
 import type { ArticleSummary, Profile } from './types'
-const topics = ['All articles', 'Planning an MVP', 'Hiring a developer']
+const topics = ['All articles', 'Planning an MVP', 'Hiring a developer', 'AI integration']
 export function Blog({ articles, profile, contactTitle, contactBody, heading, eyebrow, introduction, contactActions, avatar, preview }: { articles: ArticleSummary[]; profile: Profile; contactTitle: string; contactBody: React.ReactNode; heading: string; eyebrow?: string; introduction?: React.ReactNode; contactActions?: React.ReactNode; avatar?: string; preview?: boolean }) {
   const params = useSearchParams()
   const { routeMap } = useWebsiteRuntime()

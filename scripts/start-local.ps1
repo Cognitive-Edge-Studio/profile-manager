@@ -32,16 +32,18 @@ function Start-LocalService([string]$Name, [string[]]$CommandArguments) {
 try {
     if (-not (Test-Path -LiteralPath $taskNode)) { throw 'The bundled Node runtime is missing. Run npm install first.' }
     if (-not (Test-Path -LiteralPath (Join-Path $taskRoot '.env.local'))) { throw 'Local configuration is missing. Run npm run setup:local first.' }
+    $taskDatabasePort = [int](& $taskNode --input-type=module -e "process.loadEnvFile(process.argv[1]); console.log(new URL(process.env.DATABASE_URL).port || '5432')" (Join-Path $taskRoot '.env.local'))
+    if ($LASTEXITCODE -ne 0 -or $taskDatabasePort -lt 1 -or $taskDatabasePort -gt 65535) { throw 'The local database port configuration is invalid.' }
     if (-not (Test-Path -LiteralPath (Join-Path $taskRoot '.next/BUILD_ID'))) { throw 'The application build is missing. Run npm run build first.' }
     New-Item -ItemType Directory -Path (Join-Path $taskRoot '.local') -Force | Out-Null
-    Assert-ProjectListener 55432
+    Assert-ProjectListener $taskDatabasePort
     Assert-ProjectListener 3000
 
-    if (-not (Get-LocalListener 55432)) {
+    if (-not (Get-LocalListener $taskDatabasePort)) {
         Write-Host 'Starting the local database...'
         Start-LocalService 'db' @('scripts/run.mjs', 'script', 'scripts/local-postgres.mjs')
         $taskDeadline = (Get-Date).AddSeconds(30)
-        while (-not (Get-LocalListener 55432)) {
+        while (-not (Get-LocalListener $taskDatabasePort)) {
             if ((Get-Date) -gt $taskDeadline) { throw 'The database did not start. Check the newest .local/db logs.' }
             Start-Sleep -Milliseconds 300
         }

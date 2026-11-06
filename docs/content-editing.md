@@ -33,6 +33,23 @@ Public requests read published records even when the visitor is signed in. Previ
 
 Re-running the importer preserves later edits. Full original manuscripts and source-only form/booking instructions remain in private snapshots. Display fields contain the wording used in the existing design. Original article dates remain blank until a real date is supplied.
 
+The current published articles and their images are tracked in [`migration/published-blogs`](../migration/published-blogs). For a fresh local CMS, run `npm run import:content -- --published-blogs` to review the import, then add `--apply` to create the articles as drafts. Existing articles are retained. Review the drafts and make the associated images public before publishing.
+
+## Resizing tables in the editor
+
+Tables fill the available editing area instead of starting with very thin columns.
+Click inside a cell, then open **Table size** in the editor toolbar:
+
+- **Widen selected column** adds 48 pixels to that column.
+- **Narrow selected column** removes 48 pixels, down to a 92-pixel minimum.
+- **Fit table to editor** gives columns equal widths across the editing area,
+  with at least 160 pixels per column. Wide tables scroll horizontally inside
+  the editor.
+
+Sizing changes support Undo/Redo and are stored when you save the draft. These
+controls change the editing workspace; the public website continues to use its
+responsive article table layout. Save and Preview to review the reader's view.
+
 ## Article tables on mobile
 
 Keep the first column comfortably readable on mobile because it is visible before readers scroll across a table. Give labels sufficient width and wrap at word boundaries rather than splitting words mid-word. Use a 160px minimum as a starting point for ordinary article tables, review longer labels at phone widths, and widen further when needed. Keep horizontal scrolling inside the table rather than the whole page, and preserve any deliberately proportioned pricing or estimate columns.
