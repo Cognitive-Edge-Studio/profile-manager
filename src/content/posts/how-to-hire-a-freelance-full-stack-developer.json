@@ -18,7 +18,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "At a glance",
+              "text": "At a Glance",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -106,7 +106,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Decide whether you need a full-stack developer",
+              "text": "Decide Whether You Need a Full-Stack Developer",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -225,7 +225,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Write a short project brief before asking for quotes",
+              "text": "Write a Short Project Brief Before Asking for Quotes",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -382,7 +382,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Where to find a freelance full-stack developer",
+              "text": "Where to Find a Freelance Full-Stack Developer",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -481,7 +481,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Check what the developer actually did on past projects",
+              "text": "Check What the Developer Actually Did on Past Projects",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -612,6 +612,15 @@
           "textFormat": 0
         },
         {
+          "id": "47705885-928c-4d93-87df-29af9dc59fab",
+          "type": "upload",
+          "value": "what-to-verify-in-a-developers-portfolio.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
+        },
+        {
           "tag": "h2",
           "type": "heading",
           "format": "",
@@ -620,7 +629,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Ask questions you can assess without reading code",
+              "text": "Ask Questions You Can Assess Without Reading Code",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1257,7 +1266,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Use a small paid assessment when important questions remain",
+              "text": "Use a Small Paid Assessment When Important Questions Remain",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1376,7 +1385,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "How much does it cost to hire a full-stack developer?",
+              "text": "How Much Does It Cost to Hire a Full-Stack Developer?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2371,7 +2380,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Agree on milestones and scope changes in writing",
+              "text": "Agree on Milestones and Scope Changes in Writing",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2547,7 +2556,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Make progress easy to review",
+              "text": "Make Progress Easy to Review",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2646,7 +2655,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Plan account access, launch, and handover before starting",
+              "text": "Plan Account Access, Launch, and Handover Before Starting",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2876,7 +2885,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "A short checklist before you hire",
+              "text": "A Short Checklist Before You Hire",
               "type": "text",
               "style": "",
               "detail": 0,

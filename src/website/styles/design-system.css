@@ -267,9 +267,8 @@ h3, h4 { letter-spacing: -.02em; }
 .journal-article .estimate-table col:first-child { width: 35%; }
 .journal-article .estimate-table col:nth-child(2) { width: 65%; }
 .journal-article .pricing-table table { table-layout: fixed; min-width: 680px; }
-.journal-article .pricing-table col:first-child { width: 27%; }
-.journal-article .pricing-table col:nth-child(2) { width: 26%; }
-.journal-article .pricing-table col:nth-child(3) { width: 47%; }
+.journal-article .pricing-table col:nth-child(-n+2) { width: 30%; }
+.journal-article .pricing-table col:nth-child(3) { width: 40%; }
 .journal-article .pricing-table td:nth-child(2) { white-space: nowrap; }
 .journal-article .pricing-table td:first-child em { display: block; margin-top: 4px; font-size: 12px; line-height: 1.5; font-style: normal; color: var(--muted); }
 .journal-article .related-blogs { max-width: none; border-color: var(--line); }

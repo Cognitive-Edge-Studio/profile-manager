@@ -1,5 +1,5 @@
 {
-  "title": "LLM Integration with Existing Systems: A Step-by-Step Guide",
+  "title": "LLM Integration With Existing Systems: A Step-by-Step Guide",
   "slug": "llm-integration-with-existing-systems",
   "excerpt": "LLM integration with existing systems connects a language model to a task inside software people already use. This guide explains how to choose that task, prepare its data, connect the model through your application, and test the result before a limited release. A fictional maintenance portal shows how the decisions fit together.",
   "category": "AI integration",
@@ -203,7 +203,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "How to Implement LLM Integration with Existing Systems",
+              "text": "How to Implement LLM Integration With Existing Systems",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1888,7 +1888,7 @@
         {
           "id": "4a4a372d-a5b1-4843-9bca-87d3eb64352e",
           "type": "upload",
-          "value": "data-paths-for-an-llm-feature.webp",
+          "value": "where-the-llm-gets-its-context.webp",
           "fields": null,
           "format": "",
           "version": 3,
@@ -2230,7 +2230,7 @@
         {
           "id": "8c15eaf6-ca25-4349-a57c-438f21c589e0",
           "type": "upload",
-          "value": "how-the-model-connects-to-your-application.webp",
+          "value": "how-the-app-checks-llm-requests-and-replies.webp",
           "fields": null,
           "format": "",
           "version": 3,
@@ -3145,7 +3145,7 @@
         {
           "id": "8665b4c3-145e-4292-ba8e-b0dff67d0334",
           "type": "upload",
-          "value": "handling-llm-responses-and-failures.webp",
+          "value": "how-the-app-handles-llm-replies-and-failures.webp",
           "fields": null,
           "format": "",
           "version": 3,
@@ -5720,7 +5720,7 @@
   "related": [],
   "heroImage": "how-to-integrate-llm-into-your-existing-software-featured.jpg",
   "meta": {
-    "title": "LLM Integration with Existing Systems: Practical Guide",
+    "title": "LLM Integration With Existing Systems: Practical Guide",
     "description": "How to implement LLM integration with existing systems, connect the right data, handle incorrect outputs, and test first useful feature step-by-step.",
     "image": "how-to-integrate-llm-into-your-existing-software-featured.jpg",
     "socialTitle": null,

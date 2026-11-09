@@ -78,7 +78,7 @@ export function ArticleContents({ entries }: { entries: Entry[] }) {
     if (event.key === 'Escape') { setOpen(false); event.currentTarget.querySelector<HTMLButtonElement>('button')?.focus() }
   }}>
     <div className="article-toc__header">
-      <div className="article-toc__title" id={`${id}-title`}><List size={18} aria-hidden="true" />Table of contents</div>
+      <div className="article-toc__title" id={`${id}-title`}><List size={18} aria-hidden="true" />Table of Contents</div>
       <button className="article-toc__toggle" type="button" aria-controls={`${id}-links`} aria-expanded={open}
         aria-label={`${open ? 'Hide' : 'Show'} table of contents`} onClick={() => setOpen(value => !value)}>
         {open ? 'Hide' : 'Show'}<ChevronDown size={16} aria-hidden="true" />

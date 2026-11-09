@@ -89,7 +89,7 @@
           "template": "copy",
           "eyebrow": null,
           "sectionId": "article-contact",
-          "heading": "Hire Shibly as your developer",
+          "heading": "Hire Shibly as Your Developer",
           "body": {
             "root": {
               "type": "root",
@@ -146,7 +146,7 @@
           "template": "cta",
           "eyebrow": null,
           "sectionId": "budget-tool",
-          "heading": "Plan your first-release budget",
+          "heading": "Plan Your First-Release Budget",
           "body": {
             "root": {
               "type": "root",
@@ -3674,6 +3674,114 @@
       "decorative": false,
       "width": 1200,
       "height": 628
+    },
+    {
+      "id": "cost-to-build-an-mvp-compare-the-scope.webp",
+      "url": "/images/blog/cost-to-build-an-mvp-compare-the-scope.webp",
+      "alt": "Compare staff stock confirmation with automatic confirmation and the access, update and failure-handling work behind it.",
+      "caption": "Compare staff stock confirmation with automatic confirmation and the access, update and failure-handling work behind it.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-stock-confirmation-changes-the-build.webp",
+      "url": "/images/blog/how-stock-confirmation-changes-the-build.webp",
+      "alt": "Compare staff stock confirmation with automatic confirmation and the access, update and failure-handling work behind it.",
+      "caption": "Compare staff stock confirmation with automatic confirmation and the access, update and failure-handling work behind it.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "three-ways-to-follow-up-on-overdue-tools.webp",
+      "url": "/images/blog/three-ways-to-follow-up-on-overdue-tools.webp",
+      "alt": "An automatic-reminder request points to an overdue-tool follow-up need, with manual, existing-tool and custom alternatives.",
+      "caption": "An automatic-reminder request points to an overdue-tool follow-up need, with manual, existing-tool and custom alternatives.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "what-staff-need-to-record-a-tool-request-decision.webp",
+      "url": "/images/blog/what-staff-need-to-record-a-tool-request-decision.webp",
+      "alt": "Recording a request decision depends on saved requests, correct member identity, staff permissions and a decision record.",
+      "caption": "Recording a request decision depends on saved requests, correct member identity, staff permissions and a decision record.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-a-customers-quote-response-reaches-staff.webp",
+      "url": "/images/blog/how-a-customers-quote-response-reaches-staff.webp",
+      "alt": "Four numbered stages cover sending a quote, responding, saving the response and making it visible to staff.",
+      "caption": "Four numbered stages cover sending a quote, responding, saving the response and making it visible to staff.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "which-test-answers-your-product-question.webp",
+      "url": "/images/blog/which-test-answers-your-product-question.webp",
+      "alt": "Independent routes match interest, usability, technical feasibility and use in practice to different tests.",
+      "caption": "Independent routes match interest, usability, technical feasibility and use in practice to different tests.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "what-can-you-carry-from-prototype-to-mvp.webp",
+      "url": "/images/blog/what-can-you-carry-from-prototype-to-mvp.webp",
+      "alt": "Findings inform a next version while prototype code passes through access, error-handling and operational assessment.",
+      "caption": "Findings inform a next version while prototype code passes through access, error-handling and operational assessment.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "what-to-verify-in-a-developers-portfolio.webp",
+      "url": "/images/blog/what-to-verify-in-a-developers-portfolio.webp",
+      "alt": "A portfolio screenshot is examined through contribution, a complete task, tradeoffs and an available reference.",
+      "caption": "A portfolio screenshot is examined through contribution, a complete task, tradeoffs and an available reference.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-one-client-answer-shapes-the-scope.webp",
+      "url": "/images/blog/how-one-client-answer-shapes-the-scope.webp",
+      "alt": "Clarifying staff approval leads to a request-and-review scope and an approval-or-decline check, excluding automatic reservation.",
+      "caption": "Clarifying staff approval leads to a request-and-review scope and an approval-or-decline check, excluding automatic reservation.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "where-the-llm-gets-its-context.webp",
+      "url": "/images/blog/where-the-llm-gets-its-context.webp",
+      "alt": "Three data paths: selected request notes, retrieved document passages, and current records read through application logic.",
+      "caption": "Use the data path the task requires. Apply existing access rules before sending information to the model.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-the-app-checks-llm-requests-and-replies.webp",
+      "url": "/images/blog/how-the-app-checks-llm-requests-and-replies.webp",
+      "alt": "A coordinator sends a request through the existing application to an LLM; the draft returns through the application for review.",
+      "caption": "The application controls access, prepares model input and checks the response before the coordinator reviews the draft.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
+    },
+    {
+      "id": "how-the-app-handles-llm-replies-and-failures.webp",
+      "url": "/images/blog/how-the-app-handles-llm-replies-and-failures.webp",
+      "alt": "A model request branches into a draft for review, an invalid response, or a timeout or failure, with manual alternatives.",
+      "caption": "A returned draft still needs review. Failures should leave the original request and manual workflow available.",
+      "decorative": false,
+      "width": 1024,
+      "height": 624
     }
   ],
   "settings": {

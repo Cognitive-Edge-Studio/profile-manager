@@ -8050,6 +8050,15 @@
           "textFormat": 0
         },
         {
+          "id": "83a9af11-04df-4786-9600-b48033d192d3",
+          "type": "upload",
+          "value": "how-one-client-answer-shapes-the-scope.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
+        },
+        {
           "type": "table",
           "format": "",
           "indent": 0,

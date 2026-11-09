@@ -123,7 +123,7 @@
   .blog-article .related-blogs-controls button:disabled { opacity: .35; cursor: default; }
   .blog-article .related-blogs-controls button:hover:not(:disabled) { background: #edf3fe; border-color: #0b57d0 !important; color: #0b57d0; }
   .blog-article .related-blogs-track { display: flex; gap: 16px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 0; cursor: grab; }
-  .blog-article .related-blogs-track .related-blog-card { flex: 0 0 87%; scroll-snap-align: start; scroll-snap-stop: always; }
+  .blog-article .related-blogs-track .related-blog-card { flex: 0 0 calc((100% - 16px) / 2); scroll-snap-align: start; scroll-snap-stop: always; }
   .blog-article .related-blogs-track a { cursor: grab; }
   .blog-article .related-blogs-track.is-dragging { scroll-snap-type: none; scroll-behavior: auto; user-select: none; }
   .blog-article .related-blogs-track.is-dragging, .blog-article .related-blogs-track.is-dragging a { cursor: grabbing; }
@@ -162,5 +162,6 @@
   .blog-article .related-blog-card .related-blog-title { font-size: 20px; }
   .blog-article .related-blogs-footer { margin-top: 20px; }
 }
+@media (max-width: 560px) { .blog-article .related-blogs-track .related-blog-card { flex-basis: 87%; } }
 @media (max-width: 400px) { .blog-article .related-blogs-controls button { width: 44px; height: 44px; } }
 @media (max-width: 360px) { .blog-article .article-heading h1 { font-size: 30px; } }

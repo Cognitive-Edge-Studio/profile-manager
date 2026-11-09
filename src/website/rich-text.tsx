@@ -64,7 +64,7 @@ export function RichText({ data, site, className, inline = false, anchors = fals
       const rows = node.children || []
       const header = rows[0]?.children?.some((cell: any) => Number(cell.headerState) & 1)
       const cells = rows[0]?.children || []
-      const pricing = textOf(cells[1]) === 'Published hourly rate', estimate = textOf(cells[0]) === 'Part of the Estimate'
+      const pricing = textOf(cells[1]).trim() === 'Published hourly rate', estimate = textOf(cells[0]) === 'Part of the Estimate'
       return <div key={i} className={`article-table${pricing ? ' pricing-table' : ''}${estimate ? ' estimate-table' : ''}`} tabIndex={anchors ? 0 : undefined} role={anchors ? 'region' : undefined} aria-label={anchors ? 'Article table; scroll horizontally to see all columns' : undefined}><table>{(pricing || estimate) && <colgroup>{cells.map((_: any, n: number) => <col key={n} />)}</colgroup>}{header && <thead>{render(rows[0], 0)}</thead>}<tbody>{rows.slice(header ? 1 : 0).map(render)}</tbody></table></div>
     }
     if (node.type === 'tablerow') return <tr key={i}>{children}</tr>
@@ -79,11 +79,11 @@ export function RichText({ data, site, className, inline = false, anchors = fals
     if (navigationIndex >= 0 && i === navigationIndex + 1) return null
     if (i !== navigationIndex) return render(node, i)
     const groups = [
-      { title: 'Client briefs', description: 'Send your project requirements', links: templateLinkGroup(node, 'Client templates:')! },
-      { title: 'Provider proposals', description: 'Respond with your proposed work', links: templateLinkGroup(nodes[i + 1], 'Provider templates:')! },
+      { title: 'Client Briefs', description: 'Send your project requirements', links: templateLinkGroup(node, 'Client templates:')! },
+      { title: 'Provider Proposals', description: 'Respond with your proposed work', links: templateLinkGroup(nodes[i + 1], 'Provider templates:')! },
     ]
     return <nav key={i} className="article-template-nav" aria-label="Jump to a template">
-      <div className="article-template-nav__title"><List size={19} aria-hidden="true" /><span>Jump to a template</span></div>
+      <div className="article-template-nav__title"><List size={19} aria-hidden="true" /><span>Jump to a Template</span></div>
       <div className="article-template-nav__groups">{groups.map(group => <div key={group.title} className="article-template-nav__group">
         <p className="article-template-nav__label">{group.title}</p>
         <p className="article-template-nav__description">{group.description}</p>

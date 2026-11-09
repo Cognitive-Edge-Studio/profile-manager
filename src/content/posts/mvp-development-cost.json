@@ -453,6 +453,15 @@
           "textFormat": 0
         },
         {
+          "id": "c35188bc-aaca-42cb-a1ae-12c796799b01",
+          "type": "upload",
+          "value": "how-stock-confirmation-changes-the-build.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
+        },
+        {
           "tag": "h3",
           "type": "heading",
           "format": "",

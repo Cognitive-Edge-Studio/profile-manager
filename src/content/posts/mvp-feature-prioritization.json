@@ -18,7 +18,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "At a glance",
+              "text": "At a Glance",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1041,6 +1041,15 @@
           "direction": null,
           "textStyle": "",
           "textFormat": 0
+        },
+        {
+          "id": "ee15b61c-1399-43d4-b06c-e246a8c5e65c",
+          "type": "upload",
+          "value": "three-ways-to-follow-up-on-overdue-tools.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
         },
         {
           "tag": "h3",
@@ -2312,6 +2321,15 @@
           "direction": null,
           "textStyle": "",
           "textFormat": 0
+        },
+        {
+          "id": "7520a20d-b722-484e-9f77-43cd6646f94d",
+          "type": "upload",
+          "value": "what-staff-need-to-record-a-tool-request-decision.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
         },
         {
           "type": "paragraph",

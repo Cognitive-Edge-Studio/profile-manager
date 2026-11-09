@@ -91,7 +91,7 @@ export function RelatedBlogs({ currentSlug, articles }: { currentSlug: string; a
   if (!related.length) return null
   return <aside className="related-blogs" aria-labelledby={`${id}-heading`}>
     <div className="related-blogs-heading">
-      <div><p className="eyebrow">More from the journal</p><div className="related-blogs-title" id={`${id}-heading`}>Blogs you might need to read</div></div>
+      <div><p className="eyebrow">More from the journal</p><div className="related-blogs-title" id={`${id}-heading`}>Blogs You Might Need to Read</div></div>
       {carousel && (canPrevious || canNext) && <div className="related-blogs-controls" aria-label="Browse related blogs">
         <button type="button" aria-label="Previous blogs" aria-controls={`${id}-track`} disabled={!canPrevious} onClick={() => slide(-1)}><ArrowLeft size={17} /></button>
         <button type="button" aria-label="Next blogs" aria-controls={`${id}-track`} disabled={!canNext} onClick={() => slide(1)}><ArrowRight size={17} /></button>

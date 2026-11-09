@@ -18,7 +18,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "At a glance",
+              "text": "At a Glance",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -106,7 +106,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "What is the difference between a prototype and an MVP?",
+              "text": "What Is the Difference Between a Prototype and an MVP?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -333,7 +333,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Prototype vs MVP at a glance",
+              "text": "Prototype vs MVP at a Glance",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1245,7 +1245,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "MVP vs prototype: which should you build first?",
+              "text": "MVP vs Prototype: Which Should You Build First?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1284,7 +1284,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Is the problem worth solving?",
+              "text": "Is the Problem Worth Solving?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1397,7 +1397,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Can people use the proposed solution?",
+              "text": "Can People Use the Proposed Solution?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1476,7 +1476,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Can the technology do the essential job?",
+              "text": "Can the Technology Do the Essential Job?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1609,7 +1609,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Will people use the service in practice?",
+              "text": "Will People Use the Service in Practice?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1734,6 +1734,15 @@
           "textFormat": 0
         },
         {
+          "id": "2e1bb098-7526-4c6f-a836-656d0b5721d4",
+          "type": "upload",
+          "value": "which-test-answers-your-product-question.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
+        },
+        {
           "tag": "h2",
           "type": "heading",
           "format": "",
@@ -1742,7 +1751,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Three situations that make the choice clearer",
+              "text": "Three Situations That Make the Choice Clearer",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -1897,7 +1906,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "Can the prototype become the MVP?",
+              "text": "Can the Prototype Become the MVP?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2022,6 +2031,15 @@
           "textFormat": 0
         },
         {
+          "id": "20ebfc82-9256-452a-8e2f-12efb1112fbe",
+          "type": "upload",
+          "value": "what-can-you-carry-from-prototype-to-mvp.webp",
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "media"
+        },
+        {
           "tag": "h2",
           "type": "heading",
           "format": "",
@@ -2030,7 +2048,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "What changes the time and investment?",
+              "text": "What Changes the Time and Investment?",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -2185,7 +2203,7 @@
           "children": [
             {
               "mode": "normal",
-              "text": "What to agree before you pay for the next step",
+              "text": "What to Agree Before You Pay for the Next Step",
               "type": "text",
               "style": "",
               "detail": 0,
