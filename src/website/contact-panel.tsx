@@ -28,7 +28,7 @@ export function ContactPanel({ home = false, heading = 'Discuss your project' }:
       <Button variant="outline" onClick={copySummary}>Copy summary</Button>
       {message && <p role="status">{message}</p>}
     </div>}
-    <div className="hero-actions">
+    <div className="hero-actions inquiry-actions">
       <Button asChild><a href={`mailto:${profile.email}`}><Mail size={16} />Email me <ArrowUpRight size={16} /></a></Button>
       {profile.calendly && <CalendlyLink url={profile.calendly} />}
     </div>

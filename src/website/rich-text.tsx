@@ -24,7 +24,7 @@ export function Action({ site, value, className, children }: { site: SiteData; v
   const link = resolvedLink(site, value)
   return link ? <Link to={link.href} target={link.target} rel={link.rel} className={className}>{children || link.label}</Link> : null
 }
-export function RichText({ data, site, className, inline = false, anchors = false, nofollowExternal = false }: { data: any; site: SiteData; className?: string; inline?: boolean; anchors?: boolean; nofollowExternal?: boolean }) {
+export function RichText({ data, site, className, inline = false, anchors = false, nofollowExternal = false, beforeHeading }: { data: any; site: SiteData; className?: string; inline?: boolean; anchors?: boolean; nofollowExternal?: boolean; beforeHeading?: { text: string; content: ReactNode } }) {
   const headingIDs = anchors ? headingAnchors(data) : []
   let headingIndex = 0
   function render(node: any, i: number): ReactNode {
@@ -77,7 +77,10 @@ export function RichText({ data, site, className, inline = false, anchors = fals
   const navigationIndex = anchors ? nodes.findIndex((node, i) => templateLinkGroup(node, 'Client templates:') && templateLinkGroup(nodes[i + 1], 'Provider templates:')) : -1
   const content = nodes.map((node, i) => {
     if (navigationIndex >= 0 && i === navigationIndex + 1) return null
-    if (i !== navigationIndex) return render(node, i)
+    if (i !== navigationIndex) {
+      const heading = beforeHeading && node.type === 'heading' && textOf(node).trim() === beforeHeading.text
+      return heading ? <Fragment key={i}>{beforeHeading.content}{render(node, i)}</Fragment> : render(node, i)
+    }
     const groups = [
       { title: 'Client Briefs', description: 'Send your project requirements', links: templateLinkGroup(node, 'Client templates:')! },
       { title: 'Provider Proposals', description: 'Respond with your proposed work', links: templateLinkGroup(nodes[i + 1], 'Provider templates:')! },

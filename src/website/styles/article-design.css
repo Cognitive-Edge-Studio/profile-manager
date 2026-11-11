@@ -71,6 +71,7 @@
 .blog-article .article-table tr:last-child td { border-bottom: 0; }
 .blog-article .journal-article-body li { margin: 12px 0; }
 .blog-article .journal-article-body a { text-underline-offset: 4px; }
+.blog-article .journal-article-body .hero-actions .button-primary { color: #fff; }
 
 .blog-article .related-blogs { max-width: 1048px; margin: 72px auto 0; border-top: 1px solid #e3e7ed; padding-top: 40px; }
 .blog-article .related-blogs-heading { gap: 24px; margin-bottom: 28px; align-items: flex-end; }

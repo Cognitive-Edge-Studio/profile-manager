@@ -110,7 +110,7 @@ export function RelatedBlogs({ currentSlug, articles }: { currentSlug: string; a
     }}>
       {related.map((item, index) => <article className="journal-card related-blog-card" key={item.slug} aria-label={`${index + 1} of ${related.length}`}>
         <Link to={`/blog/${item.slug}/`} className="journal-card-link">
-          <ArticleArt kind={item.kind} />
+          <ArticleArt kind={item.kind} image={item.image} />
           <div className="journal-card-copy"><Meta article={item} /><div className="related-blog-title">{item.title}</div><p>{item.excerpt}</p><span className="journal-read">Read article <ArrowUpRight size={16} /></span></div>
         </Link>
       </article>)}
