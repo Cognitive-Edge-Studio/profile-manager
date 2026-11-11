@@ -153,9 +153,12 @@ not a universal standardized service taxonomy.
 
 ## First page: AI Integration Services
 
-The next intended page is AI Integration Services. The user has requested
-pre-development checks; actual page implementation and CMS publication have not
-been performed as part of saving this context.
+The AI Integration Services page is implemented at `/services/ai-integration/`.
+Its website copy is maintained in
+[`src/content/services/ai-integration.md`](../src/content/services/ai-integration.md).
+The user deferred the real-project section; add project evidence when they are
+ready. The page is linked from the homepage service card and included in the
+production sitemap when indexing is enabled. Deployment is a separate step.
 
 Before layout or implementation, establish:
 
@@ -181,6 +184,26 @@ Before layout or implementation, establish:
 Before developing, the most useful concrete artifact is a short page brief
 covering buyer, problem, scope, evidence, primary search intent, and contact action.
 Do not invent unknown business facts to complete that brief.
+
+## Next page: AI Workflow Automation
+
+- Working H1: **AI Workflow Automation Services**. Open with what a client can
+  hire Shibly to build: a repeatable process that connects the tools they already use.
+- Include a **What is AI workflow automation?** section near the top, after the
+  service introduction. Explain how a trigger starts a defined sequence, AI handles
+  steps like reading an inquiry or extracting invoice details, and business rules
+  route the work, including to a person for review when needed.
+- Keep the six subservices in the service tree as sections on this page. For each,
+  give an example with a trigger, connected tools, review point, and a result the
+  client can verify. Cover testing, exception handling, and handover in the copy.
+- Candidate featured example: a website inquiry starts a workflow that extracts lead
+  details, applies qualification rules, and creates a HubSpot follow-up or review
+  task. n8n and HubSpot are proposed demo tools. Describe it as an example until
+  there is a working demo or a verified client project to show.
+- The Google results reviewed on 2026-11-11 displayed Mountain View, CA. The main
+  service query returned providers, guides, and software comparisons. DATAFOREST
+  and Netrix Global were the closest service-page references in that snapshot.
+  This supports a service page with a short definition and concrete examples.
 
 ## Existing repository/CMS considerations
 

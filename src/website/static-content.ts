@@ -4,6 +4,7 @@ import { validateSlug } from '../domain/contracts.mjs'
 import { readMarkdownPost } from './markdown'
 import site from '../content/site.json'
 import type { SiteData } from './queries'
+import { readAIIntegrationService } from './ai-integration-content'
 
 export async function readStaticSite(): Promise<SiteData> {
   const directory = join(process.cwd(), 'src', 'content', 'posts')
@@ -27,5 +28,9 @@ export async function readStaticSite(): Promise<SiteData> {
     }
   }
   posts.sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
-  return { ...site, posts, media: [...media.values()], preview: false }
+  const aiIntegration = await readAIIntegrationService()
+  if ((site.services as SiteData['services']).some(service => service.slug === aiIntegration.slug)) {
+    throw new Error(`Duplicate service slug: ${aiIntegration.slug}`)
+  }
+  return { ...site, services: [...site.services, aiIntegration], posts, media: [...media.values()], preview: false }
 }

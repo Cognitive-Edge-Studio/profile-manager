@@ -31,6 +31,16 @@ function SectionImage({ site, section }: { site: SiteData; section: any }) { ret
 function Title({ section, index, description }: { section: any; index: number; description?: any }) {
   return <SectionTitle title={section.heading} eyebrow={section.eyebrow || ''} number={String(index + 1).padStart(2, '0')} description={description} />
 }
+export function ProcessSteps({ site, steps }: { site: SiteData; steps: ReturnType<typeof grouped>['items'] }) {
+  return <div className="process-grid">
+    {steps.map((step, index) => <Reveal className="process-step" key={index} delay={index * .04}>
+      <span className="step-number">0{index + 1}<ArrowRight size={17} aria-hidden="true" /></span>
+      <h3>{step.title.replace(/^\d+\.?\s+/, '')}</h3>
+      <RichText site={site} data={step.nodes} className="prose" />
+    </Reveal>)}
+  </div>
+}
+
 function HomeSection({ site, page, section, index }: SectionContext) {
   const profile = profileFor(site), group = grouped(section.body)
   const description = <RichText site={site} data={group.intro} inline />
@@ -38,10 +48,23 @@ function HomeSection({ site, page, section, index }: SectionContext) {
   const cards = [<Network key="n" />, <Code2 key="c" />, <Server key="s" />]
   if (section.template === 'services') {
     const categories = grouped(section.body).items
-    return <section {...common} className="services-section section-space"><div className="container"><Title section={section} index={index} description={description} /><div className="service-groups">{categories.map((category, n) => <Reveal className="service-group" key={category.title}><div className="service-group-heading"><span className="service-icon">{cards[n % cards.length]}</span><h3>{category.title}</h3><span className="group-count">0{n + 1}</span></div><div className="service-cards">{grouped(category.nodes, 'h4').items.map((service, k) => <article className="service-card" key={service.title}><span className="service-index">0{k + 1}</span><h4>{service.title}</h4><RichText site={site} data={service.nodes} className="prose" /></article>)}</div></Reveal>)}</div><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></div></section>
+    return <section {...common} className="services-section section-space"><div className="container"><Title section={section} index={index} description={description} /><div className="service-groups">{categories.map((category, n) => <Reveal className="service-group" key={category.title}><div className="service-group-heading"><span className="service-icon">{cards[n % cards.length]}</span><h3>{category.title}</h3><span className="group-count">0{n + 1}</span></div><div className="service-cards">{grouped(category.nodes, 'h4').items.map((service, k) => {
+      const detail = service.title === 'AI Integration Services' && site.services.find(item => item.slug === 'ai-integration')
+      return <article className="service-card" key={service.title}><span className="service-index">0{k + 1}</span><h4>{detail ? <Link to={contentPath('services', detail)!}>{service.title}</Link> : service.title}</h4><RichText site={site} data={service.nodes} className="prose" />{detail && <Link className="text-link" to={contentPath('services', detail)!}>Explore AI Integration <ArrowUpRight size={15} aria-hidden="true" /></Link>}</article>
+    })}</div></Reveal>)}</div><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></div></section>
   }
   if (section.template === 'projects') return <section {...common} className="work-section container section-space"><Title section={section} index={index} description={description} /><div className="work-grid">{site.projects.map((project, n) => <Reveal key={project.id} className={`work-card work-tone-${n % 4}`} delay={n % 2 * .07}><div className="work-card-top"><span className="work-icon">{[<BookOpen key="b" />, <GitBranch key="g" />, <LayersIcon key="l" />, <AudioLines key="a" />][n % 4]}</span><span className="work-index">0{n + 1} /</span></div><h3>{project.title}</h3><RichText site={site} data={project.body} className="prose" /><CMSImage site={site} value={project.image} />{resolvedLink(site, { url: project.verifiedURL }) && <Link to={project.verifiedURL} className="text-link">{project.title} <ArrowUpRight size={16} /></Link>}<div className="work-card-decoration" aria-hidden="true">{n === 0 ? 'e.' : n === 1 ? <Network /> : n === 2 ? <Database /> : <AudioLines />}</div></Reveal>)}</div><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></section>
-  if (section.template === 'process') return <section {...common} className="process-section section-space"><div className="container"><Title section={section} index={index} description={description} /><div className="process-grid">{group.items.map((step, n) => <Reveal className="process-step" key={n} delay={n * .04}><span className="step-number">0{n + 1}<ArrowRight size={17} /></span><h3>{step.title.replace(/^\d+\.?\s+/, '')}</h3><RichText site={site} data={step.nodes} className="prose" /></Reveal>)}</div>{section.note && <Reveal className="maintenance"><span><GitBranch size={21} /></span><RichText site={site} data={section.note} className="prose" /></Reveal>}<SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></div></section>
+  if (section.template === 'process') {
+    return <section {...common} className="process-section section-space">
+      <div className="container">
+        <Title section={section} index={index} description={description} />
+        <ProcessSteps site={site} steps={group.items} />
+        {section.note && <Reveal className="maintenance"><span><GitBranch size={21} /></span><RichText site={site} data={section.note} className="prose" /></Reveal>}
+        <SectionImage site={site} section={section} />
+        <Actions site={site} values={section.actions} />
+      </div>
+    </section>
+  }
   if (section.template === 'faqs') return <section {...common} className="faq-section container section-space"><div><Title section={section} index={index} description={description} /><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></div><Reveal className="faq-items">{group.items.map((question, n) => <details key={n} className="faq-item"><summary><h3>{question.title}</h3><span><ChevronDown size={17} /></span></summary><RichText site={site} data={question.nodes} className="prose" /></details>)}</Reveal></section>
   if (section.template === 'contact') {
     const body = nodesOf(section.body)

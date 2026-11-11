@@ -7,7 +7,10 @@ import { contentPath } from '../src/domain/contracts.mjs'
 const output = 'out'
 const directory = 'src/content/posts'
 const site = JSON.parse(await readFile('src/content/site.json', 'utf8'))
-const pages = site.pages.map(page => ({ path: contentPath('pages', page), title: page.heading }))
+const pages = [
+  ...site.pages.map(page => ({ path: contentPath('pages', page), title: page.heading })),
+  { path: '/services/ai-integration/', title: 'AI integration services' },
+]
 const articles = []
 for (const file of await readdir(directory)) {
   if (!/\.(json|md)$/.test(file)) continue

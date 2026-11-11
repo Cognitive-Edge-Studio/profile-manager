@@ -25,6 +25,8 @@ The build writes HTML and assets to `out/`. The verification command checks arti
 
 The published profile, page sections, navigation, and projects are in `src/content/site.json`. Edit existing text in that file and keep page keys, section anchors, and linked IDs intact. The seven existing articles keep their rich-text JSON in `src/content/posts/`, preserving their tables, links, and images.
 
+The AI Integration service page copy is in `src/content/services/ai-integration.md`. Its first heading supplies the page title, and the four second-level headings organize the services, process, FAQs, and contact section. After editing, run the build and verification commands to check the page.
+
 ## Publish an article
 
 Add a file such as `src/content/posts/launching-your-first-mvp.md`. The filename defines the permanent URL `/blog/launching-your-first-mvp/`. Use lowercase letters, numbers, and hyphens.

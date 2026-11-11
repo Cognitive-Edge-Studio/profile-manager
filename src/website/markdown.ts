@@ -83,6 +83,10 @@ function blocks(tokens: Token[] | undefined, images: Map<string, Image>): Node[]
   })
 }
 
+export function markdownToRichText(source: string, images = new Map<string, Image>()) {
+  return root(blocks(marked.lexer(source, { gfm: true }), images))
+}
+
 export async function readMarkdownPost(directory: string, file: string) {
   const input = await readFile(join(directory, file), 'utf8')
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(input)
@@ -105,7 +109,7 @@ export async function readMarkdownPost(directory: string, file: string) {
       if (typeof meta.imageAlt !== 'string' || !meta.imageAlt.trim()) throw new Error('Set imageAlt for the article image.')
       images.set(heroImage, { id: heroImage, url: heroImage, alt: meta.imageAlt })
     }
-    const body = root(blocks(marked.lexer(match[2], { gfm: true }), images))
+    const body = markdownToRichText(match[2], images)
     await Promise.all([...images.keys()].map(url => access(join(process.cwd(), 'public', url.slice(1)))))
     const slug = file.slice(0, -3)
     const post = {
