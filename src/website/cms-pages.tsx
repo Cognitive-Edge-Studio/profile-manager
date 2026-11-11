@@ -43,6 +43,7 @@ export function ProcessSteps({ site, steps }: { site: SiteData; steps: ReturnTyp
 
 const homeServiceLinks = new Map([
   ['AI Integration Services', { slug: 'ai-integration', label: 'Explore AI Integration' }],
+  ['AI Workflow Automation', { slug: 'ai-workflow-automation', label: 'Explore AI Workflow Automation' }],
   ['AI Agent Development', { slug: 'ai-agent-development', label: 'Explore AI Agent Development' }],
 ])
 

@@ -4,7 +4,7 @@ import { validateSlug } from '../domain/contracts.mjs'
 import { readMarkdownPost } from './markdown'
 import site from '../content/site.json'
 import type { SiteData } from './queries'
-import { readAIAgentDevelopmentService, readAIIntegrationService } from './service-content'
+import { readAIAgentDevelopmentService, readAIIntegrationService, readAIWorkflowAutomationDraft } from './service-content'
 
 export async function readStaticSite(): Promise<SiteData> {
   const directory = join(process.cwd(), 'src', 'content', 'posts')
@@ -29,7 +29,11 @@ export async function readStaticSite(): Promise<SiteData> {
   }
   posts.sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
   const services = [...site.services] as SiteData['services']
-  const markdownServices = await Promise.all([readAIIntegrationService(), readAIAgentDevelopmentService()])
+  const markdownServices = await Promise.all([
+    readAIIntegrationService(),
+    readAIWorkflowAutomationDraft(),
+    readAIAgentDevelopmentService(),
+  ])
   for (const service of markdownServices) {
     if (services.some(existing => existing.slug === service.slug)) {
       throw new Error(`Duplicate service slug: ${service.slug}`)

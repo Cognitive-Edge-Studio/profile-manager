@@ -10,7 +10,7 @@ const site = JSON.parse(await readFile('src/content/site.json', 'utf8'))
 const pages = [
   ...site.pages.map(page => ({ path: contentPath('pages', page), title: page.heading })),
   { path: '/services/ai-integration/', title: 'AI integration services' },
-  { path: '/services/ai-workflow-automation/', title: 'AI Workflow Automation Services' },
+  { path: '/services/ai-workflow-automation/', title: 'AI Workflow Automation Services', noindex: true },
   { path: '/services/ai-agent-development/', title: 'AI Agent Development Services', noindex: true },
 ]
 const articles = []
@@ -59,7 +59,10 @@ for (const entry of [...pages, ...articles]) {
   }
   if (entry.article) assert.match(html, /class="journal-article-body"[^>]*>[\s\S]*?<p[ >]/)
   if (entry.path === '/blog/') blog = html
-  if (entry.path === '/') assert.match(html, /<a\b[^>]*href="\/services\/ai-agent-development\/"[^>]*>AI Agent Development<\/a>/)
+  if (entry.path === '/') {
+    assert.match(html, /<a\b[^>]*href="\/services\/ai-workflow-automation\/"[^>]*>AI Workflow Automation<\/a>/)
+    assert.match(html, /<a\b[^>]*href="\/services\/ai-agent-development\/"[^>]*>AI Agent Development<\/a>/)
+  }
   if (entry.path === '/contact/') assert.match(html, /href="mailto:[^"]+"/)
 }
 for (const article of articles) assert.ok(blog?.includes(`href="${article.path}"`), article.path + ' link in initial blog HTML')

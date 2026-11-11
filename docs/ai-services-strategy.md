@@ -193,7 +193,8 @@ Do not invent unknown business facts to complete that brief.
 
 - Draft route: `/services/ai-workflow-automation/`. The page copy lives in
   [`src/content/services/ai-workflow-automation.md`](../src/content/services/ai-workflow-automation.md).
-  The draft has noindex and is outside the published service list and sitemap.
+  The homepage's AI Workflow Automation card links to the page. The page is
+  marked noindex and excluded from the sitemap.
 - The Connected workflows diagram sits directly on the hero background and
   follows the AI Integration hero's light nodes and animated connections. It
   shows a website form, shared inbox, and invoice upload flowing through AI and
