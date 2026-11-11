@@ -11,6 +11,7 @@ const pages = [
   ...site.pages.map(page => ({ path: contentPath('pages', page), title: page.heading })),
   { path: '/services/ai-integration/', title: 'AI integration services' },
   { path: '/services/ai-workflow-automation/', title: 'AI Workflow Automation Services' },
+  { path: '/services/ai-agent-development/', title: 'AI Agent Development Services', noindex: true },
 ]
 const articles = []
 for (const file of await readdir(directory)) {
@@ -45,6 +46,10 @@ for (const entry of [...pages, ...articles]) {
   const canonical = /<link rel="canonical" href="([^"]+)"/.exec(html)?.[1]
   assert.ok(canonical, entry.path + ' canonical')
   const robotsMeta = /<meta name="robots" content="([^"]+)"/.exec(html)?.[1] || ''
+  if (entry.noindex) {
+    assert.ok(robotsMeta.includes('noindex'), entry.path + ' noindex')
+    assert.ok(!sitemap.includes(entry.path), entry.path + ' excluded from sitemap')
+  }
   if (!robotsMeta.includes('noindex') && new URL(canonical).pathname === entry.path) {
     assert.ok(sitemap.includes('<loc>' + canonical + '</loc>'), entry.path + ' sitemap')
   }
@@ -54,6 +59,7 @@ for (const entry of [...pages, ...articles]) {
   }
   if (entry.article) assert.match(html, /class="journal-article-body"[^>]*>[\s\S]*?<p[ >]/)
   if (entry.path === '/blog/') blog = html
+  if (entry.path === '/') assert.match(html, /<a\b[^>]*href="\/services\/ai-agent-development\/"[^>]*>AI Agent Development<\/a>/)
   if (entry.path === '/contact/') assert.match(html, /href="mailto:[^"]+"/)
 }
 for (const article of articles) assert.ok(blog?.includes(`href="${article.path}"`), article.path + ' link in initial blog HTML')

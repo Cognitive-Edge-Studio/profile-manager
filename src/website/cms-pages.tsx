@@ -41,6 +41,11 @@ export function ProcessSteps({ site, steps }: { site: SiteData; steps: ReturnTyp
   </div>
 }
 
+const homeServiceLinks = new Map([
+  ['AI Integration Services', { slug: 'ai-integration', label: 'Explore AI Integration' }],
+  ['AI Agent Development', { slug: 'ai-agent-development', label: 'Explore AI Agent Development' }],
+])
+
 function HomeSection({ site, page, section, index }: SectionContext) {
   const profile = profileFor(site), group = grouped(section.body)
   const description = <RichText site={site} data={group.intro} inline />
@@ -49,8 +54,15 @@ function HomeSection({ site, page, section, index }: SectionContext) {
   if (section.template === 'services') {
     const categories = grouped(section.body).items
     return <section {...common} className="services-section section-space"><div className="container"><Title section={section} index={index} description={description} /><div className="service-groups">{categories.map((category, n) => <Reveal className="service-group" key={category.title}><div className="service-group-heading"><span className="service-icon">{cards[n % cards.length]}</span><h3>{category.title}</h3><span className="group-count">0{n + 1}</span></div><div className="service-cards">{grouped(category.nodes, 'h4').items.map((service, k) => {
-      const detail = service.title === 'AI Integration Services' && site.services.find(item => item.slug === 'ai-integration')
-      return <article className="service-card" key={service.title}><span className="service-index">0{k + 1}</span><h4>{detail ? <Link to={contentPath('services', detail)!}>{service.title}</Link> : service.title}</h4><RichText site={site} data={service.nodes} className="prose" />{detail && <Link className="text-link" to={contentPath('services', detail)!}>Explore AI Integration <ArrowUpRight size={15} aria-hidden="true" /></Link>}</article>
+      const link = homeServiceLinks.get(service.title)
+      const detail = link && site.services.find(item => item.slug === link.slug)
+      const href = detail && contentPath('services', detail)
+      return <article className="service-card" key={service.title}>
+        <span className="service-index">0{k + 1}</span>
+        <h4>{href ? <Link to={href}>{service.title}</Link> : service.title}</h4>
+        <RichText site={site} data={service.nodes} className="prose" />
+        {href && link && <Link className="text-link" to={href}>{link.label} <ArrowUpRight size={15} aria-hidden="true" /></Link>}
+      </article>
     })}</div></Reveal>)}</div><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></div></section>
   }
   if (section.template === 'projects') return <section {...common} className="work-section container section-space"><Title section={section} index={index} description={description} /><div className="work-grid">{site.projects.map((project, n) => <Reveal key={project.id} className={`work-card work-tone-${n % 4}`} delay={n % 2 * .07}><div className="work-card-top"><span className="work-icon">{[<BookOpen key="b" />, <GitBranch key="g" />, <LayersIcon key="l" />, <AudioLines key="a" />][n % 4]}</span><span className="work-index">0{n + 1} /</span></div><h3>{project.title}</h3><RichText site={site} data={project.body} className="prose" /><CMSImage site={site} value={project.image} />{resolvedLink(site, { url: project.verifiedURL }) && <Link to={project.verifiedURL} className="text-link">{project.title} <ArrowUpRight size={16} /></Link>}<div className="work-card-decoration" aria-hidden="true">{n === 0 ? 'e.' : n === 1 ? <Network /> : n === 2 ? <Database /> : <AudioLines />}</div></Reveal>)}</div><SectionImage site={site} section={section} /><Actions site={site} values={section.actions} /></section>

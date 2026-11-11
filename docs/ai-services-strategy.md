@@ -216,6 +216,25 @@ Do not invent unknown business facts to complete that brief.
   and Netrix Global were the closest service-page references in that snapshot.
   This supports a service page with a short definition and concrete examples.
 
+## AI Agent Development service page
+
+- The [page copy](../src/content/services/ai-agent-development.md) covers all five
+  subservices. The homepage's AI Agent Development card links to
+  `/services/ai-agent-development/`. The service page is marked noindex and is
+  excluded from the sitemap.
+- The page addresses SaaS teams with an existing product and a specific task
+  that requires choosing between tools or actions. The support investigation
+  scenario is an illustrative example. It sits below the hero, before the five
+  service sections. Replace or supplement it with a labeled demo or verified
+  project when there is evidence to show.
+- The November 11, 2026 Valentin.app Google snapshot used US English and showed
+  Mountain View, CA. The broad query led with guides from IBM and OpenAI.
+  **AI Agent Development Services** returned provider pages such as N-iX and
+  Rishabh Software. **Custom AI Agent Development Services** shared several
+  results with it. The four other subservice queries leaned toward documentation,
+  training, and tool comparisons. This supports one service page with all five
+  sections. Search volume and ranking difficulty were not measured.
+
 ## Existing repository/CMS considerations
 
 Repository documentation records that earlier generated Services content and nine

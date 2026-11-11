@@ -43,3 +43,21 @@ export const readAIWorkflowAutomationDraft = cache(async () => {
     },
   }
 })
+
+export const readAIAgentDevelopmentService = cache(async () => {
+  const slug = 'ai-agent-development'
+  const summary = 'Work directly with a freelance developer to build an AI agent for your SaaS product, connect it to your tools, and test it before launch.'
+  return {
+    id: slug,
+    slug,
+    ...await readServiceCopy(slug),
+    category: 'AI Systems & Integration',
+    summary,
+    detailsReviewed: true,
+    meta: {
+      title: 'AI Agent Development Services | Shibly Mohammad Noman',
+      description: summary,
+      hideFromSearch: true,
+    },
+  }
+})
