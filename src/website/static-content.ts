@@ -4,7 +4,7 @@ import { validateSlug } from '../domain/contracts.mjs'
 import { readMarkdownPost } from './markdown'
 import site from '../content/site.json'
 import type { SiteData } from './queries'
-import { readAIIntegrationService } from './ai-integration-content'
+import { readAIIntegrationService } from './service-content'
 
 export async function readStaticSite(): Promise<SiteData> {
   const directory = join(process.cwd(), 'src', 'content', 'posts')

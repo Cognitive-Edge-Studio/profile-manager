@@ -7,7 +7,7 @@ import { RichText } from '@/website/rich-text'
 import { WebsiteShell } from '@/website/shell'
 import { pageMetadata, StructuredData } from '@/website/seo'
 import { IntegrationDiagram } from './integration-diagram'
-import styles from './page.module.css'
+import styles from '@/website/styles/service-detail.module.css'
 
 export async function generateMetadata() {
   const site = await getSite()

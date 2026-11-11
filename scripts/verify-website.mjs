@@ -10,6 +10,7 @@ const site = JSON.parse(await readFile('src/content/site.json', 'utf8'))
 const pages = [
   ...site.pages.map(page => ({ path: contentPath('pages', page), title: page.heading })),
   { path: '/services/ai-integration/', title: 'AI integration services' },
+  { path: '/services/ai-workflow-automation/', title: 'AI Workflow Automation Services' },
 ]
 const articles = []
 for (const file of await readdir(directory)) {

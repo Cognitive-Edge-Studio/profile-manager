@@ -145,6 +145,10 @@ offers distinct buyer value, enough original content/evidence, and justified
 demand. More pages alone do not guarantee better rankings. Different URL nesting
 is not a prerequisite for a useful hierarchy.
 
+Use a service-specific FAQ heading in sentence case. Follow the existing
+**AI integration FAQs** pattern with **AI workflow automation FAQs** and
+**AI agent development FAQs**.
+
 Candidate page topics are AI integration services, AI workflow automation
 services, and AI agent development services. No US keyword-volume, difficulty,
 Search Console, or comprehensive search-result intent analysis has been performed.
@@ -187,12 +191,19 @@ Do not invent unknown business facts to complete that brief.
 
 ## Next page: AI Workflow Automation
 
+- Draft route: `/services/ai-workflow-automation/`. The page copy lives in
+  [`src/content/services/ai-workflow-automation.md`](../src/content/services/ai-workflow-automation.md).
+  The draft has noindex and is outside the published service list and sitemap.
+- The Connected workflows diagram sits directly on the hero background and
+  follows the AI Integration hero's light nodes and animated connections. It
+  shows a website form, shared inbox, and invoice upload flowing through AI and
+  business rules to lead assignment, email routing, and approval. The service
+  cards use icons and written examples.
 - Working H1: **AI Workflow Automation Services**. Open with what a client can
   hire Shibly to build: a repeatable process that connects the tools they already use.
-- Include a **What is AI workflow automation?** section near the top, after the
-  service introduction. Explain how a trigger starts a defined sequence, AI handles
-  steps like reading an inquiry or extracting invoice details, and business rules
-  route the work, including to a person for review when needed.
+- Put **What is AI workflow automation?** first in the FAQ. Explain how a trigger
+  starts the workflow, AI handles steps such as reading an inquiry, and business
+  rules route the work, including to a person for review when needed.
 - Keep the six subservices in the service tree as sections on this page. For each,
   give an example with a trigger, connected tools, review point, and a result the
   client can verify. Cover testing, exception handling, and handover in the copy.
